@@ -1,0 +1,186 @@
+body {margin: 20px auto; font-family: tahoma, arial, sans-serif; font-size: 15px; background-color:#070657; color: #FFD700;}
+a {color: #DAA520;}
+a:hover {color: #bbf;}
+p.center {text-align: center;}
+p.mono {font-family: "Courier New", Courier, monospace;}
+a.red {color: red;}
+div.center {text-align: center;}
+div.large_font {font-size: 25px;}
+div.wrap {width: 720px; margin: 0 auto;}
+div.left {float: left; width: 360px;}
+div.right {float: right; width: 360px;}
+div.left2 {float:left; width: 550px;}
+div.right2 {float:right; width:170px;}
+p.red {color:red;}
+p.green {color:green;}
+p.blue {color:blue;}
+table.leaders {font-size:10px; line-height:12px;}
+table.center {margin-left:auto; margin-right:auto;}
+
+/* Copied from 1t1 style.css */
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+p {
+	margin: 10px 0px 5px;
+	text-align: justify;
+	line-height: 18px;
+}
+
+.clearthis {
+	margin : 0px;
+	height : 1px;
+	clear : both;
+	float : none;
+	font-size : 1px;
+	line-height : 0px;
+	overflow : hidden;
+}
+
+.sidebarbox {
+	width: 91px;
+}
+
+input {
+	padding-left: 2px;
+#	background-color: #eee;
+	border: 2px solid #004384;
+	color: #55b;
+	font-family: tahoma, arial, sans-serif;
+	font-size: 10px;
+}
+
+#container {
+	margin: 0px auto;
+	width: 768px;
+}
+
+/* Page Header */
+
+#header_container {
+	background-image:url('/1T4/media/banner.jpg');
+#	background-color: #00bbff ;
+	margin-bottom: 12px;
+#	border: 1px solid #fff;
+	overflow: hidden;
+	height: 135px;
+}
+
+/* Page Header : Company Name & Logo */
+
+#header_company {
+	margin-top: 20px;
+	width: 585px;
+	height: 35px;
+	float: left;
+	text-align: left;
+}
+
+#header_company h1 {
+	width: 585px;
+	height: 35px;
+}
+
+
+/* Page Header : Welcome Note */
+
+#header_welcome {
+	padding-left: 142px;
+	float: left;
+	text-align: justify;
+}
+
+#header_welcome h3 {
+	padding: 3px 0px 0px;
+	font-size: 14px;
+}
+
+#header_welcome p {
+	margin-top: 7px;
+}
+
+#header_welcome #welcome_text {
+	width: 447px;
+}
+
+/* Page Header : Menu */
+
+#header_menu {
+	padding-top: 10px;
+	padding-right: 40px;
+	float: right;
+}
+
+#header_menu li {
+	margin-bottom: 2px;
+	width: 150px;
+	border: 1px solid #dee8f5;
+	text-align: left;
+	clear: both;
+	float: none;
+}
+
+#header_menu li a {
+	display: block;
+	width: 150px;
+	height: 20px;
+	color: #004384;
+	background-color: #00bbff ;
+	text-decoration: none;
+	font-weight: bold;
+	overflow: hidden;
+	line-height: 10px;
+}
+
+#header_menu li a span {
+	display: block;
+	padding-top: 4px;
+	padding-left: 31px;
+}
+
+/* Left Sidebar */
+
+#left_sidebar {
+	width: 100px;
+	float: left;
+	margin: 0px 0px 20px;
+}
+
+#left_sidebar .box_container {
+	border: 1px solid #fff;
+	background-color: #002366;
+	text-align: center;
+}
+
+/* Main Content */
+
+#maincontent_container {
+	border: 1px solid #d5dfec;
+	background-color: #002366;
+	float: right;
+	text-align: left;
+	margin: 0px 0px 16px;
+}
+
+#maincontent {
+	margin: 0px 0px 0px 7px;
+	width: 650px;
+}
+
+#maincontent_top {
+	width: 650px;
+}
+
+/* How We Started */
+
+#started_container {
+	width: 644px;
+	float: left;
+	margin: 0px 0px 10px;
+}
