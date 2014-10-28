@@ -1,4 +1,4 @@
-<form name="final_answer" action="../php_source/answercheck.php" method="post">
+<form name="final_answer" action="answercheck.php" method="post">
   <div id="username">
     User ID:<br />
     <input name="username" style="font-family:'Open Sans'; width:84px" type="text" value="" />

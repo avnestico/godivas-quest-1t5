@@ -1,5 +1,5 @@
 <?php
-include_once "global_variables.php";
+include_once "../global_variables.php";
 
 // Compatibility library. Needed as long as php version is < 5.5.0.
 if (PHP_VERSION_ID < 50500) {
@@ -14,7 +14,7 @@ if ($_REQUEST['username'] == "" || $_REQUEST['password']== "")
 }
 
 //Connect to the MySQL server with given address, user, and password
-require_once 'openDB.php';
+require_once '../openDB.php';
 $db = new MySQL;
 $db->connectDB(); 
 

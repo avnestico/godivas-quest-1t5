@@ -10,7 +10,7 @@
 <body>
 <div id="container">
 <?php
-include 'header.php'
+include '../header.php'
 ?>
 <div id="maincontent_container">
 <div id="maincontent">

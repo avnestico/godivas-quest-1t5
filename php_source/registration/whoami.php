@@ -1,7 +1,7 @@
 <?php
 
 //Connect to the MySQL server with given address, user, and password
-require_once 'openDB.php';
+require_once '../openDB.php';
 $db = new MySQL;
 $db->connectDB(); 
 

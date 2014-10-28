@@ -10,7 +10,7 @@
 
   <title>Leaderboard</title>
   <link rel="stylesheet" href="../style/mystyle.css" type="text/css" media="screen" />
-  <script src="sorttable.js" type="text/javascript">
+  <script src="../php_source/sorttable.js" type="text/javascript">
 </script>
 </head>
 

@@ -1,5 +1,5 @@
 <?php
-include_once "global_variables.php";
+include_once "../global_variables.php";
 
 if (($_REQUEST['name'] == "" || $_REQUEST['lastname']== "" || $_REQUEST['email'] == ""))
 {
@@ -9,7 +9,7 @@ if (($_REQUEST['name'] == "" || $_REQUEST['lastname']== "" || $_REQUEST['email']
 }
 
 //Connect to the MySQL server with given address, user, and password
-require_once 'openDB.php';
+require_once '../openDB.php';
 $db = new MySQL;
 $db->connectDB(); 
 

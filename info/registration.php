@@ -36,7 +36,7 @@ include_once "../php_source/global_variables.php";
 			?>
 
             <center>
-              <form name="registerform" action="../php_source/perform_register.php" method="post" id="registerform">
+              <form name="registerform" action="../php_source/registration/perform_register.php" method="post" id="registerform">
                 First name:<br />
                 <input name="name" type="text" value="" /><br />
                 <br />

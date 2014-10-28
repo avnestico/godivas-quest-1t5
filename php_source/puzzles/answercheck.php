@@ -70,7 +70,7 @@ if ($_REQUEST['answer'] == "")
 
 
 
-require_once 'openDB.php';
+require_once '../openDB.php';
 $db = new MySQL;
 $db->connectDB(); //function from global.php
 

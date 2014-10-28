@@ -32,7 +32,7 @@ if (!array_key_exists('auth', $_SESSION)) {
             if ($message != "")
               echo "<h2>$message</h2>";
 			if (!$_SESSION['auth'])
-				include_once "../php_source/login.php";
+				include_once "../php_source/godivanet/login.php";
             ?>
 		  </div>
         </div>
