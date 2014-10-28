@@ -1,4 +1,11 @@
 <?php
+/*
+ * perform_register.php
+ *
+ * Takes registration information from registration.php. Inserts user's info
+ * into database and provides user with alias to use when solving questions.
+ */
+
 include_once "../global_variables.php";
 
 if (($_REQUEST['name'] == "" || $_REQUEST['lastname']== "" || $_REQUEST['email'] == ""))

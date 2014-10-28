@@ -1,16 +1,15 @@
 <?php
 /*
  * hash_generate.php
+ *
  * Script to pass user and a hashed password to an SQL database
  * Connects to the database using openDB.php
  * Usage: php5-cli hash_generate.php <SQL table> <username> <password>
  */
 
-/*
- * Uses the password.php compatibility library for password functions. The file
- * and this line can be safely removed if the server is upgraded to php >=
- * 5.5.0. You can use "php5_cli phpinfo.php" to check this.
- */
+// Uses the password.php compatibility library for password functions. The file
+// and this line can be safely removed if the server is upgraded to php >=
+// 5.5.0. You can use "php5_cli phpinfo.php" to check this.
 if (PHP_VERSION_ID < 50500) {
 	require 'password.php';
 }

@@ -1,4 +1,12 @@
 <?php
+/*
+ * answercheck.php
+ *
+ * Takes in user-submitted ID and solution, as well as hidden question variable.
+ * If solution matches question, updates the leaderboard database and informs
+ * the user that they have solved the question. Can also provide hints on
+ * incorrect answers and additional information on correct answers.
+ */
 
 define('SOLVED',0);
 define('INVALID_LOGIN',1);

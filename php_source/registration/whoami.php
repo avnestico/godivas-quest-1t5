@@ -1,4 +1,10 @@
 <?php
+/*
+ * whoami.php
+ *
+ * Returns full list of users in SQL database
+ * Usage: php5-cli whoami.php
+ */
 
 //Connect to the MySQL server with given address, user, and password
 require_once '../openDB.php';

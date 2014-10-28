@@ -1,4 +1,11 @@
 <?php
+/*
+ * perform_login.php
+ *
+ * Takes user-supplied username and password and validates against stored
+ * username and password in database.
+ */
+
 include_once "../global_variables.php";
 
 // Compatibility library. Needed as long as php version is < 5.5.0.
