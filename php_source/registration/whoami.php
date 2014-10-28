@@ -19,5 +19,3 @@ while($row = mysql_fetch_array($result))
 }
 
 $db->disconnectDB();
-
-?>
