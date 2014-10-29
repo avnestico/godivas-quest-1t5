@@ -8,34 +8,28 @@
 
 include_once "../global_variables.php";
 
-if (($_REQUEST['name'] == "" || $_REQUEST['lastname']== "" || $_REQUEST['email'] == ""))
+$firstname = $_REQUEST['firstname'];
+$lastname = $_REQUEST['lastname'];
+$email = $_REQUEST['email'];
+
+if (($firstname == "" || $lastname == "" || $email == ""))
 {
 	$message = "Registration failed! Please make sure all fields are filled out.";
 	header("Location: ../../info/registration.php?message=$message");
 	die();
 }
 
-//Connect to the MySQL server with given address, user, and password
+$alias = $firstname{0}.rand(0, 100).$lastname{0}.rand(0,100);
+
 require_once '../openDB.php';
-$db = new MySQL;
-$db->connectDB(); 
+$query = registerUser($firstname, $lastname, $alias, $email);
 
-$name = mysql_real_escape_string($_REQUEST['name']);
-$lastname = mysql_real_escape_string($_REQUEST['lastname']);
-$email = mysql_real_escape_string($_REQUEST['email']);
-
-$alias = $name{0}.rand(0, 100).$lastname{0}.rand(0,100);
-
-$query = "insert into alldata (name,lastname,alias,email) values ('$name','$lastname','$alias','$email');";
-
-$result = mysql_query($query);
-
-if ($result)
+if ($query->rowCount())
 {
 	$headers = 'From: ' . $GLOBALS["qm_email"] . "\r\n";
 	$headers .= 'Cc: ' . $GLOBALS["qm_email"] . "\r\n";
 
-	$body = "Thank you $name for registering.\r\n
+	$body = "Thank you $firstname for registering.\r\n
 Your user ID is: $alias \r\n
 
 Use your user ID to submit your answers to puzzles.  You can check your progress at: quest.skule.ca/1T5/leaderboards.php\r\n 
@@ -52,5 +46,3 @@ else
 	header("Location: ../../info/registration.php?message=$message");
 	die();
 }
-
-$db->disconnectDB();

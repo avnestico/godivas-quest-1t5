@@ -39,7 +39,7 @@ include_once "../php_source/global_variables.php";
             <div style="text-align:center">
               <form name="registerform" action="../php_source/registration/perform_register.php" method="post" id="registerform">
                 First name:<br />
-                <input name="name" type="text" value="" onKeyPress="return submitenter(this,event)" /><br />
+                <input name="firstname" type="text" value="" onKeyPress="return submitenter(this,event)" /><br />
                 <br />
                 Last name:<br />
                 <input name="lastname" type="text" value="" onKeyPress="return submitenter(this,event)" /><br />

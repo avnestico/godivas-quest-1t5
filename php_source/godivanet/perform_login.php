@@ -13,34 +13,28 @@ if (PHP_VERSION_ID < 50500) {
     require 'password.php';
 }
 
-if ($_REQUEST['username'] == "" || $_REQUEST['password']== "")
+$username = $_REQUEST['username'];
+$password = $_REQUEST['password'];
+
+if ($username == "" || $password == "")
 {
 	$message = "Login failed! Please make sure all fields are filled out.";
 	header("Location: ../../godivanet/index.php?message=$message");
 	die();
 }
 
-//Connect to the MySQL server with given address, user, and password
 require_once '../openDB.php';
-$db = new MySQL;
-$db->connectDB(); 
+$query = checkForUsername($username);
 
-$username = mysql_real_escape_string($_REQUEST['username']);
-$password = $_REQUEST['password'];
-
-$query = "select * from godivanet where username = '$username'";
-
-$result = mysql_query($query);
-
-if (!$result)
+if (!$query->columnCount())
 {
-	$message = "Login failed! Username " . $_REQUEST['username'] . " does not exist.";
+	$message = "Login failed! Username " . $username . " does not exist.";
 	header("Location: ../../godivanet/index.php?message=$message");
 	die();
 }
 else
 {
-    $row = mysql_fetch_assoc($result);
+    $row = $query->fetch();
 	if (!password_verify($password, $row['password']))
 	{
 		$message = "Login failed! Username and password do not match.";
@@ -56,5 +50,3 @@ else
 		die();
 	}
 }
-
-$db->disconnectDB();
