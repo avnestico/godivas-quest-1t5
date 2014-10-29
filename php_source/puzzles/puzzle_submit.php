@@ -7,7 +7,7 @@
     Answer:<br />
     <input name="answer" style="width:84px" type="text" value="" />
   </div>
-  <div id="submit">
+  <div id="form_submit">
     <br />
     <button onclick="final_answer.submit();">
       Submit

@@ -11,7 +11,7 @@ include_once "../global_variables.php";
 if (($_REQUEST['name'] == "" || $_REQUEST['lastname']== "" || $_REQUEST['email'] == ""))
 {
 	$message = "Registration failed! Please make sure all fields are filled out.";
-	header("Location: ../registration.php?message=$message");
+	header("Location: ../../info/registration.php?message=$message");
 	die();
 }
 
@@ -43,13 +43,13 @@ Good luck! \r\n
                       ";
 	mail($email, "[Quest]Registration Complete!", $body, $headers);
 	$message = "Registration success! An email will be sent each time a new stage is released. In the mean time, your ID is $alias if you would like to start puzzles right away.";
-	header("Location: /1T5/index.php?message=$message");
+	header("Location: ../../index.php?message=$message");
 	die();
 }
 else
 {
 	$message = "Registration failed! Please try again, or contact me at " . $GLOBALS["qm_email"];
-	header("Location: ../registration.php?message=$message");
+	header("Location: ../../info/registration.php?message=$message");
 	die();
 }
 

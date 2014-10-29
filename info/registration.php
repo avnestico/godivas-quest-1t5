@@ -35,23 +35,24 @@ include_once "../php_source/global_variables.php";
               echo "<h1>$message</h1>";
 			?>
 
-            <center>
+            <script type="text/javascript" src="../php_source/submitenter.js"></script>
+            <div style="text-align:center">
               <form name="registerform" action="../php_source/registration/perform_register.php" method="post" id="registerform">
                 First name:<br />
-                <input name="name" type="text" value="" /><br />
+                <input name="name" type="text" value="" onKeyPress="return submitenter(this,event)" /><br />
                 <br />
                 Last name:<br />
-                <input name="lastname" type="text" value="" /><br />
+                <input name="lastname" type="text" value="" onKeyPress="return submitenter(this,event)" /><br />
                 <br />
                 Email: (Important)<br />
-                <input name="email" type="text" value="" /><br />
+                <input name="email" type="text" value="" onKeyPress="return submitenter(this,event)" /><br />
                 <br />
 
-                <div id="answerform_submit" onclick="registerform.submit();">
+                <div id="form_submit" onclick="registerform.submit();">
                   <a><b>Register</b></a>
                 </div>
               </form>
-            </center>
+            </div>
           </div>
         </div>
       </div>

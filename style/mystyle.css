@@ -1,5 +1,5 @@
 body {margin: 20px auto; font-family: tahoma, arial, sans-serif; font-size: 15px; background-color:#070657; color: #FFD700;}
-a {color: #DAA520;}
+a {color: #DAA520; text-decoration:underline; cursor:pointer}
 a:hover {color: #bbf;}
 p.center {text-align: center;}
 p.mono {font-family: "Courier New", Courier, monospace;}

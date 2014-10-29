@@ -6,9 +6,10 @@
     }
 ?>
 
-<p class="center"></p>
+<h3>GodivaNet</h3>
+
 <form name="logoutform" action="" method="post">
-    <div id="logout_submit" onclick="logoutform.submit();">
+    <div id="form_submit" onclick="logoutform.submit();">
         <a><b>Log Out</b></a>
     </div>
     <input name="logout" type="hidden" value="true" />
