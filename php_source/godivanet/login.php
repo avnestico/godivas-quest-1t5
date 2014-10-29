@@ -1,5 +1,5 @@
 <center>
-  <form name="loginform" action="perform_login.php" method="post"
+  <form name="loginform" action="../php_source/godivanet/perform_login.php" method="post"
   id="loginform">
     Username:<br />
     <input name="username" type="text" value="" /><br />

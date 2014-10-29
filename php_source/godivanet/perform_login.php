@@ -5,7 +5,7 @@
  * Takes user-supplied username and password and validates against stored
  * username and password in database.
  */
-
+session_start();
 include_once "../global_variables.php";
 
 // Compatibility library. Needed as long as php version is < 5.5.0.
@@ -16,7 +16,7 @@ if (PHP_VERSION_ID < 50500) {
 if ($_REQUEST['username'] == "" || $_REQUEST['password']== "")
 {
 	$message = "Login failed! Please make sure all fields are filled out.";
-	header("Location: ../godivanet/index.php?message=$message");
+	header("Location: ../../godivanet/index.php?message=$message");
 	die();
 }
 
@@ -26,29 +26,33 @@ $db = new MySQL;
 $db->connectDB(); 
 
 $username = mysql_real_escape_string($_REQUEST['username']);
+$password = $_REQUEST['password'];
 
-$query = "select * from godivanet (username) values ('$username');";
+$query = "select * from godivanet where username = '$username'";
 
 $result = mysql_query($query);
 
 if (!$result)
 {
-	$message = "Login failed! Username does not exist.";
-	header("Location: ../godivanet/index.php?message=$message");
+	$message = "Login failed! Username " . $_REQUEST['username'] . " does not exist.";
+	header("Location: ../../godivanet/index.php?message=$message");
 	die();
 }
 else
 {
-	if (!password_verify($_REQUEST['password'], $row['password']))
+    $row = mysql_fetch_assoc($result);
+	if (!password_verify($password, $row['password']))
 	{
 		$message = "Login failed! Username and password do not match.";
-		header("Location: ../godivanet/index.php?message=$message");
+		header("Location: ../../godivanet/index.php?message=$message");
 		die();
 	}
 	else
 	{
+        $_SESSION['auth'] = true;
+        $_SESSION[$username] = true;
 		$message = "Login successful!";
-		header("Location: ../godivanet/index.php?message=$message");
+		header("Location: ../../godivanet/index.php?message=$message");
 		die();
 	}
 }
