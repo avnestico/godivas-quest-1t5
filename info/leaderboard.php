@@ -1,3 +1,23 @@
+<?php
+/**
+ * Prints header/footer of leaderboard as a row of an html table.
+ *
+ * @param $fieldCount
+ */
+function print_leaderboard_header($fieldCount) {
+  echo"<tr><th><div style='width:100px;'>Quester</div></th>";
+
+  for ($i=1; $i<$fieldCount-5; $i++) {
+    $fieldName = $i;
+    echo "<th><div style='width:13px;'>$fieldName</div></th>";
+  }
+
+  echo "<th><div>last<br>solved</div></th>";
+  echo "<th><div>num<br>solved</div></th>";
+  echo "</tr>";
+}
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
@@ -27,60 +47,39 @@
             <h2>Leaderboard</h2><em>Previous winners are ineligible to win again, so you
             are <strong>not</strong> competing against Ryan Wills, Ang Cui, Evangelos Staikos, Alvin
             Ho, Tommy Liu, Ian Swartz, John Zhou, or Harry Zhao. Of course, you are also not
-            competing against the Questmasters.</em> <?php
+            competing against the Questmasters.</em>
 
-            //Connect to the MySQL server with given address, user, and password
+            <?php
+
+            // Connect to the database and retrieve user table
             require_once '../php_source/openDB.php';
-            $db = new MySQL;
-            $db->connectDB(); //function from openDB.php
+            $query = selectAllUsers();
 
-            $result = "original";
-            $result = mysql_query("SELECT * from alldata where alias != 'XXXX'");
+            $fieldCount = $query->columnCount();
 
-            echo "<table border=\"1\" class=\"leaders sortable\">";
-            echo "<thead>";
-            echo "<tr>";
-            $fieldCount = mysql_num_fields($result);
+            echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
+            print_leaderboard_header($fieldCount);
+            echo "</thead><tfoot>";
+            print_leaderboard_header($fieldCount);
+            echo "</tfoot><tbody>";
 
-            echo "<th><div style='width:100px;'>Quester</div></th>";
-            for ($i=5; $i<$fieldCount-1; $i++) {              
-            #    $fieldName = mysql_field_name($result, $i);
-                    $fieldName = $i-4;
-                echo "<th><div style='width:13px;'>$fieldName</div></th>";
-            }
-            echo "<th><div>last<br>solved</div></th>";
-            echo "<th><div>num<br>solved</div></th>";
-            echo "</tr>";
-            echo "</thead><tbody>";
-
-            while($row = mysql_fetch_array($result))
+            while($row = $query->fetch())
             {
               $solved = 0;
-              $full_name = strip_tags($row[1] . " " . $row[2]);
-              echo "<tr>";
-              echo "<td><div style='width:100px;'>$full_name</div></td>";
-              for ($i=5; $i<$fieldCount; $i++) 
+              $full_name = strip_tags($row["firstname"] . " " . $row["lastname"]);
+              echo "<tr><td><div style='width:100px;'>$full_name</div></td>";
+              for ($i=1; $i<$fieldCount-4; $i++)
               {              
-                  $fieldName = $row[$i];
+                  $fieldName = $row["Q" . $i];
                   echo "<td><div>$fieldName</div></td>";
                   if ($fieldName == 'Y') $solved++;
               }
-              echo "<td>$solved</td>";
-              
-              echo "</tr>";
+              echo "<td>$solved</td></tr>";
             }
 
-            echo "<tfoot><tr><td><div style='width:100px;'>Quester</div></td>";
-            for ($i=5; $i<$fieldCount-1; $i++) {              
-            #    $fieldName = mysql_field_name($result, $i);
-                $fieldName = $i-4;
-                echo "<td><div>$fieldName</div></td>";
-            }
-            echo "<th>last<br>solved</th>";
-            echo "<th>num<br>solved</th>";
-            echo "</tr></tfoot>";
             echo "</tbody></table>";
-            $db->disconnectDB();
+
+            $db = null;
 
             ?>
           </div>
