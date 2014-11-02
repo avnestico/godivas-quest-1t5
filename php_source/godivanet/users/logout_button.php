@@ -1,9 +1,9 @@
 <?php
-    if (isset($_REQUEST['logout'])) {
-        session_unset();
-        unset($_REQUEST['message']);
-        return;
-    }
+if (isset($_REQUEST['logout'])) {
+    session_unset();
+    unset($_REQUEST['message']);
+    return;
+}
 ?>
 
 <h3>GodivaNet</h3>
@@ -12,5 +12,5 @@
     <div id="form_submit" onclick="logoutform.submit();">
         <a><b>Log Out</b></a>
     </div>
-    <input name="logout" type="hidden" value="true" />
+    <input name="logout" type="hidden" value="true"/>
 </form>

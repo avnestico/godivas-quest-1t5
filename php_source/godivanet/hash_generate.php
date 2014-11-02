@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * hash_generate.php
  *
  * Script to pass user and a hashed password to an SQL database
@@ -11,7 +11,7 @@
 // and this line can be safely removed if the server is upgraded to php >=
 // 5.5.0. You can use "php5_cli phpinfo.php" to check this.
 if (PHP_VERSION_ID < 50500) {
-	require 'password.php';
+    require 'password.php';
 }
 
 // If the number of arguments is incorrect, cancel user creation.
@@ -30,7 +30,7 @@ $pass = $argv[3];
 
 // Hashing options and function
 $pwoptions = ['cost' => 8,];
-$passhash  = password_hash($pass, PASSWORD_BCRYPT, $pwoptions);
+$passhash = password_hash($pass, PASSWORD_BCRYPT, $pwoptions);
 
 echo "Username:\n" . $user . "\n";
 echo "Password hash:\n" . $passhash . "\n";

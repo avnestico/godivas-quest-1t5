@@ -3,23 +3,23 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta name="generator" content=
-  "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org"/>
 
-  <title></title>
+    <title></title>
 </head>
 
 <body>
-  <div id="header_container">
+<div id="header_container">
     <div id="header_menu"></div>
-  </div>
+</div>
 
-  <div id="left_sidebar">
+<div id="left_sidebar">
     <div class="box_container">
-	  <?php
-	  include_once "header_data.php"
-	  ?>
+        <?php
+        include_once "header_data.php"
+        ?>
     </div>
-  </div>
+</div>
 </body>
 </html>
