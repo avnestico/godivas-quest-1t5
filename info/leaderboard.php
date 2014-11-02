@@ -65,16 +65,16 @@ function print_leaderboard_header($fieldCount) {
 
             while($row = $query->fetch())
             {
-              $solved = 0;
-              $full_name = strip_tags($row["firstname"] . " " . $row["lastname"]);
-              echo "<tr><td><div style='width:100px;'>$full_name</div></td>";
-              for ($i=1; $i<$fieldCount-4; $i++)
+              $numSolved = 0;
+              $fullName = strip_tags($row["firstname"] . " " . $row["lastname"]);
+              echo "<tr><td><div style='width:100px;'>$fullName</div></td>";
+              for ($i=1; $i<$fieldCount-5; $i++)
               {              
                   $fieldName = $row["Q" . $i];
                   echo "<td><div>$fieldName</div></td>";
-                  if ($fieldName == 'Y') $solved++;
+                  if ($fieldName == 'Y') $numSolved++;
               }
-              echo "<td>$solved</td></tr>";
+              echo "<td><div style='width:48px;'>" . $row["last_solve"] . "</div></td><td>$numSolved</td></tr>";
             }
 
             echo "</tbody></table>";
