@@ -1,10 +1,12 @@
 <?php
 /**
+ * printLeaderboardHeader
+ *
  * Prints header/footer of leaderboard as a row of an html table.
  *
  * @param $fieldCount
  */
-function print_leaderboard_header($fieldCount) {
+function printLeaderboardHeader($fieldCount) {
   echo"<tr><th><div style='width:100px;'>Quester</div></th>";
 
   for ($i=1; $i<$fieldCount-5; $i++) {
@@ -58,9 +60,9 @@ function print_leaderboard_header($fieldCount) {
             $fieldCount = $query->columnCount();
 
             echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
-            print_leaderboard_header($fieldCount);
+            printLeaderboardHeader($fieldCount);
             echo "</thead><tfoot>";
-            print_leaderboard_header($fieldCount);
+            printLeaderboardHeader($fieldCount);
             echo "</tfoot><tbody>";
 
             while($row = $query->fetch())

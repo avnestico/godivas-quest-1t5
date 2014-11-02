@@ -1,5 +1,5 @@
 <?php
-/*
+/**
  * perform_login.php
  *
  * Takes user-supplied username and password and validates against stored
