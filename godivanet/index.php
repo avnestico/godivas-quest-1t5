@@ -4,6 +4,9 @@ $user1 = 'testuser';
 $user2 = 'testuser2';
 $user3 = 'testuser3';
 
+if (!array_key_exists('message', $_REQUEST)) {
+    $_REQUEST['message'] = "";
+}
 if (!array_key_exists('auth', $_SESSION)) {
     $_SESSION['auth'] = false;
 }
