@@ -12,13 +12,16 @@ $firstname = $_REQUEST['firstname'];
 $lastname = $_REQUEST['lastname'];
 $email = $_REQUEST['email'];
 
-if (($firstname == "" || $lastname == "" || $email == "")) {
-    $message = "Registration failed! Please make sure all fields are filled out.";
+// Validate registration data. An empty string is returned on successful validation.
+include_once "validate_register.php";
+$message = validationMessage($firstname, $lastname, $email);
+
+if ($message != "") {
     header("Location: ../../info/registration.php?message=$message");
     die();
 }
 
-$alias = $firstname{0} . rand(0, 100) . $lastname{0} . rand(0, 100);
+$alias = strtolower($firstname{0}) . sprintf('%02d', rand(0, 99)) . strtolower($lastname{0}) . sprintf('%02d', rand(0, 99));
 
 require_once '../openDB.php';
 $query = registerUser($firstname, $lastname, $alias, $email);
@@ -34,7 +37,7 @@ Use your user ID to submit your answers to puzzles.  You can check your progress
 Good luck! \r\n
                       ";
     mail($email, "[Quest]Registration Complete!", $body, $headers);
-    $message = "Registration success! An email will be sent each time a new stage is released. In the mean time, your ID is $alias if you would like to start puzzles right away.";
+    $message = "Registration success! An email will be sent each time a new stage is released. In the meantime, your ID is $alias if you would like to start puzzles right away.";
     header("Location: ../../index.php?message=$message");
     die();
 } else {

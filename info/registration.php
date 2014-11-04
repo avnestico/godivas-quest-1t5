@@ -35,7 +35,7 @@ if (!array_key_exists('message', $_REQUEST)) {
                     <?php
                     $message = htmlspecialchars($_REQUEST['message']);
                     if ($message != "")
-                        echo "<h1>$message</h1>";
+                        echo "<h2>$message</h2>";
                     ?>
 
                     <script type="text/javascript" src="../php_source/submitenter.js"></script>
