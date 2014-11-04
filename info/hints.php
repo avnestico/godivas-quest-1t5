@@ -1,5 +1,6 @@
 <?php
 include_once "../php_source/global_variables.php";
+$qm_email = $GLOBALS["qm_email"];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -14,7 +15,7 @@ include_once "../php_source/global_variables.php";
 <body>
 <div id="container">
     <?php
-    include '../php_source/header.php'
+    include '../php_source/header.php';
     ?>
     <div id="maincontent_container">
         <div id="maincontent">
@@ -25,14 +26,13 @@ include_once "../php_source/global_variables.php";
                     <p>
                         None yet! If a puzzle is solved by less than 5 people before the next phase activates, automatic
                         hints will be provided here. If you want a hint on a particular puzzle, you are entitled to
-                        <strong>two</strong> for the entire quest, and you can request one by e-mailing the Questmaster.
+                        <strong>two</strong> for the entire quest, and you can request one by e-mailing the Questmasters.
                     </p>
 
                     <h2>Contact</h2>
 
                     <p>
-                        You can contact the Questmasters at <a
-                            href="mailto:<? echo $GLOBALS["qm_email"] ?>"><? echo $GLOBALS["qm_email"] ?></a>.
+                        You can contact the Questmasters at <?php echo "<a href=mailto:" . $qm_email . ">" . $qm_email . "</a>" ?>.
                     </p>
                 </div>
             </div>
