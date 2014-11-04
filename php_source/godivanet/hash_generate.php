@@ -19,13 +19,8 @@ if ($argc != 4) {
     die("Usage: php5-cli hash_generate.php <SQL table> <username> <password>\n");
 }
 
-// Connect to the database.
-require_once '../openDB.php';
-$db = new MySQL;
-$db->connectDB();
-
-$table = mysql_real_escape_string($argv[1]);
-$user = mysql_real_escape_string($argv[2]);
+$table = $argv[1];
+$user = $argv[2];
 $pass = $argv[3];
 
 // Hashing options and function
@@ -35,14 +30,13 @@ $passhash = password_hash($pass, PASSWORD_BCRYPT, $pwoptions);
 echo "Username:\n" . $user . "\n";
 echo "Password hash:\n" . $passhash . "\n";
 
-$query = "insert into $table (username, password) values ('$user','$passhash');";
+// Connect to the database.
+require_once '../openDB.php';
 
-$result = mysql_query($query);
+$query = insertUserAndHash($table, $user, $passhash);
 
-if ($result) {
+if ($query->rowCount()) {
     echo "User created successfully\n";
 } else {
     echo "User creation failed\n";
 }
-
-$db->disconnectDB();
