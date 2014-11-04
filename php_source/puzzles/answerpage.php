@@ -17,7 +17,7 @@
             <div id="maincontent_top">
                 <div id="started_container">
                     <?php
-                    $message = $_REQUEST['message'];
+                    $message = htmlspecialchars($_REQUEST['message']);
                     if ($message != "")
                         echo "<h2>$message</h2>";
                     ?>

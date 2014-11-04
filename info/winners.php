@@ -25,7 +25,7 @@ if (!array_key_exists('message', $_REQUEST)) {
                 <div id="started_container">
                     <h2>
                         <?php
-                        $message = $_REQUEST['message'];
+                        $message = htmlspecialchars($_REQUEST['message']);
                         if ($message != "")
                             echo "<h2>$message</h2>";
                         ?>

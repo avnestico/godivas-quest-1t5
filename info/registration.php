@@ -33,7 +33,7 @@ if (!array_key_exists('message', $_REQUEST)) {
                     <h2>Registration</h2>
 
                     <?php
-                    $message = $_REQUEST['message'];
+                    $message = htmlspecialchars($_REQUEST['message']);
                     if ($message != "")
                         echo "<h1>$message</h1>";
                     ?>
