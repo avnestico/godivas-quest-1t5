@@ -69,14 +69,14 @@ function printLeaderboardHeader($fieldCount)
 
                     while ($row = $query->fetch()) {
                         $numSolved = 0;
-                        $fullName = strip_tags($row["firstname"] . " " . $row["lastname"]);
+                        $fullName = strip_tags($row["firstName"] . " " . $row["lastName"]);
                         echo "<tr><td><div style='width:100px;'>$fullName</div></td>";
                         for ($i = 1; $i < $fieldCount - 5; $i++) {
                             $fieldName = $row["Q" . $i];
                             echo "<td><div>$fieldName</div></td>";
                             if ($fieldName == 'Y') $numSolved++;
                         }
-                        echo "<td><div style='width:48px;'>" . $row["last_solve"] . "</div></td><td>$numSolved</td></tr>";
+                        echo "<td><div style='width:48px;'>" . $row["lastSolve"] . "</div></td><td>$numSolved</td></tr>";
                     }
 
                     echo "</tbody></table>";
