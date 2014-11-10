@@ -2,8 +2,8 @@ body {
     margin: 20px auto;
     font-family: tahoma, arial, sans-serif;
     font-size: 15px;
-    background-color: #070657;
-    color: #FFD700;
+    background-color: #3a0362;
+    color: #FFDE00;
 }
 
 a {
@@ -130,7 +130,7 @@ input {
 /* Page Header */
 
 #header_container {
-    background-image: url('../media/banner.jpg');
+    background-image: url('../media/banner.png');
     /*	background-color: #00bbff ; */
     margin-bottom: 12px;
     /*	border: 1px solid #fff; */
@@ -219,7 +219,7 @@ input {
 
 #left_sidebar .box_container {
     border: 1px solid #fff;
-    background-color: #002366;
+    background-color: #3e0462;
     text-align: center;
 }
 
@@ -227,7 +227,7 @@ input {
 
 #maincontent_container {
     border: 1px solid #d5dfec;
-    background-color: #002366;
+    background-color: #3e0462;
     float: right;
     text-align: left;
     margin: 0px 0px 16px;
