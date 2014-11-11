@@ -33,7 +33,7 @@ function printLeaderboardHeader($fieldCount)
     <meta http-equiv="Content-Style-Type" content="text/css"/>
 
     <title>Leaderboard</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/1T5/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css" media="screen"/>
     <script src="../php_source/sorttable.js" type="text/javascript">
     </script>

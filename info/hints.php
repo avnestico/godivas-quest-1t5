@@ -10,7 +10,7 @@ $qm_email = $GLOBALS["qm_email"];
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org"/>
     <title>Hints</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/1T5/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css"/>
 </head>
 <body>

@@ -17,7 +17,7 @@ if (!array_key_exists('message', $_REQUEST)) {
     <meta http-equiv="Content-Style-Type" content="text/css"/>
 
     <title>Registration</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/1T5/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css" media="screen"/>
 </head>
 
