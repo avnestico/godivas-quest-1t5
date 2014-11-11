@@ -48,7 +48,7 @@ if (!array_key_exists('message', $_REQUEST)) {
 
                     <p>There can only be one winner, but collaboration is encouraged and the top 10 people to complete
                         the Quest (or, if less than 10 people solve it, the top 10 people on the leaderboard) will
-                        receive an <a href="/1T5/media/patch.jpg">ultra-exclusive limited edition patch</a> for his or
+                        receive an <a href="media/patch.jpg">ultra-exclusive limited edition patch</a> for his or
                         her coveralls!</p>
 
                     <p>Frosh cannot win by tradition, but are certainly encouraged to participate and can still earn the
