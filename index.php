@@ -4,6 +4,7 @@ include_once "php_source/global_variables.php";
 if (!array_key_exists('message', $_REQUEST)) {
     $_REQUEST['message'] = "";
 }
+$qm_email = $GLOBALS["qm_email"];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -75,9 +76,9 @@ if (!array_key_exists('message', $_REQUEST)) {
                         so please don't try to break into there.</p>
 
                     <p>Everyone is eligible for two hints. If you're really really stuck,
-                        e-mail <? echo $GLOBALS["qm_email"] ?> and explain where you are in the puzzle, and a hint will
-                        be provided. If a puzzle has less than 5 solvers by the time the next phase is active, hints for
-                        those puzzles will be provided to everyone.</p>
+                        e-mail <?php echo "<a href=mailto:" . $qm_email . ">" . $qm_email . "</a>" ?> and explain where
+                        you are in the puzzle, and a hint will be provided. If a puzzle has less than 5 solvers by the
+                        time the next phase is active, hints for those puzzles will be provided to everyone.</p>
 
                     <h3><strong>Past Winners</strong></h3>
 
