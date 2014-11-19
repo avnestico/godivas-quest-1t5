@@ -131,9 +131,9 @@ namespace {
             if ($salt_requires_encoding) {
                 // encode string with the Base64 variant used by crypt
                 $base64_digits =
-                    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
+                        'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/';
                 $bcrypt64_digits =
-                    './ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                        './ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
                 $base64_string = base64_encode($salt);
                 $salt = strtr(rtrim($base64_string, '='), $base64_digits, $bcrypt64_digits);
@@ -170,9 +170,9 @@ namespace {
         function password_get_info($hash)
         {
             $return = array(
-                'algo' => 0,
-                'algoName' => 'unknown',
-                'options' => array(),
+                    'algo' => 0,
+                    'algoName' => 'unknown',
+                    'options' => array(),
             );
             if (PasswordCompat\binary\_substr($hash, 0, 4) == '$2y$' && PasswordCompat\binary\_strlen($hash) == 60) {
                 $return['algo'] = PASSWORD_BCRYPT;

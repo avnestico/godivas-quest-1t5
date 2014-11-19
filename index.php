@@ -95,7 +95,8 @@ $qm_email = $GLOBALS["qm_email"];
                     <hr/>
 
                     <h3><strong>Good luck and happy questing!</strong></h3>
-                        <p>- Andrew Nestico, Questmaster 1T5</p>
+
+                    <p>- Andrew Nestico, Questmaster 1T5</p>
                 </div>
             </div>
         </div>

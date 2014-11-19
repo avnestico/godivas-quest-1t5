@@ -4,7 +4,7 @@ $qm_email = $GLOBALS["qm_email"];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="generator" content=
@@ -27,13 +27,15 @@ $qm_email = $GLOBALS["qm_email"];
                     <p>
                         None yet! If a puzzle is solved by less than 5 people before the next phase activates, automatic
                         hints will be provided here. If you want a hint on a particular puzzle, you are entitled to
-                        <strong>two</strong> for the entire quest, and you can request one by e-mailing the Questmasters.
+                        <strong>two</strong> for the entire quest, and you can request one by e-mailing the
+                        Questmasters.
                     </p>
 
                     <h2>Contact</h2>
 
                     <p>
-                        You can contact the Questmasters at <?php echo "<a href=mailto:" . $qm_email . ">" . $qm_email . "</a>" ?>.
+                        You can contact the Questmasters
+                        at <?php echo "<a href=mailto:" . $qm_email . ">" . $qm_email . "</a>" ?>.
                     </p>
                 </div>
             </div>
