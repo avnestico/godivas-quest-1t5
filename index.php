@@ -8,7 +8,7 @@ $qm_email = $GLOBALS["qm_email"];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -36,60 +36,66 @@ $qm_email = $GLOBALS["qm_email"];
                         echo "<h2>$message</h2>";
                     ?>
 
-                    <h1><strong>Welcome to Godiva's Quest 1T5!</strong></h1>
+                    <h1><strong>Hello and welcome to Godiva's Quest 1T5!</strong></h1>
 
-                    <p><strong>Godiva's Quest</strong> is an annual Skule tradition that tests students' logic,
-                        problem-solving skills, and perseverance by having them (you) solve a set of increasingly
-                        difficult puzzles. Beginning in 0T0, this year marks the Quest's 15th anniversary!</p>
-
-                    <p>The first U of T St. George Engineering Undergrad student to solve the final puzzle (we have ways
-                        of knowing who it is) will become next year's Questmaster and the third judge of <strong>Ye
-                            Grande Olde Chariot Races</strong> held on the Wednesday of Godiva Week! If no one solves
-                        the final puzzle by January 6th, the eligible person with the most solves wins.</p>
-
-                    <p>There can only be one winner, but collaboration is encouraged and the top 10 people to complete
-                        the Quest (or, if less than 10 people solve it, the top 10 people on the leaderboard) will
-                        receive an <a href="media/patch.jpg">ultra-exclusive limited edition patch</a> for his or
-                        her coveralls!</p>
-
-                    <p>Frosh cannot win by tradition, but are certainly encouraged to participate and can still earn the
-                        patch!</p>
+                    <p>Godiva's Quest is an annual test of the wit and constitution of the University of Toronto's
+                        undergraduate engineers. Taking place from the winter break to the start of the second school
+                        semester, the Quest challenges students to solve a series of mind-bending puzzles in a race
+                        against time and their peers.</p>
 
                     <h3><strong>The Puzzles</strong></h3>
 
-                    <p>Every puzzle's solution will be one or two words which can be submitted on the puzzles'
-                        respective pages. If your answer is close but not quite right, a clue will be automatically
-                        provided.</p>
+                    <p>As in past years, the Quest is split into three stages. Once the third stage of puzzles has been
+                        released, you will have all the tools you need to solve the Quest. Remember, you don't need to
+                        solve every puzzle in order to finish the Quest, but every answer you get will bring you closer
+                        to the solution. Answers are in the form of an alphanumeric word or phrase, and will not have
+                        any spaces or punctuation.</p>
 
-                    <p>There will be three phases to the Quest with seven puzzles each. When the third phase is
-                        released, Questers will have all the tools they need to solve the Quest. Solving more puzzles
-                        before the third phase is released will help you solve the Quest faster, but it is not <em>strictly</em>
-                        necessary to have solved all the puzzles to complete the Quest.</p>
+                    <h3><strong>The Prizes</strong></h3>
 
-                    <p>There is one on-campus puzzle per phase, requiring you to visit a location on or around U of T.
-                        Every location that is necessary to solve a puzzle is completely accessible to <em>all</em>
-                        engineering students. If you're trying to break into somewhere, you're on the wrong track.</p>
+                    <p>The first eligible person to complete the Quest gets all the spoils! If you win, you'll be
+                        awarded the coveted third judge's position for Ye Grande Olde Chariot Races, which is held on
+                        the Wednesday of Godiva Week; you'll be granted the title of Questmaster 1T6, which comes with
+                        the responsibility of writing next year's Godiva's Quest; and, most importantly, your name will
+                        be immortalized in history as one of the valiant few who found glory at the end of their
+                        Quest.</p>
 
-                    <p>Unlike in past years, questers are encouraged to take peeks behind the veil and look for hidden
+                    <h3><strong>The Patches</strong></h3>
+
+                    <p><a href="media/patch.jpg">This swanky patch</a> is also available as a reward for tenacious
+                        Questers, and the first ten people to complete the Quest will be awarded one. You're encouraged
+                        to work in teams, and every member of your team can win a patch if you're all fast enough.</p>
+
+                    <h3><strong>The People</strong></h3>
+
+                    <p>Frosh cannot win the whole Quest, but they are encouraged to participate and can earn patches.
+                        Other than frosh and past Quest winners, any University of Toronto engineering undergraduate is
+                        eligible to win the Quest. If nobody has completed the Quest by 23:59 EST on Tuesday, January 8,
+                        2015, the winner will be the person who has completed the most puzzles at that time.</p>
+
+                    <h3><strong>The Private Side</strong></h3>
+
+                    <p>Unlike in past years, Questers are encouraged to take peeks behind the veil and look for hidden
                         areas of the website. Leave no stone unturned and you'll be rewarded for your efforts. The only
                         exception to this rule is the php source folder - things in that folder are there for a reason,
                         so please don't try to break into there.</p>
 
-                    <p>Everyone is eligible for two hints. If you're really really stuck,
-                        e-mail <?php echo "<a href=mailto:" . $qm_email . ">" . $qm_email . "</a>" ?> and explain where
-                        you are in the puzzle, and a hint will be provided. If a puzzle has less than 5 solvers by the
-                        time the next phase is active, hints for those puzzles will be provided to everyone.</p>
+                    <h3><strong>The Potts Trophy</strong></h3>
 
-                    <h3><strong>Past Winners</strong></h3>
+                    <p>The J.P. Potts Memorial Trophy appears to have gone missing. Considering it's the trophy awarded
+                        to the winner of Ye Grande Olde Chariot Races (aka the thing that the Quest winner will be
+                        judging), you might want to keep an eye out for it...</p>
+
+                    <h3><strong>The Past Winners</strong></h3>
 
                     <p>Previous winners are ineligible to win again, so you are <strong>not</strong> competing against
-                        Ryan Wills, Ang Cui, Evangelos Staikos, Alvin Ho, Tommy Liu, Ian Swartz, John Zhou, or Harry
-                        Zhao. Of course, you are also not competing against the Questmasters.</p>
+                        Ryan Wills, Ang Cui, or <a href="info/winners.php">a bunch of other long-gone people</a>. Of
+                        course, you are also not competing against the Questmaster.</p>
 
                     <hr/>
 
-                    <p>Happy questing!<br/>
-                        Andrew Nestico and Abhinav Ramakrishnan, Questmasters 1T5</p>
+                    <h3><strong>Good luck and happy questing!</strong></h3>
+                        <p>- Andrew Nestico, Questmaster 1T5</p>
                 </div>
             </div>
         </div>
