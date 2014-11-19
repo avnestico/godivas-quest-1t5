@@ -34,7 +34,7 @@ if (!array_key_exists('message', $_REQUEST)) {
 
                     <h1><strong>Winners</strong></h1>
 
-                    <p>The first ten(-ish) solvers received a <a href="../media/the patch.jpg">commemorative patch</a>
+                    <p>The first ten(-ish) solvers received a <a href="../media/patch.jpg">commemorative patch</a>
                         for their efforts.</p>
                     <table width="83%" border="1">
                         <tr>
@@ -43,49 +43,16 @@ if (!array_key_exists('message', $_REQUEST)) {
                             <th width="12%" scope="col">Solve Time</th>
                         </tr>
                         <tr>
-                            <td>1) <span email="gkabhi2@gmail.com"
-                                         name="Abhinav Ramakrishnan">Abhinav Ramakrishnan</span></td>
-                            <td>Engsci 1T5</td>
-                            <td>Jan 6, 9:49AM</td>
+                            <td>1)</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                         <tr>
-                            <td>2) Steven Berios</td>
-                            <td>Engsci 1T5</td>
-                            <td>Jan 6, 9:50AM</td>
-                        </tr>
-                        <tr>
-                            <td>2) Emil Kerimov</td>
-                            <td>Engsci 1T5</td>
-                            <td>Jan 6, 9:50AM</td>
-                        </tr>
-                        <tr>
-                            <td>2) Andrew Nestico</td>
-                            <td>Engsci 1T5</td>
-                            <td>Jan 6, 9:50AM</td>
-                        </tr>
-                        <tr>
-                            <td>5) Olga Bondarev</td>
-                            <td>ECE 1T6</td>
-                            <td>Jan 6, 1:22PM</td>
-                        </tr>
-                        <tr>
-                            <td>6) Colin Parker</td>
-                            <td>&nbsp;</td>
-                            <td>Jan 6, 1:30PM</td>
-                        </tr>
-                        <tr>
-                            <td>7) #TeamF!rosh: Jessica Leung, Fan Guo, Connor Smith, Eugene Sha, Ozan Coşkun, Paul
-                                Zhou, and Ahmed Yusuf
-                            </td>
-                            <td>Engsci 1T7</td>
-                            <td>Jan 6, 7:50PM</td>
+                            <td>2)</td>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </table>
-                    <p><strong>Andrew </strong>will be the third judge of Ye Grande Olde Chariot Races on Wednesday and
-                        <strong>Abhinav</strong> and <strong>Andrew</strong> will be Questmasters 1T5! Congratulations!
-                    </p>
-
-                    <div class="clearthis">&nbsp;</div>
                 </div>
             </div>
         </div>

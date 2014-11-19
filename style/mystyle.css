@@ -109,16 +109,6 @@ hr {
     border-color: inherit;
 }
 
-.clearthis {
-    margin: 0px;
-    height: 1px;
-    clear: both;
-    float: none;
-    font-size: 1px;
-    line-height: 0px;
-    overflow: hidden;
-}
-
 .sidebarbox {
     width: 91px;
 }
