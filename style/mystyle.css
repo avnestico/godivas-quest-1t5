@@ -100,9 +100,12 @@ p {
 }
 
 hr {
+    padding-top: 15px;
     display: block;
     height: 0px;
     border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
     border-color: inherit;
 }
 
