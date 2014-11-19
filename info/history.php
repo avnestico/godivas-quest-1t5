@@ -258,7 +258,8 @@ include '../php_source/header.php'
     <tr>
         <td>1T4</td>
 
-        <td>1st) Andrew Nestico, Abhinav Ramakrishnan, Steven Berios, & Emil Kerimov
+        <td>1st) Andrew Nestico<br/>
+            2nd) Abhinav Ramakrishnan, Steven Berios, & Emil Kerimov
         </td>
 
         <td>Ryan Wills</td>
@@ -269,7 +270,7 @@ include '../php_source/header.php'
 
         <td>1st) You?</td>
 
-        <td>Andrew Nestico & Abhinav Ramakrishnan</td>
+        <td>Andrew Nestico</td>
     </tr>
 </table>
 
