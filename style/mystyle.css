@@ -241,3 +241,10 @@ input {
 #message {
     padding: 0px 7px 0px;
 }
+
+/* Leaderboard cells displaying a single character */
+
+#small_cell {
+    text-align:center;
+    padding-right:1px;
+}

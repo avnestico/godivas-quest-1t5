@@ -12,7 +12,7 @@ function print_leaderboard_header($fieldCount)
 
     for ($i = 1; $i < $fieldCount - 5; $i++) {
         $fieldName = $i;
-        echo "<th><div style='width:13px;'>$fieldName</div></th>";
+        echo "<th><div id='small_cell' style='width:13px'>$fieldName</div></th>";
     }
 
     echo "<th><div>last<br>solved</div></th>";
@@ -47,20 +47,16 @@ function print_leaderboard_header($fieldCount)
 
     <div id="content_container">
         <div id="content">
-            <h2>Leaderboard</h2><em>Previous winners are ineligible to win again, so you
-                are <strong>not</strong> competing against Ryan Wills, Ang Cui, Evangelos Staikos, Alvin
-                Ho, Tommy Liu, Ian Swartz, John Zhou, or Harry Zhao. Of course, you are also not
-                competing against the Questmasters.</em>
+            <h2>Leaderboard</h2>
 
             <?php
-
             // Connect to the database and retrieve user table
             require_once '../php_source/quest_db.php';
             $query = select_all_users();
 
             $fieldCount = $query->columnCount();
 
-            echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
+            echo "<table border=\"1\" class=\"leaders sortable\" bordercolor=\"#808080\"><thead>";
             print_leaderboard_header($fieldCount);
             echo "</thead><tfoot>";
             print_leaderboard_header($fieldCount);
@@ -69,13 +65,13 @@ function print_leaderboard_header($fieldCount)
             while ($row = $query->fetch()) {
                 $numSolved = 0;
                 $fullName = strip_tags($row["firstName"] . " " . $row["lastName"]);
-                echo "<tr><td><div style='width:100px;'>$fullName</div></td>";
+                echo "<tr><td><div>$fullName</div></td>";
                 for ($i = 1; $i < $fieldCount - 5; $i++) {
                     $fieldName = $row["Q" . $i];
-                    echo "<td><div>$fieldName</div></td>";
+                    echo "<td><div id='small_cell'>$fieldName</div></td>";
                     if ($fieldName == 'Y') $numSolved++;
                 }
-                echo "<td><div style='width:48px;'>" . $row["lastSolve"] . "</div></td><td>$numSolved</td></tr>";
+                echo "<td><div style='width:48px'>" . $row["lastSolve"] . "</div></td><td><div id='small_cell'>$numSolved</div></td></tr>";
             }
 
             echo "</tbody></table>";
