@@ -28,7 +28,7 @@ function user_login_correct($alias, $username) {
     }
 
     if (isset($question)) {
-        user_answer_correct($question, $alias);
+        alias_answer_correct($question, $alias);
     } else {
         unknown_error();
     }

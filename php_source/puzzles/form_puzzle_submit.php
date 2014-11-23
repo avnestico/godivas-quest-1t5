@@ -3,7 +3,7 @@
 <form name="final_answer" action="../php_source/puzzles/answer_check.php" method="post">
 
     User ID:<br/>
-    <input name="username" style="width:84px;" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/>
+    <input name="alias" style="width:84px;" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/>
 
     Answer:<br/>
     <input name="answer" style="width:84px; margin:6px 0px" type="text" value="" onKeyPress="return submit_enter(this,event)"/>

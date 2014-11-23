@@ -58,10 +58,10 @@ if (!is_numeric($question) || $question < 1 || $question > $numPuzzles) {
     unknown_error();
 }
 
-$username = $_REQUEST['username'];
+$alias = $_REQUEST['alias'];
 $answer = $_REQUEST['answer'];
 
-if ($username == "") {
+if ($alias == "") {
     refresh_with_message("Please make sure you fill in your login name.");
 }
 if ($answer == "") {
@@ -70,9 +70,9 @@ if ($answer == "") {
 
 require_once '../quest_db.php';
 
-$query = check_for_existence("alldata", "alias", $username);
+$query = check_for_existence("alldata", "alias", $alias);
 if (!$query->rowCount()) {
-    mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], $username);
+    mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], $alias);
     refresh_with_message("Login name not found. Please make sure you entered the correct login name.");
 }
 
@@ -83,15 +83,15 @@ $solveFlag = $answerStatus[0];
 $message = $answerStatus[1];
 
 if (!$solveFlag) {
-    mail($GLOBALS["qm_email"], $subject[WRONG] . ":  $username", $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname']);
+    mail($GLOBALS["qm_email"], $subject[WRONG] . ":  $alias", $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname']);
 } else {
-    $query = user_answer_correct($question, $username);
+    $query = alias_answer_correct($question, $alias);
 
     if (!$query->rowCount()) {
         mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], mysql_error());
     } else {
         $row = $query->fetch();
-        mail($row['email'], $subject[SOLVED], "To user $username:" . "\r\n" . $body[$question], $GLOBALS["headers"] . "\r\n" . $HTTP_SERVER_VARS["REMOTE_ADDR"]);
+        mail($row['email'], $subject[SOLVED], "To user $alias:" . "\r\n" . $body[$question], $GLOBALS["headers"] . "\r\n" . $HTTP_SERVER_VARS["REMOTE_ADDR"]);
     }
 }
 

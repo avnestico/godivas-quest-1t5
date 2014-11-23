@@ -52,7 +52,7 @@ function print_leaderboard_header($fieldCount)
             <?php
             // Connect to the database and retrieve user table
             require_once '../php_source/quest_db.php';
-            $query = select_all_users();
+            $query = select_all_aliases();
 
             $fieldCount = $query->columnCount();
 

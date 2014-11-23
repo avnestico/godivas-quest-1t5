@@ -24,7 +24,7 @@ if ($message != "") {
 $alias = strtolower($firstname{0}) . sprintf('%02d', rand(0, 99)) . strtolower($lastname{0}) . sprintf('%02d', rand(0, 99));
 
 require_once '../quest_db.php';
-$query = register_user($firstname, $lastname, $alias, $email);
+$query = register_alias($firstname, $lastname, $alias, $email);
 
 if ($query->rowCount()) {
     $body = "Thank you $firstname for registering.\r\n
