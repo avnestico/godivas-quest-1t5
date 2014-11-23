@@ -1,8 +1,9 @@
 <?php
 session_start();
-$user1 = 'testuser';
-$user2 = 'testuser2';
-$user3 = 'testuser3';
+include_once "../php_source/global_variables.php";
+$user1 = $GLOBALS["user1"];
+$user2 = $GLOBALS["user2"];
+$user3 = $GLOBALS["user3"];
 
 if (!array_key_exists('auth', $_SESSION)) {
     $_SESSION['auth'] = false;
@@ -42,7 +43,7 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
     <div id="content_container">
         <div id="content">
             <?php
-            if (!$_SESSION['indexauth']) {
+            if (!array_key_exists('indexauth', $_SESSION) || !$_SESSION['indexauth']) {
                 echo "<h2>Welcome to GodivaNet!</h2>";
                 include_once "../php_source/godivanet/form_login.php";
             } else {

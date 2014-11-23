@@ -27,16 +27,13 @@ require_once '../quest_db.php';
 $query = register_user($firstname, $lastname, $alias, $email);
 
 if ($query->rowCount()) {
-    $headers = 'From: ' . $GLOBALS["qm_email"] . "\r\n";
-    $headers .= 'Cc: ' . $GLOBALS["qm_email"] . "\r\n";
-
     $body = "Thank you $firstname for registering.\r\n
 Your user ID is: $alias \r\n
 
 Use your user ID to submit your answers to puzzles.  You can check your progress at: quest.skule.ca/1T5/leaderboards.php\r\n 
 Good luck! \r\n
                       ";
-    mail($email, "[Quest]Registration Complete!", $body, $headers);
+    mail($email, "[Quest]Registration Complete!", $body, $GLOBALS["headers"]);
     $message = "Registration success! An email will be sent each time a new stage is released. In the meantime, your ID is $alias if you would like to start puzzles right away.";
     header("Location: ../../index.php?message=$message");
     die();

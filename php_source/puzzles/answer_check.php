@@ -11,27 +11,13 @@
  */
 
 include_once "../global_variables.php";
-
-/**
- * refresh_with_message
- *
- * Return to the same page and report a message.
- *
- * @param $message
- */
-function refresh_with_message($message) {
-    header("Location: " . $_REQUEST['questionUrl'] ."?message=$message");
-    die();
-}
+include_once "../global_functions.php";
 
 define('SOLVED', 0);
 define('INVALID_LOGIN', 1);
 define('MYSQL_ERROR', 2);
 define('NO_QUESTION', 3);
 define('WRONG', 4);
-
-$headers = 'From: ' . $GLOBALS["qm_email"] . "\r\n";
-$headers .= 'Cc: '. $GLOBALS["qm_email"] . "\r\n";
 
 $subject[SOLVED] = "[Quest] Puzzle Solved";
 $subject[INVALID_LOGIN] = "[Quest] Invalid login!!";
@@ -67,11 +53,9 @@ $numPuzzles = sizeof($body) - 1;
 
 $question = $_REQUEST['question'];
 
-// If $question is not a valid integer, something has gone wrong
+// If $question is not a valid puzzle number, something has gone wrong
 if (!is_numeric($question) || $question < 1 || $question > $numPuzzles) {
-    $message = "You're not supposed to get to this error. If you weren't doing anything nefarious, contact the Questmaster. On the other hand, if you were doing something nefarious, don't do it again.";
-    header("Location: ../../index.php?message=$message");
-    die();
+    unknown_error();
 }
 
 $username = $_REQUEST['username'];
@@ -101,13 +85,13 @@ $message = $answerStatus[1];
 if (!$solveFlag) {
     mail($GLOBALS["qm_email"], $subject[WRONG] . ":  $username", $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname']);
 } else {
-    $query = user_answer_correct($username, $question);
+    $query = user_answer_correct($question, $username);
 
     if (!$query->rowCount()) {
         mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], mysql_error());
     } else {
         $row = $query->fetch();
-        mail($row['email'], $subject[SOLVED], "To user $username:" . "\r\n" . $body[$question], $headers . "\r\n" . $HTTP_SERVER_VARS["REMOTE_ADDR"]);
+        mail($row['email'], $subject[SOLVED], "To user $username:" . "\r\n" . $body[$question], $GLOBALS["headers"] . "\r\n" . $HTTP_SERVER_VARS["REMOTE_ADDR"]);
     }
 }
 
