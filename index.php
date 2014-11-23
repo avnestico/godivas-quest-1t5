@@ -1,7 +1,6 @@
 <?php
 session_start();
 include_once "php_source/global_variables.php";
-$qm_email = $GLOBALS["qm_email"];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
