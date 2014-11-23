@@ -1,7 +1,7 @@
 <script type="text/javascript" src="../php_source/submit_enter.js"></script>
 <div style="text-align:center">
-    <form name="registerform" action="../php_source/registration/perform_register.php" method="post"
-          id="registerform">
+    <form name="registerform" action="../php_source/registration/perform_register.php" method="post" id="registerform">
+
         First name:<br/>
         <input name="firstname" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
@@ -12,7 +12,7 @@
         <input name="email" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
 
-        <b><button onclick="registerform.submit();"><a>Register</a></button></b>
+        <button onclick="registerform.submit();">Register</button>
 
         <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
     </form>

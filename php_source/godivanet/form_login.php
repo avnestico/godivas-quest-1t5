@@ -12,7 +12,7 @@
         <input name="password" type="password" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
 
-        <b><button onclick="loginform.submit();"><a>Log In</a></button></b>
+        <button onclick="loginform.submit();">Log In</button>
 
         <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
     </form>

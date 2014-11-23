@@ -9,7 +9,7 @@ body {
 a {
     color: #E08830;
     text-decoration: underline;
-    cursor: pointer
+    cursor: pointer;
 }
 
 a:hover {
@@ -114,12 +114,11 @@ hr {
 }
 
 input {
-    padding-left: 2px;
-    /*	background-color: #eee; */
-    border: 2px solid #004384;
-    color: #55b;
+    padding: 2px;
+    border: 0px solid;
     font-family: tahoma, arial, sans-serif;
     font-size: 10px;
+    margin:6px 0px;
 }
 
 #container {
@@ -245,15 +244,27 @@ input {
 /* Leaderboard cells displaying a single character */
 
 #small_cell {
-    text-align:center;
-    padding-right:1px;
+    text-align: center;
+    padding-right: 1px;
 }
 
 /* Form button */
 
 button {
-    background:none!important;
-    border:none;
-    padding:0!important;
-    font:inherit;
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    font: inherit;
+    cursor: pointer;
+    color: #E08830;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+button:focus {
+    outline: #E08830 dotted 1px;
+}
+
+button:hover {
+    color: #C86648;
 }
