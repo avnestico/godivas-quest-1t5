@@ -35,7 +35,7 @@ function printLeaderboardHeader($fieldCount)
     <title>Leaderboard</title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css" media="screen"/>
-    <script src="../php_source/sorttable.js" type="text/javascript">
+    <script src="../php_source/sort_table.js" type="text/javascript">
     </script>
 </head>
 
@@ -57,7 +57,7 @@ function printLeaderboardHeader($fieldCount)
                     <?php
 
                     // Connect to the database and retrieve user table
-                    require_once '../php_source/openDB.php';
+                    require_once '../php_source/quest_db.php';
                     $query = selectAllUsers();
 
                     $fieldCount = $query->columnCount();

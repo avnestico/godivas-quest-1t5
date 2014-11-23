@@ -22,7 +22,7 @@ if ($username == "" || $password == "") {
     die();
 }
 
-require_once '../openDB.php';
+require_once '../quest_db.php';
 $query = checkForExistence("godivanet", "username", $username);
 
 if (!$query->rowCount()) {

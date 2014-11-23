@@ -39,7 +39,7 @@ if (!array_key_exists('message', $_REQUEST)) {
                         echo "<h2>$message</h2>";
                     ?>
 
-                    <script type="text/javascript" src="../php_source/submitenter.js"></script>
+                    <script type="text/javascript" src="../php_source/submit_enter.js"></script>
                     <div style="text-align:center">
                         <form name="registerform" action="../php_source/registration/perform_register.php" method="post"
                               id="registerform">

@@ -1,6 +1,6 @@
 <?php
 /**
- * answercheck.php
+ * answer_check.php
  *
  * Takes in user-submitted ID and solution, as well as hidden question variable.
  * Confirms that the user ID exists and the question variable is valid.
@@ -85,7 +85,7 @@ if ($answer == "") {
     refreshWithMessage("Please make sure you fill in the answer box.");
 }
 
-require_once '../openDB.php';
+require_once '../quest_db.php';
 
 $query = checkForExistence("alldata", "alias", $username);
 if (!$query->rowCount()) {

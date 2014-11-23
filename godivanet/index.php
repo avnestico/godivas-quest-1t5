@@ -51,7 +51,7 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
                         echo "<h2>$message</h2>";
                     if (!$_SESSION['indexauth']) {
                         echo "<h2>Welcome to GodivaNet!</h2>";
-                        include_once "../php_source/godivanet/login.php";
+                        include_once "../php_source/godivanet/login_form.php";
                     } else {
                         if ($_SESSION[$user1]) {
                             echo "Logged in as user 1";

@@ -18,7 +18,7 @@ $questionNumber = 1;
 <body>
 <div id="container">
     <?php
-    include '../php_source/puzz_header.php';
+    include '../php_source/puzzle_header.php';
     ?>
     <div id="maincontent_container">
         <div id="maincontent">
