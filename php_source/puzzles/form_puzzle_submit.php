@@ -3,20 +3,16 @@
 <form name="final_answer" action="../php_source/puzzles/answer_check.php" method="post">
     <div id="username">
         User ID:<br/>
-        <input name="username" style="font-family:'Open Sans'; width:84px" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/>
+        <input name="username" style="width:84px; margin:6px 0px" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/>
     </div>
     <div id="answer">
         Answer:<br/>
-        <input name="answer" style="width:84px" type="text" value="" onKeyPress="return submit_enter(this,event)"/>
+        <input name="answer" style="width:84px; margin:6px 0px" type="text" value="" onKeyPress="return submit_enter(this,event)"/>
     </div>
-    <div id="form_submit">
-        <br/>
-        <button onclick="final_answer.submit();">
-            Submit
-        </button>
-        <input name="question" type="hidden" value="<?php echo $questionNumber ?>"/>
-        <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
-    </div>
+
+    <b><button onclick="final_answer.submit();"><a>Submit</a></button></b>
+
+    <input name="question" type="hidden" value="<?php echo $questionNumber ?>"/>
+    <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
 </form>
 <br/>
-

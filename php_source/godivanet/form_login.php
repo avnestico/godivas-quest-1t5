@@ -12,9 +12,8 @@
         <input name="password" type="password" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
 
-        <div id="form_submit" onclick="loginform.submit();">
-            <a><b>Log In</b></a>
-        </div>
+        <b><button onclick="loginform.submit();"><a>Log In</a></button></b>
+
         <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
     </form>
 </div>

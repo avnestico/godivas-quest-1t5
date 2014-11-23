@@ -12,9 +12,8 @@
         <input name="email" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
 
-        <div id="form_submit" onclick="registerform.submit();">
-            <a><b>Register</b></a>
-        </div>
+        <b><button onclick="registerform.submit();"><a>Register</a></button></b>
+
         <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
     </form>
 </div>
