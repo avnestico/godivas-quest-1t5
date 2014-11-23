@@ -14,7 +14,7 @@ $email = $_REQUEST['email'];
 
 // Validate registration data. An empty string is returned on successful validation.
 include_once "validate_register.php";
-$message = validationMessage($firstname, $lastname, $email);
+$message = info_validation_message($firstname, $lastname, $email);
 
 if ($message != "") {
     header("Location: ../../info/registration.php?message=$message");
@@ -24,7 +24,7 @@ if ($message != "") {
 $alias = strtolower($firstname{0}) . sprintf('%02d', rand(0, 99)) . strtolower($lastname{0}) . sprintf('%02d', rand(0, 99));
 
 require_once '../quest_db.php';
-$query = registerUser($firstname, $lastname, $alias, $email);
+$query = register_user($firstname, $lastname, $alias, $email);
 
 if ($query->rowCount()) {
     $headers = 'From: ' . $GLOBALS["qm_email"] . "\r\n";

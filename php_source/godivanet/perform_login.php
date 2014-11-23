@@ -23,7 +23,7 @@ if ($username == "" || $password == "") {
 }
 
 require_once '../quest_db.php';
-$query = checkForExistence("godivanet", "username", $username);
+$query = check_for_existence("godivanet", "username", $username);
 
 if (!$query->rowCount()) {
     $message = "Login failed! Username " . $username . " does not exist.";

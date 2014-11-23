@@ -3,10 +3,10 @@
     <form name="loginform" action="../php_source/godivanet/perform_login.php" method="post"
           id="loginform">
         Username:<br/>
-        <input name="username" type="text" value="" onKeyPress="return submitenter(this,event)"/><br/>
+        <input name="username" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
         Password:<br/>
-        <input name="password" type="password" value="" onKeyPress="return submitenter(this,event)"/><br/>
+        <input name="password" type="password" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
 
         <div id="form_submit" onclick="loginform.submit();">

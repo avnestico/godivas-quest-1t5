@@ -45,14 +45,14 @@ if (!array_key_exists('message', $_REQUEST)) {
                               id="registerform">
                             First name:<br/>
                             <input name="firstname" type="text" value=""
-                                   onKeyPress="return submitenter(this,event)"/><br/>
+                                   onKeyPress="return submit_enter(this,event)"/><br/>
                             <br/>
                             Last name:<br/>
                             <input name="lastname" type="text" value=""
-                                   onKeyPress="return submitenter(this,event)"/><br/>
+                                   onKeyPress="return submit_enter(this,event)"/><br/>
                             <br/>
                             Email: (Important)<br/>
-                            <input name="email" type="text" value="" onKeyPress="return submitenter(this,event)"/><br/>
+                            <input name="email" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
                             <br/>
 
                             <div id="form_submit" onclick="registerform.submit();">

@@ -6,13 +6,13 @@
  */
 
 /**
- * validationMessage
+ * info_validation_message
  *
  * Returns a message to the user on invalid registration, and an empty string if the registration passes validation.
  *
  * @return string
  */
-function validationMessage($firstname, $lastname, $email)
+function info_validation_message($firstname, $lastname, $email)
 {
     $message = "";
 

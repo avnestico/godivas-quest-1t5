@@ -1,12 +1,12 @@
 <?php
 /**
- * printLeaderboardHeader
+ * print_leaderboard_header
  *
  * Prints header/footer of leaderboard as a row of an html table.
  *
  * @param $fieldCount
  */
-function printLeaderboardHeader($fieldCount)
+function print_leaderboard_header($fieldCount)
 {
     echo "<tr><th><div style='width:100px;'>Quester</div></th>";
 
@@ -58,14 +58,14 @@ function printLeaderboardHeader($fieldCount)
 
                     // Connect to the database and retrieve user table
                     require_once '../php_source/quest_db.php';
-                    $query = selectAllUsers();
+                    $query = select_all_users();
 
                     $fieldCount = $query->columnCount();
 
                     echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
-                    printLeaderboardHeader($fieldCount);
+                    print_leaderboard_header($fieldCount);
                     echo "</thead><tfoot>";
-                    printLeaderboardHeader($fieldCount);
+                    print_leaderboard_header($fieldCount);
                     echo "</tfoot><tbody>";
 
                     while ($row = $query->fetch()) {

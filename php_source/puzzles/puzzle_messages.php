@@ -1,16 +1,16 @@
 <?php
 
 /**
- * getAnswerStatus: takes in a question and user-submitted answer.
+ * get_answer_status: takes in a question and user-submitted answer.
  *
  * @param $puzzleNum
  * @param $answer
  * @return array
  */
-function getAnswerStatus($puzzleNum, $answer) {
+function get_answer_status($puzzleNum, $answer) {
     $wrongDefault = [false, "Incorrect."];
 
-    $func = "puzzleMessages" . $puzzleNum;
+    $func = "puzzle_messages_" . $puzzleNum;
     try {
        $puzzleMessage = $func($answer);
     }
@@ -24,7 +24,7 @@ function getAnswerStatus($puzzleNum, $answer) {
     return $puzzleMessage;
 }
 
-function puzzleMessages1($answer) {
+function puzzle_messages_1($answer) {
     switch ($answer) {
         case "amused":
             return [true, "Correct"];
@@ -33,7 +33,7 @@ function puzzleMessages1($answer) {
     }
 }
 
-function puzzleMessages2($answer) {
+function puzzle_messages_2($answer) {
     switch ($answer) {
         case "vaticancity":
             return [true, "Correct"];

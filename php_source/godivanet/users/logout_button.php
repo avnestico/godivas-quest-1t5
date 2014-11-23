@@ -1,7 +1,7 @@
 <?php
 if (isset($_REQUEST['logout'])) {
     session_unset();
-    unset($_REQUEST['message']);
+    $_REQUEST['message'] = "";
     return;
 }
 ?>

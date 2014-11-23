@@ -33,7 +33,7 @@ echo "Password hash:\n" . $passhash . "\n";
 // Connect to the database.
 require_once '../quest_db.php';
 
-$query = insertUserAndHash($table, $user, $passhash);
+$query = insert_user_and_hash($table, $user, $passhash);
 
 if ($query->rowCount()) {
     echo "User created successfully\n";

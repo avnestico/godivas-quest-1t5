@@ -13,14 +13,13 @@
 include_once "../global_variables.php";
 
 /**
- * refreshWithMessage
+ * refresh_with_message
  *
  * Return to the same page and report a message.
  *
  * @param $message
  */
-function refreshWithMessage($message)
-{
+function refresh_with_message($message) {
     header("Location: " . $_REQUEST['questionUrl'] ."?message=$message");
     die();
 }
@@ -79,30 +78,30 @@ $username = $_REQUEST['username'];
 $answer = $_REQUEST['answer'];
 
 if ($username == "") {
-    refreshWithMessage("Please make sure you fill in your login name.");
+    refresh_with_message("Please make sure you fill in your login name.");
 }
 if ($answer == "") {
-    refreshWithMessage("Please make sure you fill in the answer box.");
+    refresh_with_message("Please make sure you fill in the answer box.");
 }
 
 require_once '../quest_db.php';
 
-$query = checkForExistence("alldata", "alias", $username);
+$query = check_for_existence("alldata", "alias", $username);
 if (!$query->rowCount()) {
     mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], $username);
-    refreshWithMessage("Login name not found. Please make sure you entered the correct login name.");
+    refresh_with_message("Login name not found. Please make sure you entered the correct login name.");
 }
 
-require_once 'puzzleMessages.php';
+require_once 'puzzle_messages.php';
 
-$answerStatus = getAnswerStatus($question, $answer);
+$answerStatus = get_answer_status($question, $answer);
 $solveFlag = $answerStatus[0];
 $message = $answerStatus[1];
 
 if (!$solveFlag) {
     mail($GLOBALS["qm_email"], $subject[WRONG] . ":  $username", $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname']);
 } else {
-    $query = userAnswerCorrect($username, $question);
+    $query = user_answer_correct($username, $question);
 
     if (!$query->rowCount()) {
         mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], mysql_error());
@@ -112,4 +111,4 @@ if (!$solveFlag) {
     }
 }
 
-refreshWithMessage($message);
+refresh_with_message($message);
