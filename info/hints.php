@@ -1,6 +1,5 @@
 <?php
 include_once "../php_source/global_variables.php";
-$qm_email = $GLOBALS["qm_email"];
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -35,7 +34,7 @@ $qm_email = $GLOBALS["qm_email"];
 
                     <p>
                         You can contact the Questmasters
-                        at <?php echo "<a href=mailto:" . $qm_email . ">" . $qm_email . "</a>" ?>.
+                        at <?php echo "<a href=mailto:" . $GLOBALS["qm_email"] . ">" . $GLOBALS["qm_email"] . "</a>" ?>.
                     </p>
                 </div>
             </div>

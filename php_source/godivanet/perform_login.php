@@ -23,9 +23,9 @@ if ($username == "" || $password == "") {
 }
 
 require_once '../openDB.php';
-$query = checkForUsername($username);
+$query = checkForExistence("godivanet", "username", $username);
 
-if (!$query->columnCount()) {
+if (!$query->rowCount()) {
     $message = "Login failed! Username " . $username . " does not exist.";
     header("Location: ../../godivanet/index.php?message=$message");
     die();
