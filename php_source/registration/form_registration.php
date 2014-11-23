@@ -15,5 +15,6 @@
         <div id="form_submit" onclick="registerform.submit();">
             <a><b>Register</b></a>
         </div>
+        <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
     </form>
 </div>

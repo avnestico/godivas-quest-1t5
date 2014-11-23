@@ -7,6 +7,7 @@
  */
 
 include_once "../global_variables.php";
+include_once "../global_functions.php";
 
 $firstname = $_REQUEST['firstname'];
 $lastname = $_REQUEST['lastname'];
@@ -17,8 +18,7 @@ include_once "validate_register.php";
 $message = info_validation_message($firstname, $lastname, $email);
 
 if ($message != "") {
-    header("Location: ../../info/registration.php?message=$message");
-    die();
+    refresh_with_message($message);
 }
 
 $alias = strtolower($firstname{0}) . sprintf('%02d', rand(0, 99)) . strtolower($lastname{0}) . sprintf('%02d', rand(0, 99));
@@ -30,7 +30,7 @@ if ($query->rowCount()) {
     $body = "Thank you $firstname for registering.\r\n
 Your user ID is: $alias \r\n
 
-Use your user ID to submit your answers to puzzles.  You can check your progress at: quest.skule.ca/1T5/leaderboards.php\r\n 
+Use your user ID to submit your answers to puzzles.  You can check your progress at:" . $GLOBALS['leaderboard_url'] . "</a>\r\n
 Good luck! \r\n
                       ";
     mail($email, "[Quest]Registration Complete!", $body, $GLOBALS["headers"]);
@@ -38,7 +38,5 @@ Good luck! \r\n
     header("Location: ../../index.php?message=$message");
     die();
 } else {
-    $message = "Registration failed! Please try again, or contact me at " . $GLOBALS["qm_email"];
-    header("Location: ../../info/registration.php?message=$message");
-    die();
+    refresh_with_message("Registration failed! Please try again, or contact me at " . $GLOBALS["qm_email"]);
 }
