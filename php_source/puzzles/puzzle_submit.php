@@ -1,5 +1,5 @@
 <h3>Submit</h3>
-<form name="final_answer" action="../php_source/puzzles/answercheck.php" method="post">
+<form name="final_answer" action="../php_source/puzzles/answer_check.php" method="post">
     <div id="username">
         User ID:<br/>
         <input name="username" style="font-family:'Open Sans'; width:84px" type="text" value=""/>

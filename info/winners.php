@@ -1,10 +1,3 @@
-<?php
-if (!array_key_exists('message', $_REQUEST)) {
-    $_REQUEST['message'] = "";
-}
-?>
-
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -18,20 +11,11 @@ if (!array_key_exists('message', $_REQUEST)) {
 <body>
 <div id="container">
     <?php
-    include '../php_source/header.php'
+    include_once "../php_source/header.php";
+    include_once "../php_source/message.php";
     ?>
-    <div id="maincontent_container">
-        <div id="maincontent">
-            <div id="maincontent_top">
-                <div id="started_container">
-                    <h2>
-                        <?php
-                        $message = htmlspecialchars($_REQUEST['message']);
-                        if ($message != "")
-                            echo "<h2>$message</h2>";
-                        ?>
-                    </h2>
-
+    <div id="content_container">
+        <div id="content">
                     <h1><strong>Winners</strong></h1>
 
                     <p>The first ten(-ish) solvers received a <a href="../media/patch.jpg">commemorative patch</a>
@@ -53,8 +37,6 @@ if (!array_key_exists('message', $_REQUEST)) {
                             <td></td>
                         </tr>
                     </table>
-                </div>
-            </div>
         </div>
     </div>
 </div>

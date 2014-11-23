@@ -225,27 +225,19 @@ input {
 
 /* Main Content */
 
-#maincontent_container {
+#content_container {
     border: 1px solid #FFDE00;
     background-color: #3e0462;
     float: right;
     text-align: left;
-    margin: 0px 0px 16px;
+    width: 655px;
+    margin: 0px 0px 13px;
 }
 
-#maincontent {
-    margin: 0px 0px 0px 7px;
-    width: 650px;
+#content {
+    padding: 0px 7px 16px;
 }
 
-#maincontent_top {
-    width: 650px;
-}
-
-/* How We Started */
-
-#started_container {
-    width: 644px;
-    float: left;
-    margin: 0px 0px 10px;
+#message {
+    padding: 0px 7px 0px;
 }

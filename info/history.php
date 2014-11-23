@@ -17,10 +17,8 @@
 include '../php_source/header.php'
 ?>
 
-<div id="maincontent_container">
-<div id="maincontent">
-<div id="maincontent_top">
-<div id="started_container">
+<div id="content_container">
+<div id="content">
 <h1>History of the Quest</h1>
 
 <h3>0T3</h3>
@@ -275,8 +273,6 @@ include '../php_source/header.php'
 </table>
 
 <p>*Ineligible</p>
-</div>
-</div>
 </div>
 </div>
 </div>

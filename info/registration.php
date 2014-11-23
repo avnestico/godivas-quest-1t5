@@ -1,9 +1,6 @@
 <?php
 session_start();
 include_once "../php_source/global_variables.php";
-if (!array_key_exists('message', $_REQUEST)) {
-    $_REQUEST['message'] = "";
-}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -24,43 +21,34 @@ if (!array_key_exists('message', $_REQUEST)) {
 <body>
 <div id="container">
     <?php
-    include '../php_source/header.php'
+    include_once "../php_source/header.php";
+    include_once "../php_source/message.php";
     ?>
 
-    <div id="maincontent_container">
-        <div id="maincontent">
-            <div id="maincontent_top">
-                <div id="started_container">
-                    <h2>Registration</h2>
+    <div id="content_container">
+        <div id="content">
+            <h2>Registration</h2>
 
-                    <?php
-                    $message = htmlspecialchars($_REQUEST['message']);
-                    if ($message != "")
-                        echo "<h2>$message</h2>";
-                    ?>
+            <script type="text/javascript" src="../php_source/submit_enter.js"></script>
+            <div style="text-align:center">
+                <form name="registerform" action="../php_source/registration/perform_register.php" method="post"
+                      id="registerform">
+                    First name:<br/>
+                    <input name="firstname" type="text" value=""
+                           onKeyPress="return submit_enter(this,event)"/><br/>
+                    <br/>
+                    Last name:<br/>
+                    <input name="lastname" type="text" value=""
+                           onKeyPress="return submit_enter(this,event)"/><br/>
+                    <br/>
+                    Email: (Important)<br/>
+                    <input name="email" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
+                    <br/>
 
-                    <script type="text/javascript" src="../php_source/submit_enter.js"></script>
-                    <div style="text-align:center">
-                        <form name="registerform" action="../php_source/registration/perform_register.php" method="post"
-                              id="registerform">
-                            First name:<br/>
-                            <input name="firstname" type="text" value=""
-                                   onKeyPress="return submit_enter(this,event)"/><br/>
-                            <br/>
-                            Last name:<br/>
-                            <input name="lastname" type="text" value=""
-                                   onKeyPress="return submit_enter(this,event)"/><br/>
-                            <br/>
-                            Email: (Important)<br/>
-                            <input name="email" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
-                            <br/>
-
-                            <div id="form_submit" onclick="registerform.submit();">
-                                <a><b>Register</b></a>
-                            </div>
-                        </form>
+                    <div id="form_submit" onclick="registerform.submit();">
+                        <a><b>Register</b></a>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>

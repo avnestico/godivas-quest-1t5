@@ -10,28 +10,15 @@
 <body>
 <div id="container">
     <?php
-    include '../php_source/header.php'
+    include_once "../php_source/header.php";
+    include_once "../php_source/message.php";
     ?>
-    <div id="maincontent_container">
-        <div id="maincontent">
-            <div id="maincontent_top">
-                <div id="started_container">
-                    <h2>
-                        <?php
-                        if (!array_key_exists('message', $_REQUEST)) {
-                            $_REQUEST['message'] = "";
-                        }
-                        $message = htmlspecialchars($_REQUEST['message']);
-                        if ($message != "")
-                            echo "<h2>$message</h2>";
-                        ?>
-                    </h2>
-                    <h1><strong>Phase 1</strong></h1>
-                    <p><a href="events.php">#1: This Day in History</a></p>
-                    <p><a href="photo.php">#2: A Picture's Worth</a></p>
-                    <p>Good luck!</p>
-                </div>
-            </div>
+    <div id="content_container">
+        <div id="content">
+            <h1><strong>Phase 1</strong></h1>
+            <p><a href="events.php">#1: This Day in History</a></p>
+            <p><a href="photo.php">#2: A Picture's Worth</a></p>
+            <p>Good luck!</p>
         </div>
     </div>
 </div>

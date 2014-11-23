@@ -1,7 +1,4 @@
 <?php
-if (!array_key_exists('message', $_REQUEST)) {
-    $_REQUEST['message'] = "";
-}
 $questionNumber = 1;
 ?>
 
@@ -18,19 +15,12 @@ $questionNumber = 1;
 <body>
 <div id="container">
     <?php
-    include '../php_source/puzzle_header.php';
+    include_once "../php_source/puzzle_header.php";
+    include_once "../php_source/message.php";
     ?>
-    <div id="maincontent_container">
-        <div id="maincontent">
-            <div id="maincontent_top">
-                <div id="started_container">
-                    <?php
-                    $message = htmlspecialchars($_REQUEST['message']);
-                    if ($message != "")
-                        echo "<h2>$message</h2>";
-                    ?>
-
-                    <h2>#1: This Day in History</h2>
+    <div id="content_container">
+        <div id="content">
+                     <h2>#1: This Day in History</h2>
                     <br>
                     <p>
                         This millenium has been host to some major headlines and more than a few not-so-major ones. What's so special about these events?</p>
@@ -49,8 +39,6 @@ $questionNumber = 1;
                     <br>
                     </p>
                 </div>
-            </div>
-        </div>
     </div>
 </div>
 </body>

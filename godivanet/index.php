@@ -4,9 +4,6 @@ $user1 = 'testuser';
 $user2 = 'testuser2';
 $user3 = 'testuser3';
 
-if (!array_key_exists('message', $_REQUEST)) {
-    $_REQUEST['message'] = "";
-}
 if (!array_key_exists('auth', $_SESSION)) {
     $_SESSION['auth'] = false;
 }
@@ -39,33 +36,27 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
 <div id="container">
     <?php
     include_once "../php_source/godivanet/users/godivanet_header.php";
+    include_once "../php_source/message.php"
     ?>
 
-    <div id="maincontent_container">
-        <div id="maincontent">
-            <div id="maincontent_top">
-                <div id="started_container">
-                    <?php
-                    $message = htmlspecialchars($_REQUEST['message']);
-                    if ($message != "")
-                        echo "<h2>$message</h2>";
-                    if (!$_SESSION['indexauth']) {
-                        echo "<h2>Welcome to GodivaNet!</h2>";
-                        include_once "../php_source/godivanet/login_form.php";
-                    } else {
-                        if ($_SESSION[$user1]) {
-                            echo "Logged in as user 1";
-                        } else if ($_SESSION[$user2]) {
-                            echo "Logged in as user 2";
-                        } else if ($_SESSION[$user3]) {
-                            echo "Logged in as user 3";
-                        } else {
-                            echo "Login error";
-                        }
-                    }
-                    ?>
-                </div>
-            </div>
+    <div id="content_container">
+        <div id="content">
+            <?php
+            if (!$_SESSION['indexauth']) {
+                echo "<h2>Welcome to GodivaNet!</h2>";
+                include_once "../php_source/godivanet/login_form.php";
+            } else {
+                if ($_SESSION[$user1]) {
+                    echo "Logged in as user 1";
+                } else if ($_SESSION[$user2]) {
+                    echo "Logged in as user 2";
+                } else if ($_SESSION[$user3]) {
+                    echo "Logged in as user 3";
+                } else {
+                    echo "Login error";
+                }
+            }
+            ?>
         </div>
     </div>
 </div>

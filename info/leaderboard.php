@@ -45,48 +45,44 @@ function print_leaderboard_header($fieldCount)
     include '../php_source/header.php'
     ?>
 
-    <div id="maincontent_container">
-        <div id="maincontent">
-            <div id="maincontent_top">
-                <div id="started_container">
-                    <h2>Leaderboard</h2><em>Previous winners are ineligible to win again, so you
-                        are <strong>not</strong> competing against Ryan Wills, Ang Cui, Evangelos Staikos, Alvin
-                        Ho, Tommy Liu, Ian Swartz, John Zhou, or Harry Zhao. Of course, you are also not
-                        competing against the Questmasters.</em>
+    <div id="content_container">
+        <div id="content">
+            <h2>Leaderboard</h2><em>Previous winners are ineligible to win again, so you
+                are <strong>not</strong> competing against Ryan Wills, Ang Cui, Evangelos Staikos, Alvin
+                Ho, Tommy Liu, Ian Swartz, John Zhou, or Harry Zhao. Of course, you are also not
+                competing against the Questmasters.</em>
 
-                    <?php
+            <?php
 
-                    // Connect to the database and retrieve user table
-                    require_once '../php_source/quest_db.php';
-                    $query = select_all_users();
+            // Connect to the database and retrieve user table
+            require_once '../php_source/quest_db.php';
+            $query = select_all_users();
 
-                    $fieldCount = $query->columnCount();
+            $fieldCount = $query->columnCount();
 
-                    echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
-                    print_leaderboard_header($fieldCount);
-                    echo "</thead><tfoot>";
-                    print_leaderboard_header($fieldCount);
-                    echo "</tfoot><tbody>";
+            echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
+            print_leaderboard_header($fieldCount);
+            echo "</thead><tfoot>";
+            print_leaderboard_header($fieldCount);
+            echo "</tfoot><tbody>";
 
-                    while ($row = $query->fetch()) {
-                        $numSolved = 0;
-                        $fullName = strip_tags($row["firstName"] . " " . $row["lastName"]);
-                        echo "<tr><td><div style='width:100px;'>$fullName</div></td>";
-                        for ($i = 1; $i < $fieldCount - 5; $i++) {
-                            $fieldName = $row["Q" . $i];
-                            echo "<td><div>$fieldName</div></td>";
-                            if ($fieldName == 'Y') $numSolved++;
-                        }
-                        echo "<td><div style='width:48px;'>" . $row["lastSolve"] . "</div></td><td>$numSolved</td></tr>";
-                    }
+            while ($row = $query->fetch()) {
+                $numSolved = 0;
+                $fullName = strip_tags($row["firstName"] . " " . $row["lastName"]);
+                echo "<tr><td><div style='width:100px;'>$fullName</div></td>";
+                for ($i = 1; $i < $fieldCount - 5; $i++) {
+                    $fieldName = $row["Q" . $i];
+                    echo "<td><div>$fieldName</div></td>";
+                    if ($fieldName == 'Y') $numSolved++;
+                }
+                echo "<td><div style='width:48px;'>" . $row["lastSolve"] . "</div></td><td>$numSolved</td></tr>";
+            }
 
-                    echo "</tbody></table>";
+            echo "</tbody></table>";
 
-                    $db = null;
+            $db = null;
 
-                    ?>
-                </div>
-            </div>
+            ?>
         </div>
     </div>
 </div>
