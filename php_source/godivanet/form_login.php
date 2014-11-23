@@ -1,9 +1,9 @@
-<script type="text/javascript" src="../php_source/submitenter.js"></script>
+<script type="text/javascript" src="../php_source/submit_enter.js"></script>
 <div style="text-align:center">
     <form name="loginform" action="../php_source/godivanet/perform_login.php" method="post"
           id="loginform">
         Username:<br/>
-        <input name="username" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
+        <input name="username" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
         Password:<br/>
         <input name="password" type="password" value="" onKeyPress="return submit_enter(this,event)"/><br/>
