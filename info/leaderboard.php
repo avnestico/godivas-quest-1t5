@@ -56,7 +56,7 @@ function print_leaderboard_header($fieldCount)
 
             $fieldCount = $query->columnCount();
 
-            echo "<table border=\"1\" class=\"leaders sortable\" bordercolor=\"#808080\"><thead>";
+            echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
             print_leaderboard_header($fieldCount);
             echo "</thead><tfoot>";
             print_leaderboard_header($fieldCount);

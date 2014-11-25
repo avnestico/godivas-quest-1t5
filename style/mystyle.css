@@ -268,3 +268,9 @@ button:focus {
 button:hover {
     color: #C86648;
 }
+
+/* the little bit of table styling that can be put in css */
+
+table, td, th {
+    border-color: #808080;
+}
