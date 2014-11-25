@@ -78,7 +78,7 @@ include_once "php_source/global_variables.php";
             <h3><strong>The Past Winners</strong></h3>
 
             <p>Previous winners are ineligible to win again, so you are <strong>not</strong> competing against
-                Ryan Wills, Ang Cui, or <a href="info/winners.php">a bunch of other long-gone people</a>. Of
+                Ryan Wills, Ang Cui, or <a href="info/history.php">a bunch of other long-gone people</a>. Of
                 course, you are also not competing against the Questmaster.</p>
 
             <hr/>
