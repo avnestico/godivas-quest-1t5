@@ -15,11 +15,9 @@
 </div>
 
 <div id="left_sidebar">
-    <div class="box_container">
-        <?php
-        include_once "header_data.php"
-        ?>
-    </div>
+    <?php
+    include_once "header_data.php"
+    ?>
 </div>
 </body>
 </html>
