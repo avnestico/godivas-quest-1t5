@@ -1,4 +1,6 @@
 <?php
+//TODO: proper tables using <col> and CSS
+
 /**
  * print_leaderboard_header
  *
@@ -8,7 +10,7 @@
  */
 function print_leaderboard_header($fieldCount)
 {
-    echo "<tr><th><div style='width:100px;'>Quester</div></th>";
+    echo "<tr><th><div style='width:120px;'>Quester</div></th>";
 
     for ($i = 1; $i < $fieldCount - 5; $i++) {
         $fieldName = $i;
@@ -19,7 +21,6 @@ function print_leaderboard_header($fieldCount)
     echo "<th><div>num<br>solved</div></th>";
     echo "</tr>";
 }
-
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -75,9 +76,6 @@ function print_leaderboard_header($fieldCount)
             }
 
             echo "</tbody></table>";
-
-            $db = null;
-
             ?>
         </div>
     </div>
