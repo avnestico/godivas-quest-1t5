@@ -15,8 +15,8 @@ $questionNumber = 1;
 <body>
 <div id="container">
     <?php
-    include_once "../php_source/puzzle_header.php";
-    include_once "../php_source/message.php";
+    include_once(__DIR__ . "/../php_source/puzzles/puzzle_header.php");
+    include_once(__DIR__ . "/../php_source/message.php");
     ?>
     <div id="content_container">
         <div id="content">

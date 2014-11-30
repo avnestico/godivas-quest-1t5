@@ -1,5 +1,5 @@
 <?php
-include_once "../php_source/global_variables.php";
+include_once(__DIR__ . "/../php_source/global_variables.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -15,7 +15,7 @@ include_once "../php_source/global_variables.php";
 <body>
 <div id="container">
     <?php
-    include '../php_source/header.php';
+    include_once(__DIR__ . "/../php_source/header.php");
     ?>
     <div id="content_container">
         <div id="content">

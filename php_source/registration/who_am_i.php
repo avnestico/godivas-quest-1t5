@@ -7,7 +7,7 @@
  */
 
 //Connect to the MySQL server with given address, user, and password
-require_once '../quest_db.php';
+require_once(__DIR__ . "/../quest_db.php");
 $db = new MySQL;
 $db->connectDB();
 

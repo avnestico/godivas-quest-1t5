@@ -11,8 +11,8 @@
 <body>
 <div id="container">
     <?php
-    include_once "../php_source/header.php";
-    include_once "../php_source/message.php";
+    include_once(__DIR__ . "/../php_source/header.php");
+    include_once(__DIR__ . "/../php_source/header.php");
     ?>
     <div id="content_container">
         <div id="content">

@@ -35,12 +35,12 @@ function user_login_correct($alias, $username) {
 }
 
 session_start();
-include_once "../global_variables.php";
-include_once "../global_functions.php";
+include_once(__DIR__ . "/../global_variables.php");
+include_once(__DIR__ . "/../global_functions.php");
 
 // Compatibility library. Needed as long as php version is < 5.5.0.
 if (PHP_VERSION_ID < 50500) {
-    require 'password.php';
+    require_once(__DIR__ . "/password.php");
 }
 
 $username = $_REQUEST['username'];
@@ -51,7 +51,7 @@ if ($username == "" || $password == "") {
     refresh_with_message("Login failed! Please make sure all fields are filled out.");
 }
 
-require_once '../quest_db.php';
+require_once(__DIR__ . "/../quest_db.php");
 $query = check_for_existence("godivanet", "username", $username);
 
 if (!$query->rowCount()) {

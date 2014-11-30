@@ -14,7 +14,7 @@
 <body>
 <div id="container">
 <?php
-include '../php_source/header.php'
+include_once(__DIR__ . "/../php_source/header.php");
 ?>
 
 <div id="content_container">

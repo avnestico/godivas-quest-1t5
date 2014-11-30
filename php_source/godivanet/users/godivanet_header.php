@@ -5,8 +5,8 @@
 <div id="left_sidebar">
     <?php
     if ($_SESSION['auth']) {
-        include_once "../php_source/godivanet/users/logout_button.php";
+        include_once(__DIR__ . "/logout_button.php");
     }
-    include_once "../php_source/header_data.php";
+    include_once(__DIR__ . "/../../header_data.php");
     ?>
 </div>

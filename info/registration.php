@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../php_source/global_variables.php";
+include_once(__DIR__ . "/../php_source/global_variables.php");
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -21,15 +21,15 @@ include_once "../php_source/global_variables.php";
 <body>
 <div id="container">
     <?php
-    include_once "../php_source/header.php";
-    include_once "../php_source/message.php";
+    include_once(__DIR__ . "/../php_source/header.php");
+    include_once(__DIR__ . "/../php_source/message.php");
     ?>
 
     <div id="content_container">
         <div id="content">
             <h2>Registration</h2>
 
-            <?php include_once "../php_source/registration/form_registration.php" ?>
+            <?php include_once(__DIR__ . "/../php_source/registration/form_registration.php"); ?>
         </div>
     </div>
 </div>

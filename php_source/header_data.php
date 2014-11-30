@@ -1,5 +1,5 @@
 <?php
-include_once "global_variables.php";
+include_once(__DIR__ . "/global_variables.php");
 
 /**
  * display_header_link

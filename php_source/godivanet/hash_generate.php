@@ -11,7 +11,7 @@
 // and this line can be safely removed if the server is upgraded to php >=
 // 5.5.0. You can use "php5_cli php_info.php" to check this.
 if (PHP_VERSION_ID < 50500) {
-    require 'password.php';
+    require_once(__DIR__ . "/password.php");
 }
 
 // If the number of arguments is incorrect, cancel user creation.
@@ -31,7 +31,7 @@ echo "Username:\n" . $user . "\n";
 echo "Password hash:\n" . $passhash . "\n";
 
 // Connect to the database.
-require_once '../quest_db.php';
+require_once(__DIR__ . "/../quest_db.php");
 
 $query = insert_user_and_hash($table, $user, $passhash);
 

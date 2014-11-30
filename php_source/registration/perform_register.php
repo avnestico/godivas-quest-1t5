@@ -6,15 +6,15 @@
  * into database and provides user with alias to use when solving questions.
  */
 
-include_once "../global_variables.php";
-include_once "../global_functions.php";
+include_once(__DIR__ . "/../global_variables.php");
+include_once(__DIR__ . "/../global_functions.php");
 
 $firstname = $_REQUEST['firstname'];
 $lastname = $_REQUEST['lastname'];
 $email = $_REQUEST['email'];
 
 // Validate registration data. An empty string is returned on successful validation.
-include_once "validate_register.php";
+require_once(__DIR__ . "/validate_register.php");
 $message = info_validation_message($firstname, $lastname, $email);
 
 if ($message != "") {
@@ -23,7 +23,7 @@ if ($message != "") {
 
 $alias = strtolower($firstname{0}) . sprintf('%02d', rand(0, 99)) . strtolower($lastname{0}) . sprintf('%02d', rand(0, 99));
 
-require_once '../quest_db.php';
+require_once(__DIR__ . "/../quest_db.php");
 $query = register_alias($firstname, $lastname, $alias, $email);
 
 if ($query->rowCount()) {

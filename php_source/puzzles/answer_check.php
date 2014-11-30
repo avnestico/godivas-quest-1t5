@@ -10,8 +10,8 @@
  * Sends an email to the Questmaster if something notable happens.
  */
 
-include_once "../global_variables.php";
-include_once "../global_functions.php";
+include_once(__DIR__ . "/../global_variables.php");
+include_once(__DIR__ . "/../global_functions.php");
 
 define('SOLVED', 0);
 define('INVALID_LOGIN', 1);
@@ -71,7 +71,7 @@ if ($answer == "") {
 }
 
 // Check the database for existence of the supplied username
-require_once '../quest_db.php';
+require_once(__DIR__ . "/../quest_db.php");
 
 $query = check_for_existence("alldata", "alias", $alias);
 if (!$query->rowCount()) {
@@ -84,7 +84,7 @@ if (!$query->rowCount()) {
 $row = $query->fetch();
 
 // Then confirm that the answer is correct
-require_once 'puzzle_messages.php';
+require_once(__DIR__ . "/puzzle_messages.php");
 
 $answerStatus = get_answer_status($question, $answer);
 $solveFlag = $answerStatus[0];

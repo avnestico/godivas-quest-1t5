@@ -16,7 +16,7 @@
 
 <div id="left_sidebar">
     <?php
-    include_once "header_data.php"
+    include_once(__DIR__ . "/header_data.php");
     ?>
 </div>
 </body>

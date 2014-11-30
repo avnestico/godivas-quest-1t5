@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once "../php_source/global_variables.php";
+include_once(__DIR__ . "/../php_source/global_variables.php");
 $user1 = $GLOBALS["user1"];
 $user2 = $GLOBALS["user2"];
 $user3 = $GLOBALS["user3"];
@@ -36,8 +36,8 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
 <body>
 <div id="container">
     <?php
-    include_once "../php_source/godivanet/users/godivanet_header.php";
-    include_once "../php_source/message.php"
+    include_once(__DIR__ . "/../php_source/godivanet/users/godivanet_header.php");
+    include_once(__DIR__ . "/../php_source/message.php");
     ?>
 
     <div id="content_container">
@@ -45,7 +45,7 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
             <?php
             if (!array_key_exists('indexauth', $_SESSION) || !$_SESSION['indexauth']) {
                 echo "<h2>Welcome to GodivaNet!</h2>";
-                include_once "../php_source/godivanet/form_login.php";
+                include_once(__DIR__ . "/../php_source/godivanet/form_login.php");
             } else {
                 if ($_SESSION[$user1]) {
                     echo "Logged in as user 1";

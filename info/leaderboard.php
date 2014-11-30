@@ -43,7 +43,7 @@ function print_leaderboard_header($fieldCount)
 <body>
 <div id="container">
     <?php
-    include '../php_source/header.php'
+    include_once(__DIR__ . "/../php_source/header.php");
     ?>
 
     <div id="content_container">
@@ -52,7 +52,7 @@ function print_leaderboard_header($fieldCount)
 
             <?php
             // Connect to the database and retrieve user table
-            require_once '../php_source/quest_db.php';
+            require_once(__DIR__ . "/../php_source/quest_db.php");
             $query = select_all_aliases();
 
             $fieldCount = $query->columnCount();
