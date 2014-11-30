@@ -86,9 +86,7 @@ $row = $query->fetch();
 // Then confirm that the answer is correct
 require_once(__DIR__ . "/puzzle_messages.php");
 
-$answerStatus = get_answer_status($question, $answer);
-$solveFlag = $answerStatus[0];
-$message = $answerStatus[1];
+list($solveFlag, $message) = get_answer_status($question, $answer);
 
 if (!$solveFlag) {
     mail($GLOBALS["qm_email"],
