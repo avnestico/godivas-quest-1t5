@@ -65,7 +65,7 @@ function print_leaderboard_header($fieldCount)
 
             while ($row = $query->fetch()) {
                 $numSolved = 0;
-                $fullName = strip_tags($row["firstName"] . " " . $row["lastName"]);
+                list($id, $full_name, $alias, $email) = get_info_from_row($row);
                 echo "<tr><td><div>$fullName</div></td>";
                 for ($i = 1; $i < $fieldCount - 5; $i++) {
                     $fieldName = $row["Q" . $i];

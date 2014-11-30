@@ -4,7 +4,7 @@
  *
  * Script to pass user and a hashed password to an SQL database
  * Connects to the database using quest_db.php
- * Usage: php5-cli hash_generate.php <SQL table> <username> <password>
+ * Usage: php5 -f hash_generate.php <SQL table> <username> <password>
  */
 
 // Uses the password.php compatibility library for password functions. The file
@@ -16,7 +16,7 @@ if (PHP_VERSION_ID < 50500) {
 
 // If the number of arguments is incorrect, cancel user creation.
 if ($argc != 4) {
-    die("Usage: php5-cli hash_generate.php <SQL table> <username> <password>\n");
+    die("Usage: php -f hash_generate.php <SQL table> <username> <password>\n");
 }
 
 $table = $argv[1];

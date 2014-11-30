@@ -3,24 +3,15 @@
  * who_am_i.php
  *
  * Returns full list of users in SQL database
- * Usage: php5-cli who_am_i.php
+ * Usage: php5 -f who_am_i.php
  */
 
 //Connect to the MySQL server with given address, user, and password
 require_once(__DIR__ . "/../quest_db.php");
-$db = new MySQL;
-$db->connectDB();
+$query = select_all_aliases();
 
-$result = mysql_query("SELECT * FROM alldata WHERE alias != 'XXXX'");
-$fieldCount = mysql_num_fields($result);
-
-while ($row = mysql_fetch_array($result)) {
-    $num = $row[0];
-
-    $full_name = strip_tags($row[1] . " " . $row[2]);
-    $id = $row[3];
-    $email = $row[4];
-    echo "id: " . $num . "\nname: " . $full_name . "\nid: " . $id . "\nemail: " . $email . "\n";
+while ($row = $query->fetch()) {
+    list($id, $full_name, $alias, $email) = get_info_from_row($row, true);
 }
 
 $db->disconnectDB();

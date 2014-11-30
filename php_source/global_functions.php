@@ -12,6 +12,28 @@ function refresh_with_message($message) {
 }
 
 /**
+ * get_info_from_row
+ *
+ * Takes in a user row from a query and returns the user's id, name, alias, and email.
+ *
+ * @param $row
+ * @param bool $print_row
+ * @return array
+ */
+function get_info_from_row($row, $print_row = false) {
+    $id = $row['id'];
+    $full_name = strip_tags($row['firstname'] . " " . $row['lastname']);
+    $alias = $row['alias'];
+    $email = $row['email'];
+
+    if ($print_row) {
+        echo "id: " . $id . "\nname: " . $full_name . "\nalias: " . $alias . "\nemail: " . $email . "\n";
+    }
+
+    return [$id, $full_name, $alias, $email];
+}
+
+/**
  * unknown_error
  *
  * Inform the user that something has gone very very wrong. Hopefully, nobody ever has to see this.
