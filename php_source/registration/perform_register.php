@@ -30,9 +30,7 @@ if ($query->rowCount()) {
     $body = "Thank you $firstname for registering.\r\n
 Your user ID is: $alias \r\n
 
-Use your user ID to submit your answers to puzzles.  You can check your progress at:" . $GLOBALS['leaderboard_url'] . "</a>\r\n
-Good luck! \r\n
-                      ";
+Use your user ID to submit your answers to puzzles.  You can check your progress at " . $GLOBALS['leaderboard_url'] . "\r\nGood luck!";
     mail($email, "[Quest]Registration Complete!", $body, $GLOBALS["headers"]);
     $message = "Registration success! An email will be sent each time a new stage is released. In the meantime, your ID is $alias if you would like to start puzzles right away.";
     header("Location: ../../index.php?message=$message");
