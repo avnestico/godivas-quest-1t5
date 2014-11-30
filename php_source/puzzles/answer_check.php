@@ -52,12 +52,14 @@ $body[22] = "Congratulations! You've solved all of the Phase 3 puzzles! Now go w
 $numPuzzles = sizeof($body) - 1;
 
 $question = $_REQUEST['question'];
+$questionUrl = $_REQUEST['questionUrl'];
 
 // If $question is not a valid puzzle number, something has gone wrong
 if (!is_numeric($question) || $question < 1 || $question > $numPuzzles) {
     unknown_error();
 }
 
+// Make sure an alias and answer have been submitted
 $alias = $_REQUEST['alias'];
 $answer = $_REQUEST['answer'];
 
@@ -68,14 +70,20 @@ if ($answer == "") {
     refresh_with_message("Please make sure you fill in the answer box.");
 }
 
+// Check the database for existence of the supplied username
 require_once '../quest_db.php';
 
 $query = check_for_existence("alldata", "alias", $alias);
 if (!$query->rowCount()) {
-    mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], $alias);
+    mail($GLOBALS["qm_email"],
+            $subject[INVALID_LOGIN],
+            $questionUrl . "\r\n" . $alias,
+            $GLOBALS["headers"]);
     refresh_with_message("Login name not found. Please make sure you entered the correct login name.");
 }
+$row = $query->fetch();
 
+// Then confirm that the answer is correct
 require_once 'puzzle_messages.php';
 
 $answerStatus = get_answer_status($question, $answer);
@@ -83,15 +91,25 @@ $solveFlag = $answerStatus[0];
 $message = $answerStatus[1];
 
 if (!$solveFlag) {
-    mail($GLOBALS["qm_email"], $subject[WRONG] . ":  $alias", $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname']);
+    mail($GLOBALS["qm_email"],
+            $subject[WRONG] . ":  $alias",
+            $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname'],
+            $GLOBALS["headers"]);
 } else {
-    $query = alias_answer_correct($question, $alias);
+    $correct_query = alias_answer_correct($question, $alias);
 
-    if (!$query->rowCount()) {
-        mail($GLOBALS["qm_email"], $subject[INVALID_LOGIN], mysql_error());
+    if ($correct_query->rowCount()) {
+        mail($row['email'],
+                $subject[SOLVED],
+                "To user $alias:" . "\r\n" . $body[$question],
+                $GLOBALS["headers"]);
     } else {
-        $row = $query->fetch();
-        mail($row['email'], $subject[SOLVED], "To user $alias:" . "\r\n" . $body[$question], $GLOBALS["headers"] . "\r\n" . $HTTP_SERVER_VARS["REMOTE_ADDR"]);
+        // Should never get to this point. If we do, panic.
+        mail($GLOBALS["qm_email"],
+                $subject[MYSQL_ERROR],
+                "User " . $alias . " had a correct answer for question " . $question . ", but the database did not update.",
+                $GLOBALS["headers"]);
+        unknown_error();
     }
 }
 
