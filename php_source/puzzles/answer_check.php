@@ -96,21 +96,12 @@ if (!$solveFlag) {
             $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname'],
             $GLOBALS["headers"]);
 } else {
-    $correct_query = alias_answer_correct($question, $alias);
+    alias_answer_correct($question, $alias);
 
-    if ($correct_query->rowCount()) {
-        mail($row['email'],
-                $subject[SOLVED],
-                "To user $alias:" . "\r\n" . $body[$question],
-                $GLOBALS["headers"]);
-    } else {
-        // Should never get to this point. If we do, panic.
-        mail($GLOBALS["qm_email"],
-                $subject[MYSQL_ERROR],
-                "User " . $alias . " had a correct answer for question " . $question . ", but the database did not update.",
-                $GLOBALS["headers"]);
-        unknown_error();
-    }
+    mail($row['email'],
+            $subject[SOLVED],
+            "To user $alias:" . "\r\n" . $body[$question],
+            $GLOBALS["headers"]);
 }
 
 refresh_with_message($message);
