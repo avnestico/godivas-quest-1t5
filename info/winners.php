@@ -16,27 +16,27 @@
     ?>
     <div id="content_container">
         <div id="content">
-                    <h1><strong>Winners</strong></h1>
+            <h1><strong>Winners</strong></h1>
 
-                    <p>The first ten(-ish) solvers received a <a href="../media/patch.jpg">commemorative patch</a>
-                        for their efforts.</p>
-                    <table width="83%" border="1">
-                        <tr>
-                            <th width="48%" scope="col">Name</th>
-                            <th width="40%" scope="col">Year/Discipline</th>
-                            <th width="12%" scope="col">Solve Time</th>
-                        </tr>
-                        <tr>
-                            <td>1)</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2)</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+            <p>The first ten(-ish) solvers received a <a href="../media/patch.jpg">commemorative patch</a>
+                for their efforts.</p>
+            <table width="83%" border="1">
+                <tr>
+                    <th width="48%" scope="col">Name</th>
+                    <th width="40%" scope="col">Year/Discipline</th>
+                    <th width="12%" scope="col">Solve Time</th>
+                </tr>
+                <tr>
+                    <td>1)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2)</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
