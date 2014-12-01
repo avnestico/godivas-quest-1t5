@@ -9,7 +9,7 @@
 
 // Uses the password.php compatibility library for password functions. The file
 // and this line can be safely removed if the server is upgraded to php >=
-// 5.5.0. You can use "php5_cli php_info.php" to check this.
+// 5.5.0. You can use "php -f php_info.php" to check this.
 if (PHP_VERSION_ID < 50500) {
     require_once(__DIR__ . "/password.php");
 }
