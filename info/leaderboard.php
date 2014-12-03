@@ -10,7 +10,7 @@
  */
 function print_leaderboard_header($fieldCount)
 {
-    echo "<tr><th><div style='width:120px;'>Quester</div></th>";
+    echo "<tr><th><div style='width:100px;'>Quester</div></th>";
 
     for ($i = 1; $i < $fieldCount - 5; $i++) {
         $fieldName = $i;
@@ -44,6 +44,7 @@ function print_leaderboard_header($fieldCount)
 <div id="container">
     <?php
     include_once(__DIR__ . "/../php_source/header.php");
+    include_once(__DIR__ . "/../php_source/global_functions.php");
     ?>
 
     <div id="content_container">
@@ -66,13 +67,13 @@ function print_leaderboard_header($fieldCount)
             while ($row = $query->fetch()) {
                 $numSolved = 0;
                 list($id, $full_name, $alias, $email) = get_info_from_row($row);
-                echo "<tr><td><div>$fullName</div></td>";
+                echo "<tr><td><div>$full_name</div></td>";
                 for ($i = 1; $i < $fieldCount - 5; $i++) {
                     $fieldName = $row["Q" . $i];
                     echo "<td><div id='small_cell'>$fieldName</div></td>";
                     if ($fieldName == 'Y') $numSolved++;
                 }
-                echo "<td><div style='width:48px'>" . $row["lastSolve"] . "</div></td><td><div id='small_cell'>$numSolved</div></td></tr>";
+                echo "<td><div style='width:48px'>" . $row["last_solve"] . "</div></td><td><div id='small_cell'>$numSolved</div></td></tr>";
             }
 
             echo "</tbody></table>";

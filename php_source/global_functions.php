@@ -22,7 +22,7 @@ function refresh_with_message($message) {
  */
 function get_info_from_row($row, $print_row = false) {
     $id = $row['id'];
-    $full_name = strip_tags($row['firstname'] . " " . $row['lastname']);
+    $full_name = strip_tags($row['first_name'] . " " . $row['last_name']);
     $alias = $row['alias'];
     $email = $row['email'];
 
