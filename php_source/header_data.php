@@ -75,7 +75,7 @@ function int_to_uoft_year($int) {
         <?php
         display_header_link("index.php", "Home");
         display_header_link("phase1/index.php", "Phase 1");
-        display_header_link("phase2/index.php", "Phase 2", false);
+        display_header_link("phase2/index.php", "Phase 2");
         display_header_link("phase3/index.php", "Phase 3", false);
         display_header_link("info/registration.php", "Registration");
         display_header_link("info/leaderboard.php", "Leaderboard");

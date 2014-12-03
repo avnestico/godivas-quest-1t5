@@ -1,5 +1,5 @@
 <?php
-$questionNumber = 7;
+$questionNumber = 14;
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -19,12 +19,9 @@ $questionNumber = 7;
     ?>
     <div id="content_container">
         <div id="content">
-            <h1><strong>Phase 1</strong></h1>
+            <h1><strong>Phase 2</strong></h1>
             <p>
-                <a href="putney.php">#3: Putney</a>
-            </p>
-            <p>
-                <a href="bottoms_up.php">#4: Bottoms Up</a>
+                <a href="hellhole.php">#8: Hellhole</a>
             </p>
             <p>
                 Good luck!

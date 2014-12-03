@@ -1,5 +1,5 @@
 <?php
-$questionNumber = 7;
+$questionNumber = 8;
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -8,8 +8,9 @@ $questionNumber = 7;
 <head>
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
-    <title>Godiva's Quest </title>
-    <link rel="stylesheet" href="../style/mystyle.css" type="text/css" />
+    <title>This Day in History</title>
+    <link rel="stylesheet" href="../style/mystyle.css" type=
+    "text/css" />
 </head>
 <body>
 <div id="container">
@@ -19,16 +20,8 @@ $questionNumber = 7;
     ?>
     <div id="content_container">
         <div id="content">
-            <h1><strong>Phase 1</strong></h1>
-            <p>
-                <a href="putney.php">#3: Putney</a>
-            </p>
-            <p>
-                <a href="bottoms_up.php">#4: Bottoms Up</a>
-            </p>
-            <p>
-                Good luck!
-            </p>
+            <h2>#8: Hellhole</h2>
+            <img style="border:none;" src ="../media/hellhole.jpg" width="100%">
         </div>
     </div>
 </div>
