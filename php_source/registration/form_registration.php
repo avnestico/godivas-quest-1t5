@@ -3,10 +3,10 @@
     <form name="registerform" action="../php_source/registration/perform_register.php" method="post" id="registerform">
 
         First name:<br/>
-        <input name="firstname" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/><br/>
+        <input name="first_name" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
         Last name:<br/>
-        <input name="lastname" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
+        <input name="last_name" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
         Email: (Important)<br/>
         <input name="email" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>

@@ -9,25 +9,25 @@
 include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
 
-$firstname = $_REQUEST['firstname'];
-$lastname = $_REQUEST['lastname'];
+$first_name = $_REQUEST['first_name'];
+$last_name = $_REQUEST['last_name'];
 $email = $_REQUEST['email'];
 
 // Validate registration data. An empty string is returned on successful validation.
 require_once(__DIR__ . "/validate_register.php");
-$message = info_validation_message($firstname, $lastname, $email);
+$message = info_validation_message($first_name, $last_name, $email);
 
 if ($message != "") {
     refresh_with_message($message);
 }
 
-$alias = strtolower($firstname{0}) . sprintf('%02d', rand(0, 99)) . strtolower($lastname{0}) . sprintf('%02d', rand(0, 99));
+$alias = strtolower($first_name{0}) . sprintf('%02d', rand(0, 99)) . strtolower($last_name{0}) . sprintf('%02d', rand(0, 99));
 
 require_once(__DIR__ . "/../quest_db.php");
-$query = register_alias($firstname, $lastname, $alias, $email);
+$query = register_alias($first_name, $last_name, $alias, $email);
 
 if ($query->rowCount()) {
-    $body = "Thank you $firstname for registering.\r\n
+    $body = "Thank you $first_name for registering.\r\n
 Your user ID is: $alias \r\n
 
 Use your user ID to submit your answers to puzzles.  You can check your progress at " . $GLOBALS['leaderboard_url'] . "\r\nGood luck!";
