@@ -50,6 +50,10 @@ function print_leaderboard_header($fieldCount)
     <div id="content_container">
         <div id="content">
             <h2>Leaderboard</h2>
+            <p>
+                Click on the column headers to sort.
+            </p>
+            <br/>
 
             <?php
             // Connect to the database and retrieve user table
