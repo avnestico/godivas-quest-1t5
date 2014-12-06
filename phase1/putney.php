@@ -8,7 +8,7 @@ $questionNumber = 3;
 <head>
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
-    <title>This Day in History</title>
+    <title>Putney</title>
     <link rel="stylesheet" href="../style/mystyle.css" type=
     "text/css" />
 </head>

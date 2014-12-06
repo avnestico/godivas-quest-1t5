@@ -8,7 +8,7 @@ $questionNumber = 4;
 <head>
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
-    <title>A Picture's Worth</title>
+    <title>Bottoms Up</title>
     <link rel="stylesheet" href="../style/mystyle.css" type=
     "text/css" />
 </head>
