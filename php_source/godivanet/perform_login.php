@@ -7,12 +7,13 @@
  */
 
 /**
- * user_login_correct: Update database on correct GodivaNet login
+ * quest_completed
  *
- * @param $alias
- * @param $username
+ * Update database on successful completion of final Quest puzzle.
+ *
+ * @param mixed $row
  */
-function user_login_correct($row) {
+function quest_completed($row) {
     $alias = $row['alias'];
     $question = $GLOBALS['meta'][1];
     $correct_query = alias_answer_correct($question, $alias);
@@ -24,7 +25,7 @@ function user_login_correct($row) {
     }
 
     mail($row['email'],
-            "[Quest] Puzzle Solved",
+            "[Quest] You've Completed Godiva's Quest!",
             "To user " . $alias . ":\r\nCongratulations on completing the final puzzle of Godiva's Quest! " .
             "Find the J.P. Potts Trophy first to win the Quest!",
             $GLOBALS["headers"]);
@@ -66,7 +67,7 @@ if (!$query->rowCount()) {
         $_SESSION['auth'] = true;
         $_SESSION[$username] = true;
         if ($username == $GLOBALS['user3']) {
-            user_login_correct($alias_query->fetch());
+            quest_completed($alias_query->fetch());
         }
         refresh_with_message("Login successful!");
     }
