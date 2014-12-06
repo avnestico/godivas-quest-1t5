@@ -21,15 +21,14 @@ $questionNumber = 1;
     <div id="content_container">
         <div id="content">
             <h2>#1: Bring The Beat Back</h2>
-            <p>
-                Geez, this is insufferable. I just can't wait for these clips to end.<br/><br/>
 
-                <a href="../media/bring_the_beat_back/verse_1.mp3">Verse 1</a><br/>
-                <a href="../media/bring_the_beat_back/verse_2.mp3">Verse 2</a><br/>
-                <a href="../media/bring_the_beat_back/hook.mp3">Hook</a><br/>
-                <a href="../media/bring_the_beat_back/bridge.mp3">Bridge</a><br/>
-                <a href="../media/bring_the_beat_back/verse_3.mp3">Verse 3</a><br/>
-            </p>
+            <p>Geez, this is insufferable. I just can't wait for these clips to end.</p>
+
+            <p><a href="../media/bring_the_beat_back/verse_1.mp3">Verse 1</a></p>
+            <p><a href="../media/bring_the_beat_back/verse_2.mp3">Verse 2</a></p>
+            <p><a href="../media/bring_the_beat_back/hook.mp3">Hook</a></p>
+            <p><a href="../media/bring_the_beat_back/bridge.mp3">Bridge</a></p>
+            <p><a href="../media/bring_the_beat_back/verse_3.mp3">Verse 3</a></p>
         </div>
     </div>
 </div>
