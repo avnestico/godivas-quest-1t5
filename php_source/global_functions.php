@@ -34,6 +34,26 @@ function get_info_from_row($row, $print_row = false) {
 }
 
 /**
+ * @param $field_count
+ * @param $row
+ * @param bool $print
+ * @return int
+ */
+function count_num_solved($field_count, $row, $print = false){
+    $num_solved = 0;
+    for ($i = 1; $i < $field_count - 5; $i++) {
+        $field_name = $row["Q" . $i];
+        if ($print) {
+            echo "<td><div id='small_cell'>$field_name</div></td>";
+        }
+        if ($field_name == 'Y') {
+            $num_solved++;
+        }
+    }
+    return $num_solved;
+}
+
+/**
  * unknown_error
  *
  * Inform the user that something has gone very very wrong. Hopefully, nobody ever has to see this.

@@ -60,24 +60,20 @@ function print_leaderboard_header($fieldCount)
             require_once(__DIR__ . "/../php_source/quest_db.php");
             $query = select_all_aliases();
 
-            $fieldCount = $query->columnCount();
+            $field_count = $query->columnCount();
 
             echo "<table border=\"1\" class=\"leaders sortable\"><thead>";
-            print_leaderboard_header($fieldCount);
+            print_leaderboard_header($field_count);
             echo "</thead><tfoot>";
-            print_leaderboard_header($fieldCount);
+            print_leaderboard_header($field_count);
             echo "</tfoot><tbody>";
 
             while ($row = $query->fetch()) {
-                $numSolved = 0;
+                $num_solved = 0;
                 list($id, $full_name, $alias, $email) = get_info_from_row($row);
                 echo "<tr><td><div>$full_name</div></td>";
-                for ($i = 1; $i < $fieldCount - 5; $i++) {
-                    $fieldName = $row["Q" . $i];
-                    echo "<td><div id='small_cell'>$fieldName</div></td>";
-                    if ($fieldName == 'Y') $numSolved++;
-                }
-                echo "<td><div style='width:48px'>" . $row["last_solve"] . "</div></td><td><div id='small_cell'>$numSolved</div></td></tr>";
+                $num_solved = count_num_solved($field_count, $row, true);
+                echo "<td><div style='width:48px'>" . $row["last_solve"] . "</div></td><td><div id='small_cell'>$num_solved</div></td></tr>";
             }
 
             echo "</tbody></table>";
