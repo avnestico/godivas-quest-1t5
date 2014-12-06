@@ -20,12 +20,9 @@ $questionNumber = 7;
     <div id="content_container">
         <div id="content">
             <h1><strong>Phase 1</strong></h1>
-            <p>
-                <a href="putney.php">#3: Putney</a>
-            </p>
-            <p>
-                <a href="bottoms_up.php">#4: Bottoms Up</a>
-            </p>
+            <p><a href="bring_the_beat_back.php">#1: Bring The Beat Back</a></p>
+            <p><a href="putney.php">#3: Putney</a></p>
+            <p><a href="bottoms_up.php">#4: Bottoms Up</a></p>
             <p>
                 Good luck!
             </p>
