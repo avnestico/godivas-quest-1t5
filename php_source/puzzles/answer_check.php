@@ -94,12 +94,18 @@ if (!$solveFlag) {
             $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname'],
             $GLOBALS["headers"]);
 } else {
-    alias_answer_correct($question, $alias);
+    $correct_query = alias_answer_correct($question, $alias);
 
     mail($row['email'],
             $subject[SOLVED],
             "To user $alias:" . "\r\n" . $body[$question],
             $GLOBALS["headers"]);
+
+    // If this is the first time the user has solved a given puzzle, check to see if Nobody should send an email.
+    if ($correct_query->rowCount()) {
+        include_once(__DIR__ . "/../email/email_from_nobody.php");
+        email_from_nobody($row, $question);
+    }
 }
 
 refresh_with_message($message);
