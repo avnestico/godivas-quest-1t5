@@ -12,26 +12,22 @@
  * @param $alias
  * @param $username
  */
-function user_login_correct($alias, $username) {
-    switch($username) {
-        case $GLOBALS['user1']:
-            $question = $GLOBALS['meta'][1];
-            break;
-        case $GLOBALS['user2']:
-            $question = $GLOBALS['meta'][2];
-            break;
-        case $GLOBALS['user3']:
-            $question = $GLOBALS['meta'][3];
-            break;
-        default:
-            unknown_error();
+function user_login_correct($row) {
+    $alias = $row['alias'];
+    $question = $GLOBALS['meta'][1];
+    $correct_query = alias_answer_correct($question, $alias);
+
+    // If it's the first time solving the puzzle, send a congratulatory email from Nobody.
+    if ($correct_query->rowCount()) {
+        include_once(__DIR__ . "/../email/email_from_nobody.php");
+        email_from_nobody($row, $question);
     }
 
-    if (isset($question)) {
-        alias_answer_correct($question, $alias);
-    } else {
-        unknown_error();
-    }
+    mail($row['email'],
+            "[Quest] Puzzle Solved",
+            "To user " . $alias . ":\r\nCongratulations on completing the final puzzle of Godiva's Quest! " .
+            "Find the J.P. Potts Trophy first to win the Quest!",
+            $GLOBALS["headers"]);
 }
 
 session_start();
@@ -43,15 +39,21 @@ if (PHP_VERSION_ID < 50500) {
     require_once(__DIR__ . "/password.php");
 }
 
+$alias = $_REQUEST['alias'];
 $username = $_REQUEST['username'];
 $password = $_REQUEST['password'];
-$alias = $_REQUEST['alias'];
 
-if ($username == "" || $password == "") {
+if ($alias == "" || $username == "" || $password == "") {
     refresh_with_message("Login failed! Please make sure all fields are filled out.");
 }
 
 require_once(__DIR__ . "/../quest_db.php");
+$alias_query = check_for_existence("alldata", "alias", $alias);
+
+if (!$alias_query->rowCount()) {
+    refresh_with_message("Quest ID " . $alias . " does not exist. Please make sure you entered the correct ID.");
+}
+
 $query = check_for_existence("godivanet", "username", $username);
 
 if (!$query->rowCount()) {
@@ -63,7 +65,9 @@ if (!$query->rowCount()) {
     } else {
         $_SESSION['auth'] = true;
         $_SESSION[$username] = true;
-        user_login_correct($alias, $username);
+        if ($username == $GLOBALS['user3']) {
+            user_login_correct($alias_query->fetch());
+        }
         refresh_with_message("Login successful!");
     }
 }
