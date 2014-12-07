@@ -57,8 +57,18 @@ function count_num_solved($field_count, $row, $print = false){
  * unknown_error
  *
  * Inform the user that something has gone very very wrong. Hopefully, nobody ever has to see this.
+ *
+ * Also outputs a stack trace to a safe location so the Questmaster has some data to work with.
  */
 function unknown_error() {
+    ob_start();
+    var_dump(debug_backtrace());
+    $stack_trace = ob_get_clean();
+
+    $file_count = count(glob(__DIR__ . "/unknown_errors/log*.txt"));
+    $new_log = __DIR__ . "/unknown_errors/log" . $file_count . ".txt";
+    file_put_contents($new_log, $stack_trace);
+
     $message = "You're not supposed to get to this error. If you weren't doing anything nefarious, contact the Questmaster. On the other hand, if you were doing something nefarious, don't do it again.";
     header("Location: /1T5/index.php?message=$message");
     die();
