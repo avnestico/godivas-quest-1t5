@@ -20,7 +20,7 @@
         <div id="content">
             <h1><strong>Winners</strong></h1>
 
-            <p>The first ten(-ish) solvers received a <a href="../media/patch.jpg">commemorative patch</a>
+            <p>The first ten(-ish) solvers received a <a href="../patch.jpg">commemorative patch</a>
                 for their efforts.</p>
             <table width="83%" border="1">
                 <tr>

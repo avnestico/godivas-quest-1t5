@@ -52,7 +52,7 @@ include_once(__DIR__ . "/php_source/global_variables.php");
 
             <h3><strong>The Patches</strong></h3>
 
-            <p><a href="media/patch.jpg">This swanky patch</a> is also available as a reward for tenacious
+            <p><a href="patch.jpg">This swanky patch</a> is also available as a reward for tenacious
                 Questers, and the first ten people to complete the Quest will be awarded one. You're encouraged
                 to work in teams, and every member of your team can win a patch if you're all fast enough.</p>
 

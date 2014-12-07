@@ -129,7 +129,7 @@ input {
 /* Page Header */
 
 #header_container {
-    background-image: url('../media/banner.jpg');
+    background-image: url('banner.jpg');
     /*	background-color: #00bbff ; */
     margin-bottom: 12px;
     /*	border: 1px solid #fff; */
