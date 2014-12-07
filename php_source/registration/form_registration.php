@@ -19,6 +19,6 @@ include_once(__DIR__ . "/../global_variables.php");
 
         <button onclick="registerform.submit();">Register</button>
 
-        <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
+        <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] . '/../' ?>"/>
     </form>
 </div>

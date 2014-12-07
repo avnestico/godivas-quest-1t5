@@ -16,7 +16,7 @@ include_once(__DIR__ . "/../global_variables.php");
         <button onclick="final_answer.submit();">Submit</button>
 
         <input name="question" type="hidden" value="<?php echo $questionNumber ?>"/>
-        <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] ?>"/>
+        <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] . '/../' ?>"/>
     </form>
     <br/>
 </div>
