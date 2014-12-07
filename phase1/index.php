@@ -38,6 +38,7 @@ $questionNumber = 7;
             <p><a href="bring_the_beat_back.php">#1: Bring The Beat Back</a></p>
             <p><a href="putney.php">#3: Putney</a></p>
             <p><a href="bottoms_up.php">#4: Bottoms Up</a></p>
+            <p><a href="creative_ahem_inspiration.php">#5: Creative, Ahem, Inspiration</a></p>
         </div>
     </div>
 </div>
