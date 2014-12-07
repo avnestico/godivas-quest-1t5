@@ -1,65 +1,96 @@
 <?php
 
 /**
- * get_answer_status: takes in a question and user-submitted answer.
+ * get_answer_status
  *
- * @param $puzzleNum
+ * Takes in a question and user-submitted answer.
+ * Checks the corresponding puzzle_messages_* function to see if the answer is correct.
+ * Returns false and a default message if the user is totally wrong. This does not have to be added to every
+ * puzzle_messages_* function.
+ * Returns true when it encounters a message that starts with (and can entirely be) "Correct!". It'd be poor UX if
+ * different correct answers started with different strings, or if an incorrect answer returned "Correct!", so neither
+ * of these scenarios are possible. Of course, if you don't like "Correct!", you can change it.
+ * Can return false and a different message, for when the user is on the right track.
+ *
+ * @param $puzzle_num
  * @param $answer
  * @return array
  */
-function get_answer_status($puzzleNum, $answer) {
-    $wrongDefault = [false, "Incorrect."];
+function get_answer_status($puzzle_num, $answer) {
+    $result = false;
+    $wrong_default = "Incorrect.";
+    $right_default = "Correct!";
 
-    $func = "puzzle_messages_" . $puzzleNum;
-    try {
-       $puzzleMessage = $func($answer);
+    // Take the puzzle number and append it to the prefix "puzzle_messages_".
+    $func = "puzzle_messages_" . $puzzle_num;
+
+    // If this corresponds to an existing function name, the function can be run. If it doesn't, abort immediately.
+    if (!function_exists($func)) {
+        unknown_error("Unknown question number! This is a bug; please let the Questmaster know about it.");
     }
-    catch (exception $e) {
-        return [false, "Unknown question number!"];
-    }
-    if (is_null($puzzleMessage)) {
-       $puzzleMessage = $wrongDefault;
+    $puzzle_message = $func($answer);
+
+    // Gives the user an unhelpful message by default.
+    if (is_null($puzzle_message)) {
+        $puzzle_message = $wrong_default;
     }
 
-    return $puzzleMessage;
+    // An answer is treated as correct if and only if the returned message starts with $right_default.
+    if (substr($puzzle_message, 0, sizeof($right_default)) == $right_default) {
+        $result = true;
+    }
+
+    return [$result, $puzzle_message];
 }
 
 function puzzle_messages_1($answer) {
     switch ($answer) {
-        case "amused":
-            return [true, "Correct"];
-        case "binary":
-            return [false, "You are on the right track, binary does have something to do with the answer. Keep thinking, and consider that the Quest started on 12/20/13."];
+        case "capitalcity":
+            return "Correct!";
     }
 }
 
 function puzzle_messages_2($answer) {
     switch ($answer) {
-        case "vaticancity":
-            return [true, "Correct"];
-        case "vatican":
-            return [false, "Sacred CITY.  This answer is two words."];
-        case "european":
-        case "sacred":
-        case "city":
-            return [false, "That's one of the words. Now what are the others?"];
-        case "europeansacred":
-        case "europeancity":
-        case "sacredcity":
-            return [false, "What's that last word?"];
-        case "campus":
-        case "oncampus":
-        case "skule":
-        case "uoft":
-            return [false, "Yes, this was taken on campus, but that's not the solution.  How can you figure out exactly where it was taken?"];
-        case "europeansacredcity":
-            return [false, "Now what city could I be talking about?"];
+        case "founded":
+            return "Correct!";
     }
 }
 
 function puzzle_messages_3($answer) {
     switch ($answer) {
         case "1729":
-            return [true, "Correct"];
+            return "Correct!";
+    }
+}
+
+function puzzle_messages_4($answer) {
+    switch ($answer) {
+        case "proteams":
+            return "Correct!";
+    }
+}
+
+function puzzle_messages_5($answer) {
+    switch ($answer) {
+        case "common":
+            return "Correct!";
+    }
+}
+
+function puzzle_messages_6($answer) {
+    switch ($answer) {
+        case "denominator":
+            return "Correct!";
+    }
+}
+
+function puzzle_messages_7($answer) {
+    switch ($answer) {
+        case "passeriformes":
+            return "Correct! Congratulations on solving phase 1!";
+        case "bird":
+        case "birds":
+            return "That's not specific enough, and it's in the wrong language, but it's close.";
     }
 }
