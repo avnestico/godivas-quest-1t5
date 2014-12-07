@@ -70,6 +70,6 @@ function unknown_error() {
     file_put_contents($new_log, $stack_trace);
 
     $message = "You're not supposed to get to this error. If you weren't doing anything nefarious, contact the Questmaster. On the other hand, if you were doing something nefarious, don't do it again.";
-    header("Location: /1T5/index.php?message=$message");
+    header("Location: /1T5/?message=$message");
     die();
 }

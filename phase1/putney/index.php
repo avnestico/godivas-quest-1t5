@@ -9,14 +9,14 @@ $questionNumber = 3;
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
     <title>Putney</title>
-    <link rel="stylesheet" href="../style/mystyle.css" type=
+    <link rel="stylesheet" href="../../style/mystyle.css" type=
     "text/css" />
 </head>
 <body>
 <div id="container">
     <?php
-    include_once(__DIR__ . "/../php_source/puzzles/puzzle_header.php");
-    include_once(__DIR__ . "/../php_source/message.php");
+    include_once(__DIR__ . "/../../php_source/puzzles/puzzle_header.php");
+    include_once(__DIR__ . "/../../php_source/message.php");
     ?>
     <div id="content_container">
         <div id="content">

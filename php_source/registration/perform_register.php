@@ -2,8 +2,7 @@
 /**
  * perform_register.php
  *
- * Takes registration information from registration.php. Inserts user's info
- * into database and provides user with alias to use when solving questions.
+ * Takes registration information, inserts user's info into database, and provides user with alias to use when solving questions.
  */
 
 include_once(__DIR__ . "/../global_variables.php");
@@ -37,7 +36,7 @@ if ($query->rowCount()) {
 
     mail($email, "[Quest] Registration Complete!", $body, $GLOBALS["headers"]);
     $message = "Registration success! An email will be sent each time a new stage is released. In the meantime, your ID is $alias if you would like to start puzzles right away.";
-    header("Location: ../../index.php?message=$message");
+    header("Location: ../../?message=$message");
     die();
 } else {
     refresh_with_message("Registration failed! Please try again, or contact me at " . $GLOBALS["qm_email"]);

@@ -21,7 +21,7 @@ $questionNumber = 14;
         <div id="content">
             <h1><strong>Phase 2</strong></h1>
             <p>
-                <a href="hellhole.php">#8: Hellhole</a>
+                <a href="hellhole">#8: Hellhole</a>
             </p>
             <p>
                 Good luck!

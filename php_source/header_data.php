@@ -73,16 +73,16 @@ function int_to_uoft_year($int) {
     <h3><b>Menu</b></h3>
     <b>
         <?php
-        display_header_link("index.php", "Home");
-        display_header_link("phase1/index.php", "Phase 1");
-        display_header_link("phase2/index.php", "Phase 2");
-        display_header_link("phase3/index.php", "Phase 3", false);
-        display_header_link("info/registration.php", "Registration");
-        display_header_link("info/leaderboard.php", "Leaderboard");
-        display_header_link("info/history.php", "History");
-        display_header_link("info/hints.php", "Hints");
-        display_header_link("info/winners.php", "Winners", false);
-        display_header_link("godivanet.php", "GodivaNet", false);
+        display_header_link("", "Home");
+        display_header_link("phase1", "Phase 1");
+        display_header_link("phase2", "Phase 2");
+        display_header_link("phase3", "Phase 3", false);
+        display_header_link("registration", "Registration");
+        display_header_link("leaderboard", "Leaderboard");
+        display_header_link("history", "History");
+        display_header_link("hints", "Hints");
+        display_header_link("winners", "Winners", false);
+        display_header_link("godivanet", "GodivaNet", false);
         ?>
     </b><br/>
 </div>

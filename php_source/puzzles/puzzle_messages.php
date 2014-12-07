@@ -36,7 +36,7 @@ function get_answer_status($puzzle_num, $answer) {
     }
 
     // An answer is treated as correct if and only if the returned message starts with $right_default.
-    if (substr($puzzle_message, 0, sizeof($right_default)) == $right_default) {
+    if (substr($puzzle_message, 0, strlen($right_default)) == $right_default) {
         $result = true;
     }
 

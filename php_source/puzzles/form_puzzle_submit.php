@@ -1,7 +1,11 @@
+<?php
+include_once(__DIR__ . "/../global_variables.php");
+?>
+
 <div class="box_container">
     <h3>Submit</h3>
-    <script type="text/javascript" src="../php_source/submit_enter.js"></script>
-    <form name="final_answer" action="../php_source/puzzles/answer_check.php" method="post">
+    <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/submit_enter.js' . '"'?>></script>
+    <form name="final_answer" method="post" <?php echo 'action="/' . $GLOBALS['this_year'] . '/php_source/puzzles/answer_check.php' . '"'?>>
 
         User ID:<br/>
         <input name="alias" style="width:84px;" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/>
