@@ -39,6 +39,7 @@ $questionNumber = 7;
             <h2>A New Beginning</h2>
 
             <p><a href="bring_the_beat_back">#1: Bring The Beat Back</a></p>
+            <p><a href="startups">#2: Startups</a></p>
             <p><a href="putney">#3: Putney</a></p>
             <p><a href="bottoms_up">#4: Bottoms Up</a></p>
             <p><a href="creative_ahem_inspiration">#5: Creative, Ahem, Inspiration</a></p>

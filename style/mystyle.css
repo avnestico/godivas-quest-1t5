@@ -85,12 +85,9 @@ table.center {
 
 /* Copied from 1t1 style.css */
 
-ul {
-    list-style-type: none;
-}
-
 li {
-    list-style-type: none;
+    margin: 0px 30px 5px 0px;
+    text-align: justify;
 }
 
 p {
