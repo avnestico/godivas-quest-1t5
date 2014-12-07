@@ -11,6 +11,7 @@ $questionNumber = 7;
     <meta name="viewport" content="width=800px"/>
 
     <title>A New Beginning</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css" />
 </head>
 <body>

@@ -11,6 +11,7 @@ $questionNumber = 1;
     <meta name="viewport" content="width=800px"/>
 
     <title>Bring The Beat Back</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
     <link rel="stylesheet" href="../../style/mystyle.css" type=
     "text/css" />
 </head>

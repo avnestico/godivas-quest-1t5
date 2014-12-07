@@ -11,6 +11,7 @@ $questionNumber = 14;
     <meta name="viewport" content="width=800px"/>
 
     <title>Phase 2 Title</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css" />
 </head>
 <body>

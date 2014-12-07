@@ -11,6 +11,7 @@ $questionNumber = 4;
     <meta name="viewport" content="width=800px"/>
 
     <title>Bottoms Up</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
     <link rel="stylesheet" href="../../style/mystyle.css" type=
     "text/css" />
 </head>
