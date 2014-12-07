@@ -21,18 +21,13 @@ $questionNumber = 4;
     <div id="content_container">
         <div id="content">
             <h2>#4: Bottoms Up</h2>
-            <p>
-                I'd say these were here without reason or rhyme, but then I'd be lying.<br/><br/>
 
-                ADCNELNILANSH AFEURSEOYSNGET<br/>
-                OWSELINO / CARLVIIKTSEEL<br/>
-                ENAMDNYRCAARLDOA RSAPEKHESAE<br/>
-                RASLSEGNSOI GERVNEITAAOKSA<br/>
-                _ANCKTNDLABAH _CEINOPTX<br/>
-                SSDNCAHRTINKGOEHE EDCYNLOLSOIOR<br/>
-                FEOSWERHK BNIHYUBOSWARSYTAE<br/>
-                ECOTOTRHDSIKRFE ALIARABFNAHBR<br/>
-            </p>
+            <p>An old widower handed me this note. I'm having a little trouble digesting it, do you think you could help?</p>
+            <br/>
+
+            <img src="../media/bottoms_up.jpg" alt="Bottoms Up" title="When in doubt, use what Wikipedia would consider the alternate spelling."/>
+
+            <p>That's strange. It looks to me like the ordering is messed up. Don't ask me why.</p>
         </div>
     </div>
 </div>

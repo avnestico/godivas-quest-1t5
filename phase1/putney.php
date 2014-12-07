@@ -21,23 +21,14 @@ $questionNumber = 3;
     <div id="content_container">
         <div id="content">
             <h2>#3: Putney</h2>
-            <p>
-                I found this note on my way home from the club one dreary morning. I feel like the fellow who wrote it was
-                as drunk as I was when I read it:
-                <br/>
-                <br/>
-                <br/>
-                Q WVKM BPWCOPB BPQA VCUJMZ EIA ZIBPMZ LCTT
-                <br/>
-                <br/>
-                IBA UVD P MPUK PA CLYF PUALYLZAPUN
-                <br/>
-                <br/>
-                ORPNHFR N SEVRAQ BS ZVAR VASBEZRQ ZR GUNG VG VF GUR FZNYYRFG AHZORE
-                <br/>
-                <br/>
-                PIACPDDTMWP LD ESP DFX ZQ EHZ NFMPD TY EHZ OTQQPCPYE HLJD
-            </p>
+
+            <p>I found this note on my way home from the club one dreary morning. I feel like the fellow who wrote it was
+                as drunk as I was when I read it:</p>
+            <br/>
+            <p>Q WVKM BPWCOPB BPQA VCUJMZ EIA ZIBPMZ LCTT</p>
+            <p>IBA UVD P MPUK PA CLYF PUALYLZAPUN</p>
+            <p>ORPNHFR N SEVRAQ BS ZVAR VASBEZRQ ZR GUNG VG VF GUR FZNYYRFG AHZORE</p>
+            <p>PIACPDDTMWP LD ESP DFX ZQ EHZ NFMPD TY EHZ OTQQPCPYE HLJD</p>
         </div>
     </div>
 </div>
