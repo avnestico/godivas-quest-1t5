@@ -19,13 +19,25 @@ $questionNumber = 7;
     ?>
     <div id="content_container">
         <div id="content">
-            <h1><strong>Phase 1</strong></h1>
+            <h2>Ladies and gentlemen,</h2>
+            <p>Godiva Industries is proud to present <strong>Godiva's Quest 1T5</strong>, the foremost puzzle competition, scavenger hunt, and mad dash in the world! As in past years, the Quest follows the familiar format of three staggered phases of puzzles, culminating in a final puzzle that will require students to race to somewhere on campus in order to claim the title of Godiva's Quest 1T5 Champion!</p>
+            <p>This year, each phase of the Quest consists of six puzzles followed by a meta puzzle. In order to solve the meta puzzle, you'll first need the answers to the phase's other puzzles. The phase 1 meta puzzle can be submitted on this page, and links to the rest of the phase 1 puzzles are below.</p>
+            <p>On behalf of Ms. Bold, Godiva Industries' president, I wish all of you good luck!</p>
+
+            <p>Happy Questing!</p>
+            <p>Robin Lark,<br/>
+                Godiva Industries U of T Representative
+            </p>
+        </div>
+    </div>
+
+    <div id="content_container">
+        <div id="content">
+            <h2>A New Beginning</h2>
+
             <p><a href="bring_the_beat_back.php">#1: Bring The Beat Back</a></p>
             <p><a href="putney.php">#3: Putney</a></p>
             <p><a href="bottoms_up.php">#4: Bottoms Up</a></p>
-            <p>
-                Good luck!
-            </p>
         </div>
     </div>
 </div>
