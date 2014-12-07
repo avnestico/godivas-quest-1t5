@@ -8,7 +8,9 @@ $questionNumber = 7;
 <head>
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
-    <title>Godiva's Quest </title>
+    <meta name="viewport" content="width=800px"/>
+
+    <title>A New Beginning</title>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css" />
 </head>
 <body>

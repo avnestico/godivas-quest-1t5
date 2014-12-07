@@ -8,6 +8,7 @@ $questionNumber = 8;
 <head>
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    <meta name="viewport" content="width=800px"/>
     <title>Hellhole</title>
     <link rel="stylesheet" href="../../style/mystyle.css" type=
     "text/css" />

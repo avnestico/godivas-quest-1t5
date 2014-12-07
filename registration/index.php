@@ -10,8 +10,7 @@ include_once(__DIR__ . "/../php_source/global_variables.php");
 <head>
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org"/>
-    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/>
-    <meta http-equiv="Content-Style-Type" content="text/css"/>
+    <meta name="viewport" content="width=800px"/>
 
     <title>Registration</title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>

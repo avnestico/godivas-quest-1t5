@@ -27,8 +27,9 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
 <head>
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org"/>
-
+    <meta name="viewport" content="width=800px"/>
     <title>GodivaNet</title>
+
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css"/>
 </head>
