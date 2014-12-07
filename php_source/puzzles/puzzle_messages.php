@@ -47,6 +47,8 @@ function puzzle_messages_1($answer) {
     switch ($answer) {
         case "capitalcity":
             return "Correct!";
+        case "taylorswift":
+            return "Are you sure you have all the words you need?";
     }
 }
 
@@ -61,6 +63,10 @@ function puzzle_messages_3($answer) {
     switch ($answer) {
         case "1729":
             return "Correct!";
+        case "taxi":
+        case "taxicab":
+        case "taxicabnumber":
+            return "I want the actual number, not its name.";
     }
 }
 
@@ -68,6 +74,8 @@ function puzzle_messages_4($answer) {
     switch ($answer) {
         case "proteams":
             return "Correct!";
+        case "proteems":
+            return "Did you read the picture's title text?";
     }
 }
 
