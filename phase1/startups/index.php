@@ -40,7 +40,7 @@ $questionNumber = 2;
                 One of the companies founded by members of the PayPal Mafia, this video sharing site was originally a video-powered online dating service.
             </li>
             <li>
-                Upon finding that his clients were more interested in the free perfume samples he offered than the books he was selling, a salesman pivoted into the cosmetics market. Over 40 years later, his business changed its name to the one it's known by today.
+                Upon finding that his clients were more interested in the free perfume samples he offered than the books he was selling, a salesman pivoted into the cosmetics market. Over 40 years later, his business changed its name to this one, the one it's known by today.
             </li>
             <li>
                 This blacksmith, unhappy with ploughs that couldn't cut through his area's tough clay, had the bright idea of building ploughs out of cast steel. His products are found on farms and lawns across the world today.
