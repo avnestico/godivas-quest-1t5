@@ -33,9 +33,9 @@ $questionNumber = 2;
 
             <ul>
                 <li>
-                    This company was a sporting goods outfitter for years before going bankrupt, being bought out, and
-                    getting revived under its original name. For at least the past 10 years, it's switched to casual
-                    wear for youth. (Last word in the name only)
+                    When health concerns started to pose a threat to the tobacco industry, this patriotic company's
+                    management chose to evolve. Insurance, golf, home furnishings, and alcohol were their most
+                    successful forays. Less than 10 years ago, they changed their name to this.
                 </li>
                 <li>
                     Though it filed for bankruptcy over 20 years ago, this company successfully pivoted into toys after
