@@ -43,6 +43,7 @@ $questionNumber = 7;
             <p><a href="putney">#3: Putney</a></p>
             <p><a href="bottoms_up">#4: Bottoms Up</a></p>
             <p><a href="creative_ahem_inspiration">#5: Creative, Ahem, Inspiration</a></p>
+            <p><a href="solve_for_x">#6: Solve For X</a> </p>
         </div>
     </div>
 </div>

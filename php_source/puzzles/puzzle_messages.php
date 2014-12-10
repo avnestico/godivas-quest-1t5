@@ -90,6 +90,11 @@ function puzzle_messages_6($answer) {
     switch ($answer) {
         case "denominator":
             return "Correct!";
+        case "divisor":
+            return "Almost. Think...shorter.";
+        case "two":
+        case "2":
+            return "You seem to have mistaken some symbols for numbers.";
     }
 }
 
