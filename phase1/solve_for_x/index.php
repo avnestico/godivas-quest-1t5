@@ -25,7 +25,9 @@ $questionNumber = 6;
         <div id="content">
             <h2>#6: Solve For X</h2>
 
-            <img style="border:none;" src="solve_for_x.jpg">
+            <div id="centre">
+                <img style="border:none;" src="solve_for_x.jpg">
+            </div>
         </div>
     </div>
 </div>

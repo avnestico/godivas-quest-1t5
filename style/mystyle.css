@@ -272,3 +272,9 @@ button:hover {
 table, td, th {
     border-color: #808080;
 }
+
+#centre img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
