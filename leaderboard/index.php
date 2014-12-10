@@ -8,8 +8,7 @@
  *
  * @param $fieldCount
  */
-function print_leaderboard_header($fieldCount)
-{
+function print_leaderboard_header($fieldCount) {
     echo "<tr><th><div style='width:100px;'>Quester</div></th>";
 
     for ($i = 1; $i < $fieldCount - 5; $i++) {
@@ -21,6 +20,7 @@ function print_leaderboard_header($fieldCount)
     echo "<th><div>num<br>solved</div></th>";
     echo "</tr>";
 }
+
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -49,6 +49,7 @@ function print_leaderboard_header($fieldCount)
     <div id="content_container">
         <div id="content">
             <h2>Leaderboard</h2>
+
             <p>
                 Click on the column headers to sort.
             </p>

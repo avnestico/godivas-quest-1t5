@@ -19,7 +19,7 @@ function display_header_link($url, $name, $is_visible = true, $is_current_year =
         $new_link = "/" . $GLOBALS['this_year'];
     }
 
-    $new_link =  "<a href=" . $new_link . "/$url>$name</a><br/>";
+    $new_link = "<a href=" . $new_link . "/$url>$name</a><br/>";
     if (!$is_visible) {
         $new_link = "<!--" . $new_link . "-->";
     }
@@ -64,9 +64,10 @@ function uoft_year_to_int($year) {
  * @return string
  */
 function int_to_uoft_year($int) {
-    $year = str_pad($int,2,'0',STR_PAD_LEFT);
+    $year = str_pad($int, 2, '0', STR_PAD_LEFT);
     return $year[0] . "T" . $year[1];
 }
+
 ?>
 
 <div class="box_container">

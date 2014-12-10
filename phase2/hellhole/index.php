@@ -7,12 +7,12 @@ $questionNumber = 8;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="generator" content=
-    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org"/>
     <meta name="viewport" content="width=800px"/>
     <title>Hellhole</title>
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
     <link rel="stylesheet" href="../../style/mystyle.css" type=
-    "text/css" />
+    "text/css"/>
 </head>
 <body>
 <div id="container">
@@ -23,7 +23,7 @@ $questionNumber = 8;
     <div id="content_container">
         <div id="content">
             <h2>#8: Hellhole</h2>
-            <img style="border:none;" src ="hellhole.jpg" width="100%">
+            <img style="border:none;" src="hellhole.jpg" width="100%">
         </div>
     </div>
 </div>

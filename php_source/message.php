@@ -13,6 +13,6 @@ if ($message != "") {
             ?>
         </div>
     </div>
-    <?php
+<?php
 }
 ?>

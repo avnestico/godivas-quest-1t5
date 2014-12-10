@@ -115,7 +115,7 @@ input {
     border: 0px solid;
     font-family: tahoma, arial, sans-serif;
     font-size: 10px;
-    margin:6px 0px;
+    margin: 6px 0px;
 }
 
 #container {
@@ -249,9 +249,9 @@ input {
 /* Form button */
 
 button {
-    background: none!important;
+    background: none !important;
     border: none;
-    padding: 0!important;
+    padding: 0 !important;
     font: inherit;
     cursor: pointer;
     color: #E08830;

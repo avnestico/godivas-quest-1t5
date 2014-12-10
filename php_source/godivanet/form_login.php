@@ -3,9 +3,9 @@ include_once(__DIR__ . "/../global_variables.php");
 ?>
 
 <div style="text-align:center">
-    <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/submit_enter.js' . '"'?>></script>
+    <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/submit_enter.js' . '"' ?>></script>
     <form name="loginform" method="post" id="loginform"
-            <?php echo 'action="/' . $GLOBALS['this_year'] . '/php_source/godivanet/perform_login.php"' . '"'?>>
+            <?php echo 'action="/' . $GLOBALS['this_year'] . '/php_source/godivanet/perform_login.php"' . '"' ?>>
         Quest ID:<br/>
         <input name="alias" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>

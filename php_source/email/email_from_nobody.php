@@ -57,7 +57,7 @@ function email_nobody_meta_solve($num, $email) {
                     "trademark, for crying out loud. They're in talks with the university to raise tuition to help them afford " .
                     "all this! If nothing else, that should get you mad. Mad enough to solve those last puzzles and expose them " .
                     "for the frauds they are.\r\n\r\n" .
-                    "Keep fighting,".
+                    "Keep fighting," .
                     "Nobody";
             break;
         case 21:

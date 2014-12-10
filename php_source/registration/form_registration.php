@@ -3,9 +3,9 @@ include_once(__DIR__ . "/../global_variables.php");
 ?>
 
 <div style="text-align:center">
-    <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/submit_enter.js' . '"'?>></script>
+    <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/submit_enter.js' . '"' ?>></script>
     <form name="registerform" method="post" id="registerform"
-            <?php echo 'action="/' . $GLOBALS['this_year'] . '/php_source/registration/perform_register.php' . '"'?>>
+            <?php echo 'action="/' . $GLOBALS['this_year'] . '/php_source/registration/perform_register.php' . '"' ?>>
 
         First name:<br/>
         <input name="first_name" type="text" value="" autofocus onKeyPress="return submit_enter(this,event)"/><br/>

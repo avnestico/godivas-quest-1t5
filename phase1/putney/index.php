@@ -7,12 +7,12 @@ $questionNumber = 3;
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta name="generator" content=
-    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org"/>
     <meta name="viewport" content="width=800px"/>
     <title>Putney</title>
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
     <link rel="stylesheet" href="../../style/mystyle.css" type=
-    "text/css" />
+    "text/css"/>
 </head>
 <body>
 <div id="container">
@@ -24,12 +24,17 @@ $questionNumber = 3;
         <div id="content">
             <h2>#3: Putney</h2>
 
-            <p>I found this note on my way home from the club one dreary morning. I feel like the fellow who wrote it was
+            <p>I found this note on my way home from the club one dreary morning. I feel like the fellow who wrote it
+                was
                 as drunk as I was when I read it:</p>
             <br/>
+
             <p>Q WVKM BPWCOPB BPQA VCUJMZ EIA ZIBPMZ LCTT</p>
+
             <p>IBA UVD P MPUK PA CLYF PUALYLZAPUN</p>
+
             <p>ORPNHFR N SEVRAQ BS ZVAR VASBEZRQ ZR GUNG VG VF GUR FZNYYRFG AHZORE</p>
+
             <p>PIACPDDTMWP LD ESP DFX ZQ EHZ NFMPD TY EHZ OTQQPCPYE HLJD</p>
         </div>
     </div>

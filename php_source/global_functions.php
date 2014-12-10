@@ -7,7 +7,7 @@
  * @param $message
  */
 function refresh_with_message($message) {
-    header("Location: " . $_REQUEST['questionUrl'] ."?message=$message");
+    header("Location: " . $_REQUEST['questionUrl'] . "?message=$message");
     die();
 }
 
@@ -39,7 +39,7 @@ function get_info_from_row($row, $print_row = false) {
  * @param bool $print
  * @return int
  */
-function count_num_solved($field_count, $row, $print = false){
+function count_num_solved($field_count, $row, $print = false) {
     $num_solved = 0;
     for ($i = 1; $i < $field_count - 5; $i++) {
         $field_name = $row["Q" . $i];

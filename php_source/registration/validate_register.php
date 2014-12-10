@@ -12,8 +12,7 @@
  *
  * @return string
  */
-function info_validation_message($firstname, $lastname, $email)
-{
+function info_validation_message($firstname, $lastname, $email) {
     $message = "";
 
     if (($firstname == "" || $lastname == "" || $email == "")) {

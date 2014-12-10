@@ -19,8 +19,7 @@ require_once(__DIR__ . "/../quest_db.php");
  * @param $body
  * @param $headers
  */
-function email_all_users($subject, $body, $headers)
-{
+function email_all_users($subject, $body, $headers) {
     $query = select_all_aliases();
 
     while ($row = $query->fetch()) {
