@@ -28,6 +28,12 @@ include_once(__DIR__ . "/../php_source/global_variables.php");
         <div id="content">
             <h2>Registration</h2>
 
+            <p>
+                You will be sent emails with additional instructions. If the email address you submit is not one you
+                have access to for the entire Quest, you will not be able to complete the Quest.
+            </p>
+            <br/>
+
             <?php include_once(__DIR__ . "/../php_source/registration/form_registration.php"); ?>
         </div>
     </div>

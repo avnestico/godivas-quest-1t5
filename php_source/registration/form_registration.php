@@ -13,7 +13,7 @@ include_once(__DIR__ . "/../global_variables.php");
         Last name:<br/>
         <input name="last_name" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
-        Email: (Important)<br/>
+        Email:<br/>
         <input name="email" type="text" value="" onKeyPress="return submit_enter(this,event)"/><br/>
         <br/>
 
