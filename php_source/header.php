@@ -1,6 +1,12 @@
-<div id="header_container">
-    <div id="header_menu"></div>
-</div>
+<?php
+include_once(__DIR__ . "/global_variables.php");
+?>
+
+<a href=<?php echo '"/' . $GLOBALS['this_year'] . '/"'?>>
+    <div id="header_container">
+        <div id="header_menu"></div>
+    </div>
+</a>
 
 <div id="left_sidebar">
     <?php
