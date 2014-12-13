@@ -139,7 +139,7 @@ include_once(__DIR__ . "/../php_source/header.php");
 
 <h3>1T5</h3>
 
-<p>Insert secret here.</p>
+<p>Will be updated when the Quest begins.</p>
 
 <h2>Past Winners and Questmasters</h2>
 

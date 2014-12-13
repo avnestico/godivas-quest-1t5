@@ -1,1 +1,1 @@
-RedirectMatch 404 ^/1T5/php_source/.*$
+RedirectMatch 404 ^/1T5/php_source/(?!puzzles/answer_check\.php|registration/perform_register\.php|godivanet/perform_login\.php).*$

@@ -24,17 +24,10 @@ include_once(__DIR__ . "/../php_source/global_variables.php");
             <h1>Hints</h1>
 
             <p>
-                None yet! If a puzzle is solved by less than 5 people before the next phase activates, automatic
-                hints will be provided here. If you want a hint on a particular puzzle, you are entitled to
-                <strong>two</strong> for the entire quest, and you can request one by e-mailing the
-                Questmasters.
-            </p>
-
-            <h2>Contact</h2>
-
-            <p>
-                You can contact the Questmasters
-                at <?php echo "<a href=mailto:" . $GLOBALS["qm_email"] . ">" . $GLOBALS["qm_email"] . "</a>" ?>.
+                If you want a hint on a particular puzzle, contact the Questmaster at
+                <?php echo "<a href=mailto:" . $GLOBALS["qm_email"] . ">" . $GLOBALS["qm_email"] . "</a>" ?> with how
+                far you've gotten on the puzzle, and I might point you in the right direction or confirm you're already
+                going that way.
             </p>
         </div>
     </div>
