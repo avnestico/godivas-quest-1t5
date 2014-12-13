@@ -24,10 +24,14 @@ include_once(__DIR__ . "/../php_source/global_variables.php");
             <h1>Hints</h1>
 
             <p>
+                If it's determined that any puzzles need hints, those hints will be posted here.
+            </p>
+
+            <p>
                 If you want a hint on a particular puzzle, contact the Questmaster at
                 <?php echo "<a href=mailto:" . $GLOBALS["qm_email"] . ">" . $GLOBALS["qm_email"] . "</a>" ?> with how
-                far you've gotten on the puzzle, and I might point you in the right direction or confirm you're already
-                going that way.
+                far you've gotten. I might point you in the right direction or confirm that that's already where you're
+                going.
             </p>
         </div>
     </div>
