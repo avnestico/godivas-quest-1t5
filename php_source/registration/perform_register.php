@@ -8,6 +8,11 @@
 include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
 
+// Fail early
+if (!isset($_REQUEST['first_name'])) {
+    unknown_error();
+}
+
 $first_name = $_REQUEST['first_name'];
 $last_name = $_REQUEST['last_name'];
 $email = $_REQUEST['email'];

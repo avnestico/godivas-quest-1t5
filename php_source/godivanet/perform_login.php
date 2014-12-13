@@ -35,6 +35,11 @@ session_start();
 include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
 
+// Fail early
+if (!isset($_REQUEST['username'])) {
+    unknown_error();
+}
+
 // Compatibility library. Needed as long as php version is < 5.5.0.
 if (PHP_VERSION_ID < 50500) {
     require_once(__DIR__ . "/password.php");
