@@ -9,7 +9,7 @@
  * @param $fieldCount
  */
 function print_leaderboard_header($fieldCount) {
-    echo "<tr><th><div style='width:100px;'>Quester</div></th>";
+    echo "<tr><th><div style='width:92px;'>Quester</div></th>";
 
     for ($i = 1; $i < $fieldCount - 5; $i++) {
         $fieldName = $i;
@@ -74,7 +74,7 @@ function print_leaderboard_header($fieldCount) {
                 echo "<tr><td><div>$full_name</div></td>";
                 // Returns the number of cells with 'Y' in them. If the 3rd argument is set to true, prints cells in table.
                 $num_solved = count_num_solved($field_count, $row, true);
-                echo "<td><div style='width:48px'>" . $row["last_solve"] . "</div></td><td><div id='small_cell'>$num_solved</div></td></tr>";
+                echo "<td><div style='width:56px'>" . $row["last_solve"] . "</div></td><td><div id='small_cell'>$num_solved</div></td></tr>";
             }
 
             echo "</tbody></table>";
