@@ -59,7 +59,7 @@ include_once(__DIR__ . "/php_source/global_variables.php");
 
             <p>Frosh cannot win the whole Quest, but they are encouraged to participate and can earn patches. Other than
                 frosh and past Quest winners, any University of Toronto engineering undergraduate is eligible to win the
-                Quest. If nobody has completed the Quest by 10:00 a.m. EST on Wednesday, January 9, 2015, the winner
+                Quest. If nobody has completed the Quest by 10:00 a.m. EST on Wednesday, January 7, 2015, the winner
                 will be the person who has completed the most puzzles at that time.</p>
 
             <h3><strong>The Private Side</strong></h3>
