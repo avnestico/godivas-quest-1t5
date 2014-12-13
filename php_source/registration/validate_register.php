@@ -17,8 +17,8 @@ function info_validation_message($firstname, $lastname, $email) {
 
     if (($firstname == "" || $lastname == "" || $email == "")) {
         $message = "Registration failed! One or more fields were left blank. Please make sure all fields are filled out.";
-    } else if (!ctype_alpha($firstname) || !ctype_alpha($lastname)) {
-        $message = "Registration failed! Your name must contain only alphabetical characters. Please fill out the form again.";
+    } else if (!ctype_alpha($firstname[0]) || !ctype_alpha($lastname[0])) {
+        $message = "Registration failed! Your name must begin with an alphabetical character. Please fill out the form again.";
     } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $message = "Registration failed! That doesn't appear to be a valid email address. Please fill out the form again.";
     } else if (strlen($firstname) > 30) {
