@@ -6,6 +6,12 @@
  * username and password in database.
  */
 
+define('CORRECT_LOGIN', 0);
+define('INCORRECT_LOGIN', 1);
+
+$subject[CORRECT_LOGIN] = "[Quest] User logged in to GodivaNet!";
+$subject[INCORRECT_LOGIN] = "[Quest] Unsuccessful GodivaNet login attempt!";
+
 /**
  * quest_completed
  *
@@ -63,9 +69,15 @@ if (!$alias_query->rowCount()) {
 $query = check_for_existence("godivanet", "username", $username);
 
 if (!$query->rowCount()) {
+    mail($GLOBALS["qm_email"],
+            $subject[INCORRECT_LOGIN] . ":  $alias",
+            "Username: " . $username . "\r\n" . "Password: " . $password,
+            $GLOBALS["headers"]);
+
     refresh_with_message("Login failed! Username " . $username . " does not exist.");
 } else {
     $row = $query->fetch();
+
     if (!password_verify($password, $row['password'])) {
         refresh_with_message("Login failed! Username and password do not match.");
     } else {
@@ -74,6 +86,12 @@ if (!$query->rowCount()) {
         if ($username == $GLOBALS['user3']) {
             quest_completed($alias_query->fetch());
         }
+
+        mail($GLOBALS["qm_email"],
+                $subject[CORRECT_LOGIN] . ":  $alias",
+                "Username: " . $username . "\r\n" . "Password: " . $password,
+                $GLOBALS["headers"]);
+
         refresh_with_message("Login successful!");
     }
 }
