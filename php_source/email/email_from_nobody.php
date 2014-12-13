@@ -3,6 +3,22 @@ include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
 
 /**
+ * phase_three_row
+ *
+ * Strip phase 1 and 2 answers from row and only return the user's phase 3 results.
+ *
+ * @param $row
+ * @return mixed
+ */
+function phase_three_row($row) {
+    for ($i = 1; $i < 15; $i++) {
+        unset($row["Q" . $i]);
+    }
+    unset($row["Q21"]);
+    return $row;
+}
+
+/**
  * Send an email from 'Nobody', an anonymous aide.
  *
  * @param mixed $row
@@ -13,6 +29,15 @@ function email_from_nobody($row, $question) {
     $num_solved = count_num_solved(sizeof($row), $row);
     if ($num_solved == 0) {
         email_nobody_first_solve($row['email']);
+    }
+
+    // If this is the user's first solve from phase 3, send them the phase 3 email.
+    if ($question > 14 && $question < 21) {
+        $phase_three_row = phase_three_row($row);
+        $phase_three_solved = count_num_solved(sizeof($phase_three_row), $phase_three_row);
+        if ($phase_three_solved == 0) {
+            email_nobody_phase_three($row['email']);
+        }
     }
 
     // Check if the user has solved a meta puzzle for the first time. If so, send them the corresponding meta email.
@@ -38,6 +63,19 @@ function email_nobody_first_solve($email) {
     mail($email, $subject, $body, $headers);
 }
 
+function email_nobody_phase_three($email) {
+    $subject = "[Quest] FWD: See You In Court";
+    $body = "If I were you, I’d make sure your cells are energized.\r\n\r\n" .
+            "Our mutual friend Bold isn’t very happy with people snooping around her site, and she’s letting people know " .
+            "it. She’s always been a fan of reversing things for her own benefit, so I think you need to end this " .
+            "quickly, before she can turn the tables.\r\n\r\n" .
+            "The end is close,\r\n" .
+            "Nobody";
+    $headers = $GLOBALS['nobody'];
+
+    mail($email, $subject, $body, $headers);
+}
+
 function email_nobody_meta_solve($num, $email) {
     switch ($num) {
         case 7:
@@ -51,22 +89,13 @@ function email_nobody_meta_solve($num, $email) {
             break;
         case 14:
             $subject = "[Quest] This is Troubling";
-            $body = "Have you gotten into Johnson's email yet? You really should go take a look.\r\n\r\n" .
+            $body = "Have you gotten into King's email yet? You really should go take a look.\r\n\r\n" .
                     "This is worse than I thought. Godiva Industries isn't stopping at Godiva Week. They're looking to  " .
                     "subsume and monetize practically all of engineering culture at U of T. They're plotting to buy the Skule " .
                     "trademark, for crying out loud. They're in talks with the university to raise tuition to help them afford " .
                     "all this! If nothing else, that should get you mad. Mad enough to solve those last puzzles and expose them " .
                     "for the frauds they are.\r\n\r\n" .
                     "Keep fighting," .
-                    "Nobody";
-            break;
-        case 21:
-            $subject = "[Quest] FWD: See You In Court";
-            $body = "If I were you, I’d make sure your cells are energized.\r\n\r\n" .
-                    "Our mutual friend Bold isn’t very happy with people snooping around her site, and she’s letting people know " .
-                    "it. She’s always been a fan of reversing things for her own benefit, so I think you need to end this " .
-                    "quickly, before she can turn the tables.\r\n\r\n" .
-                    "The end is close,\r\n" .
                     "Nobody";
             break;
         case 22:
