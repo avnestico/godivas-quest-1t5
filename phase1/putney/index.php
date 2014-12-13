@@ -25,17 +25,16 @@ $questionNumber = 3;
             <h2>#3: Putney</h2>
 
             <p>I found this note on my way home from the club one dreary morning. I feel like the fellow who wrote it
-                was
-                as drunk as I was when I read it:</p>
+                was as drunk as I was when I read it:</p>
             <br/>
 
-            <p>Q WVKM BPWCOPB BPQA VCUJMZ EIA ZIBPMZ LCTT</p>
+            <p>K UBCM HXUWRXH HXKQ BWLEMO YJQ OJHXMO VWII</p>
 
-            <p>IBA UVD P MPUK PA CLYF PUALYLZAPUN</p>
+            <p>EWH BUY K SKBV KH NMOZ KBHMOMQHKBR</p>
 
-            <p>ORPNHFR N SEVRAQ BS ZVAR VASBEZRQ ZR GUNG VG VF GUR FZNYYRFG AHZORE</p>
+            <p>EMCJWQM J SOKMBV US LKBM KBSUOLMV LM HXJH KH KQ HXM QLJIIMQH BWLEMO</p>
 
-            <p>PIACPDDTMWP LD ESP DFX ZQ EHZ NFMPD TY EHZ OTQQPCPYE HLJD</p>
+            <p>MFTOMQQKEIM JQ HXM QWL US HYU CWEMQ KB HYU VKSSMOMBH YJZQ</p>
         </div>
     </div>
 </div>
