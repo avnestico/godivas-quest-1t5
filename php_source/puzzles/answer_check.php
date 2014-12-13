@@ -27,11 +27,11 @@ $subject[WRONG] = "[Quest] Wrong";
 
 $body[0] = "Congratulations! You have successfully solved puzzle ";
 $body[1] = $body[0] . "1: Bring The Beat Back!";
-$body[2] = $body[0] . "2: !";
+$body[2] = $body[0] . "2: Startups!";
 $body[3] = $body[0] . "3: Putney!";
 $body[4] = $body[0] . "4: Bottoms Up!";
 $body[5] = $body[0] . "5: Creative, Ahem, Inspiration!";
-$body[6] = $body[0] . "6: !";
+$body[6] = $body[0] . "6: Solve For X!";
 $body[7] = $body[0] . "7: A New Beginning!";
 $body[8] = $body[0] . "8: !";
 $body[9] = $body[0] . "9: !";
