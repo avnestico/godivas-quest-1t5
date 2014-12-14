@@ -29,7 +29,7 @@ $questionNumber = 6;
             <br/>
 
             <div id="centre">
-                <img style="border:none;" src="solve_for_x.jpg">
+                <img style="border:none;" src="solve_for_x.jpg" alt="Solve For X">
             </div>
         </div>
     </div>

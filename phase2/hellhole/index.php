@@ -23,7 +23,7 @@ $questionNumber = 10;
     <div id="content_container">
         <div id="content">
             <h2>#10: Hellhole</h2>
-            <img style="border:none;" src="hellhole.jpg" width="100%" alt="#10: Hellhole">
+            <img style="border:none;" src="hellhole.jpg" width="100%" alt="Hellhole">
         </div>
     </div>
 </div>

@@ -28,7 +28,7 @@ $questionNumber = 12;
                 solution. The solution can be found without any guessing. This note is not a hint.</em></p>
             <br/>
 
-            <img style="border:none;" src="syndicated.jpg" alt="#12: Syndicated">
+            <img style="border:none;" src="syndicated.jpg" alt="Syndicated">
         </div>
     </div>
 </div>
