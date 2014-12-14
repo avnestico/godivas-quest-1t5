@@ -107,3 +107,33 @@ function puzzle_messages_7($answer) {
             return "That's not specific enough, and it's in the wrong language, but it's close.";
     }
 }
+
+
+function puzzle_messages_10($answer) {
+    switch ($answer) {
+        case "sfpit":
+        case "thepit":
+            return "Correct!";
+    }
+}
+
+
+function puzzle_messages_12($answer) {
+    switch ($answer) {
+        case "trinity":
+            return "Correct!";
+        case "31eefe2631e42e14":
+            return "What does that spell?";
+    }
+}
+
+
+function puzzle_messages_14($answer) {
+    switch ($answer) {
+        case "universitycollege":
+            return "Correct!";
+        case "collegeuniversity":
+        case "universityandcollege":
+            return "All the answers in this phase, including this one, have something in common.";
+    }
+}
