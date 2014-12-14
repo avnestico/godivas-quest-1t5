@@ -22,19 +22,25 @@ $questionNumber = 14;
     ?>
     <div id="content_container">
         <div id="content">
-            <h1><strong>Phase 2</strong></h1>
+            <h2>Welcome to phase two of the Quest!</h2>
 
-            <p>
-                <a href="hellhole">#10: Hellhole</a>
-            </p>
+            <p>Godiva Industries is proud of all the progress that's been made so far. We're glad you're enjoying the
+                Quest, and we hope you continue solving those puzzles! Good luck!</p>
 
-            <p>
-                <a href="syndicated">#12: Syndicated</a>
+            <p>Peter King,<br/>
+                Godiva Industries Director of University Affairs
             </p>
+        </div>
+    </div>
 
-            <p>
-                Good luck!
-            </p>
+    <div id="content_container">
+        <div id="content">
+            <h2>Crossroads</h2>
+
+            <p><a href="hellhole">#10: Hellhole</a></p>
+
+            <p><a href="syndicated">#12: Syndicated</a></p>
+
         </div>
     </div>
 </div>
