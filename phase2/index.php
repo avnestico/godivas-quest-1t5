@@ -25,7 +25,11 @@ $questionNumber = 14;
             <h1><strong>Phase 2</strong></h1>
 
             <p>
-                <a href="hellhole">#8: Hellhole</a>
+                <a href="hellhole">#10: Hellhole</a>
+            </p>
+
+            <p>
+                <a href="syndicated">#12: Syndicated</a>
             </p>
 
             <p>

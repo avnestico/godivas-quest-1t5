@@ -1,5 +1,5 @@
 <?php
-$questionNumber = 10;
+$questionNumber = 12;
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -22,8 +22,13 @@ $questionNumber = 10;
     ?>
     <div id="content_container">
         <div id="content">
-            <h2>#10: Hellhole</h2>
-            <img style="border:none;" src="hellhole.jpg" width="100%" alt="#10: Hellhole">
+            <h2>#12: Syndicated</h2>
+
+            <p><em>Editor's note: This puzzle had 144 possible permutations. This is the only one with a unique
+                solution. The solution can be found without any guessing. This note is not a hint.</em></p>
+            <br/>
+
+            <img style="border:none;" src="syndicated.jpg" alt="#12: Syndicated">
         </div>
     </div>
 </div>
