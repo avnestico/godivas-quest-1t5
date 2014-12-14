@@ -210,7 +210,6 @@ input {
 #left_sidebar {
     width: 100px;
     float: left;
-    margin: 0px 0px 20px;
 }
 
 #left_sidebar .box_container {
