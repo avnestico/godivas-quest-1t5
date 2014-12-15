@@ -59,6 +59,8 @@ function puzzle_messages_1($answer) {
             return "That's one of the songs. Keep going.";
         case "safeandsoundbandsingular":
             return "Go on...";
+        case "breakfastinamerica":
+            return "Good ear. One of the songs sampled Breakfast In America.";
     }
 }
 
