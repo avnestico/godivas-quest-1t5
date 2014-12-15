@@ -48,8 +48,10 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
                 echo "<h2>Welcome to GodivaNet!</h2>";
                 include_once(__DIR__ . "/../php_source/godivanet/form_login.php");
             } else {
+                include_once(__DIR__ . "/../php_source/godivanet/users/display_email.php");
+                echo "<h2>Inbox</h2>";
                 if ($_SESSION[$user1]) {
-                    echo "Logged in as user 1";
+                    print_email_table(1);
                 } else if ($_SESSION[$user2]) {
                     echo "Logged in as user 2";
                 } else if ($_SESSION[$user3]) {
