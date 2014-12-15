@@ -35,7 +35,7 @@ function print_leaderboard_header($fieldCount) {
     <title>Leaderboard</title>
     <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
     <link rel="stylesheet" href="../style/mystyle.css" type="text/css" media="screen"/>
-    <script src="../php_source/sort_table.js" type="text/javascript">
+    <script src="../php_source/sorttable.js" type="text/javascript">
     </script>
 </head>
 
