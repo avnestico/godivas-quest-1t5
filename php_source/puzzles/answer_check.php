@@ -64,13 +64,15 @@ $alias = $_REQUEST['alias'];
 $answer = $_REQUEST['answer'];
 $answer = strtolower($answer);
 $answer = str_replace(' ','',$answer);
-$answer = str_replace('/','',$answer);
 
 if ($alias == "") {
     refresh_with_message("Please make sure you fill in your login name.");
 }
 if ($answer == "") {
     refresh_with_message("Please make sure you fill in the answer box.");
+}
+if (!ctype_alnum($answer)) {
+    refresh_with_message("Invalid answer. All answers will be entirely alphanumeric. Remove anything that isn't a letter or number and resubmit.");
 }
 
 // Check the database for existence of the supplied username
