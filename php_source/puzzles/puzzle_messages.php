@@ -94,11 +94,10 @@ function puzzle_messages_6($answer) {
             return "Almost. Think...shorter.";
         case "two":
         case "2":
-        case "y2":
-        case "05y":
+        case "y/2":
+        case "0.5y":
             return "You seem to have mistaken some symbols for numbers.";
-        case "yz":
-        case "zy":
+        case "y/z":
         case "yoverz":
             return "I don't want what X is equal to. I want what X is.";
     }
