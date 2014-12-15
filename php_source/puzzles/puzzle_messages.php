@@ -47,6 +47,7 @@ function puzzle_messages_1($answer) {
     switch ($answer) {
         case "capitalcity":
             return "Correct!";
+        case "capitalcities":
         case "taylorswift":
             return "Are you sure you have all the words you need?";
         case "cupidschokehold":
@@ -57,7 +58,7 @@ function puzzle_messages_1($answer) {
         case "sogood":
             return "That's one of the songs. Keep going.";
         case "safeandsoundbandsingular":
-            return "Well?";
+            return "Go on...";
     }
 }
 
