@@ -62,6 +62,9 @@ if (!is_numeric($question) || $question < 1 || $question > $numPuzzles) {
 // Make sure an alias and answer have been submitted
 $alias = $_REQUEST['alias'];
 $answer = $_REQUEST['answer'];
+$answer = strtolower($answer);
+$answer = str_replace(' ','',$answer);
+$answer = str_replace('/','',$answer);
 
 if ($alias == "") {
     refresh_with_message("Please make sure you fill in your login name.");
