@@ -117,6 +117,16 @@ function puzzle_messages_10($answer) {
     }
 }
 
+function puzzle_messages_11($answer) {
+    switch ($answer) {
+        case "lashmiller":
+        case "lashmillerchemicallaboratories":
+            return "Correct!";
+        case "lm":
+        case "ml":
+            return "You're on the right track.";
+    }
+}
 
 function puzzle_messages_12($answer) {
     switch ($answer) {
