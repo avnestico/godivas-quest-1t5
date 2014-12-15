@@ -111,9 +111,12 @@ function puzzle_messages_7($answer) {
 
 function puzzle_messages_10($answer) {
     switch ($answer) {
-        case "sfpit":
+        case "sandfordfleming":
+        case "sf":
         case "thepit":
             return "Correct!";
+        case "sanfordfleming":
+            return "Correct! It's ok, everyone misses the first 'd' in Sandford.";
     }
 }
 
