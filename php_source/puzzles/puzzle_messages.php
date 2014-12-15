@@ -49,6 +49,15 @@ function puzzle_messages_1($answer) {
             return "Correct!";
         case "taylorswift":
             return "Are you sure you have all the words you need?";
+        case "cupidschokehold":
+        case "callmemaybe":
+        case "speedofsound":
+        case "sgtpepper":
+        case "sgtpepperslonelyheartsclubband":
+        case "sogood":
+            return "That's one of the songs. Keep going.";
+        case "safeandsoundbandsingular":
+            return "Well?";
     }
 }
 
@@ -56,6 +65,15 @@ function puzzle_messages_2($answer) {
     switch ($answer) {
         case "founded":
             return "Correct!";
+        case "fortune":
+        case "coleco":
+        case "youtube":
+        case "avon":
+        case "avonproducts":
+        case "johndeere":
+        case "wrigley":
+        case "nintendo":
+            return "That's one of the companies. Keep going.";
     }
 }
 
@@ -75,7 +93,19 @@ function puzzle_messages_4($answer) {
         case "proteams":
             return "Correct!";
         case "proteems":
+        case "subedar":
             return "Did you read the picture's title text?";
+        case "herm":
+        case "hootart":
+        case "ides":
+        case "recoups":
+        case "hrow":
+        case "subadar":
+        case "theta":
+        case "thog":
+            return "That's one of the clues. Keep going.";
+        case "therewasanoldladywhoswallowedafly":
+            return "Hmmm....";
     }
 }
 
@@ -83,6 +113,20 @@ function puzzle_messages_5($answer) {
     switch ($answer) {
         case "common":
             return "Correct!";
+        case "coldturkey":
+        case "onetokeovertheline":
+        case "mysteryoflove":
+        case "morningglory":
+        case "otherside":
+        case "novacane":
+            return "That's one of the songs. Keep going.";
+        case "heroin":
+        case "marijuana":
+        case "mdma":
+        case "cocaine":
+        case "codeine":
+        case "novocaine":
+            return "That's one of the drugs. Keep going.";
     }
 }
 
