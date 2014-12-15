@@ -96,7 +96,7 @@ list($solveFlag, $message) = get_answer_status($question, $answer);
 if (!$solveFlag) {
     mail($GLOBALS["qm_email"],
             $subject[WRONG] . ":  $alias",
-            $question . " :   " . $answer . "\r\n" . $row['name'] . " " . $row['lastname'],
+            $question . " :   " . $answer . "\r\n" . $row['first_name'] . " " . $row['last_name'] . "\r\n" . $row['email'],
             $GLOBALS["headers"]);
 } else {
     $correct_query = alias_answer_correct($question, $alias);
