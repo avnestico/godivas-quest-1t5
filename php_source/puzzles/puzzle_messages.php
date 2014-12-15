@@ -123,8 +123,11 @@ function puzzle_messages_11($answer) {
         case "lashmillerchemicallaboratories":
             return "Correct!";
         case "lm":
+            return "Almost. There's one more thing you have to do.";
         case "ml":
-            return "You're on the right track.";
+        case "queensparkcrsce39a":
+        case "queensparkcrescent39a":
+            return "You didn't read the question carefully enough, did you?";
     }
 }
 
