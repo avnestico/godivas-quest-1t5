@@ -33,6 +33,9 @@ include_once(__DIR__ . "/../php_source/global_variables.php");
                 far you've gotten. I might point you in the right direction or confirm that that's already where you're
                 going.
             </p>
+
+            <img src="../style/splash.png" title="Find where this picture comes from. -Nobody"
+                 style="display: block; margin: 0 auto;"/>
         </div>
     </div>
 </div>

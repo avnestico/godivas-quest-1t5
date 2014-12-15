@@ -139,7 +139,12 @@ include_once(__DIR__ . "/../php_source/header.php");
 
 <h3>1T5</h3>
 
-<p>Will be updated when the Quest begins.</p>
+<p>This year's Quest contains three phases, each with six puzzles and one meta puzzle, followed by a final puzzle that
+    questers will need to solve to win the Quest. The shadowy Godiva Industries appears to have taken over the Quest,
+    and, unlike in past years, questers are encouraged to find hidden parts of the site in order to unravel the mystery
+    behind the group. Though this year's Quest shares the styling of the past few years, sweeping changes have been made
+    to the backend.</p>
+<!-- Also new this year are hints in picture title text. -->
 
 <h2>Past Winners and Questmasters</h2>
 

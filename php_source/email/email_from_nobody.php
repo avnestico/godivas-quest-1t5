@@ -46,8 +46,7 @@ function email_from_nobody($row, $question) {
 
 function email_nobody_first_solve($email) {
     $subject = "[Quest] I hope this gets to its intended recipient";
-    $body = "I need you to read this. It's urgent!\r\n\r\n" .
-            "Look, I don't know who you are, and you don't need to know who I am. All that's important is that we " .
+    $body = "Look, I don't know who you are, and you don't need to know who I am. All that's important is that we " .
             "have a mutual enemy: these Godiva Industries people. I have no idea where they came from, what they do, " .
             "or why they're here, but at this point, it doesn't matter. They've already taken over Godiva's Quest, and " .
             "it looks to me like their end goal is to do the same for the entirety of Godiva Week. They need to be " .
