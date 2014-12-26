@@ -13,6 +13,23 @@ if (PHP_VERSION_ID < 50500) {
     require_once(__DIR__ . "/password.php");
 }
 
+function get_validation_url($alias) {
+    $pwoptions = ['cost' => 8,];
+    $alias_hash = password_hash($alias, PASSWORD_BCRYPT, $pwoptions);
+
+    // Remove hash information
+    $alias_hash_array = explode("$", $alias_hash);
+    $alias_hash = end($alias_hash_array);
+
+    //Delete periods from the url; if this is not done, a period at the end of the url could be seen as malformed
+    $alias_hash = str_replace('.','',$alias_hash);
+
+    //Delete slashes too, just in case.
+    $alias_hash = str_replace('/','',$alias_hash);
+
+    return $alias_hash;
+}
+
 // Fail early
 if (!isset($_REQUEST['first_name'])) {
     unknown_error();
@@ -35,8 +52,7 @@ if ($message != "") {
 // TODO: replace all this stuff with UTORauth so that we can get rid of aliases once and for all.
 // This is only being done because I don't have the time to figure out UTORauth in the middle of the Quest.
 $alias = strtolower($first_name{0}) . sprintf('%02d', rand(0, 99)) . strtolower($last_name{0}) . sprintf('%02d', rand(0, 99));
-$pwoptions = ['cost' => 8,];
-$alias_hash = password_hash($email, PASSWORD_BCRYPT, $pwoptions);
+$alias_hash = get_validation_url($alias);
 
 // Register the user and send them an email to validate their email address.
 require_once(__DIR__ . "/../quest_db.php");
