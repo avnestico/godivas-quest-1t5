@@ -7,6 +7,11 @@
 
 include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
+include_once(__DIR__ . "/../email/email_registration.php");
+
+if (PHP_VERSION_ID < 50500) {
+    require_once(__DIR__ . "/password.php");
+}
 
 // Fail early
 if (!isset($_REQUEST['first_name'])) {
@@ -25,24 +30,21 @@ if ($message != "") {
     refresh_with_message($message);
 }
 
+// Create the user's alias, hash it, and use the hashed string as their validation url.
+// TODO: figure out if this has a security hole.
+// TODO: replace all this stuff with UTORauth so that we can get rid of aliases once and for all.
+// This is only being done because I don't have the time to figure out UTORauth in the middle of the Quest.
 $alias = strtolower($first_name{0}) . sprintf('%02d', rand(0, 99)) . strtolower($last_name{0}) . sprintf('%02d', rand(0, 99));
+$pwoptions = ['cost' => 8,];
+$alias_hash = password_hash($email, PASSWORD_BCRYPT, $pwoptions);
 
+// Register the user and send them an email to validate their email address.
 require_once(__DIR__ . "/../quest_db.php");
-$query = register_alias($first_name, $last_name, $alias, $email);
+$query = register_user($first_name, $last_name, $alias, $alias_hash, $email);
 
 if ($query->rowCount()) {
-    $body = "$first_name,\r\n\r\n" .
-            "Thank you for registering for Godiva's Quest! Your Quest ID is $alias. Use this ID to submit your answers to puzzles.\r\n" .
-            "You can check your progress at " . $GLOBALS['leaderboard_url'] . "\r\n" .
-            "If you're having trouble, you can email " . $GLOBALS["qm_email"] . " and I'll see if I can help you.\r\n\r\n" .
-            "Good luck!\r\n" .
-            "Andrew Nestico,\r\n" .
-            "Questmaster 1T5\r\n\r\n";
-
-    mail($email, "[Quest] Registration Complete!", $body, $GLOBALS["headers"]);
-    $message = "Registration success! An email will be sent each time a new stage is released. In the meantime, your ID is $alias if you would like to start puzzles right away.";
-    header("Location: ../../?message=$message");
-    die();
+    email_register($first_name, $alias_hash, $email);
+    refresh_with_message("Your information has been submitted. Please check your email for the next step in the registration process.", true);
 } else {
     refresh_with_message("Registration failed! Please try again, or contact me at " . $GLOBALS["qm_email"]);
 }

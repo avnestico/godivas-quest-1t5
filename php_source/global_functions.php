@@ -2,12 +2,19 @@
 /**
  * refresh_with_message
  *
- * Return to the same page and report a message.
+ * Return to the same page and report a message. If $to_index is set to true, return to the homepage instead.
  *
  * @param $message
+ * @param bool $to_index: If set to true, return to the homepage of the Quest.
  */
-function refresh_with_message($message) {
-    header("Location: " . $_REQUEST['questionUrl'] . "?message=$message");
+function refresh_with_message($message, $to_index=false) {
+    $url = $_REQUEST['questionUrl'];
+
+    if ($to_index) {
+        $url = "/1T5/";
+    }
+
+    header("Location: " . $url . "?message=$message");
     die();
 }
 

@@ -80,11 +80,18 @@ require_once(__DIR__ . "/../quest_db.php");
 
 $query = check_for_existence("alldata", "alias", $alias);
 if (!$query->rowCount()) {
-    mail($GLOBALS["qm_email"],
-            $subject[INVALID_LOGIN],
-            $questionUrl . "\r\n" . $alias,
-            $GLOBALS["headers"]);
-    refresh_with_message("Login name not found. Please make sure you entered the correct login name.");
+    //Check if the user hasn't verified their email yet.
+    $verify_query = check_for_existence("need_verification", "alias", $alias);
+
+    if ($verify_query->rowCount()) {
+        refresh_with_message("You haven't validated your account yet. Please check your email or contact the Questmaster for assistance.");
+    } else {
+        mail($GLOBALS["qm_email"],
+                $subject[INVALID_LOGIN],
+                $questionUrl . "\r\n" . $alias,
+                $GLOBALS["headers"]);
+        refresh_with_message("Login name not found. Please make sure you entered the correct login name.");
+    }
 }
 $row = $query->fetch();
 
