@@ -13,8 +13,7 @@ include_once(__DIR__ . "/../global_functions.php");
  */
 function email_register($first_name, $registration_url, $email) {
     $body = "$first_name,\r\n\r\n" .
-            "Thank you for registering for Godiva's Quest. Before you can begin solving puzzles, " .
-            "I need you to verify that you have access to this email account.\r\n" .
+            "Thank you for registering for Godiva's Quest. Before you can begin solving puzzles, I need you to verify that you have access to this email account.\r\n" .
             "Please click the link below, or copy and paste it into your browser to go to the page directly:\r\n\r\n" .
             $GLOBALS['verification_url'] . $registration_url . "\r\n\r\n" .
             "Thank you.\r\n" .
@@ -55,9 +54,9 @@ function email_verify($first_name, $alias, $email) {
  */
 function email_not_registered($first_name, $email) {
     $body = "$first_name,\r\n\r\n" .
-            "You have signed up for Godiva's Quest with a non-U of T email address. Due to a recent change, this is no longer allowed.\r\n" .
-            "If you have made progress with this email address and wish to transfer it to a U of T email address, please send me an email with [EMAIL TRANSFER] in the title and your U of T email address in the body.\r\n" .
-            "Alternatively, you can just sign up again at http://quest.skule.ca/1T5/registration/.\r\n" .
+            "You have signed up for Godiva's Quest with a non-U of T email address. Unfortunately, this is no longer allowed.\r\n" .
+            "If you've made progress with this email address and wish to transfer that progress to a U of T email address, please send me an email with [EMAIL TRANSFER] in the title and your U of T email address in the body.\r\n" .
+            "Alternatively, you can just sign up again at http://quest.skule.ca/1T5/registration/.\r\n\r\n" .
             "Thanks for your understanding,\r\n" .
             "Andrew Nestico,\r\n" .
             "Questmaster 1T5\r\n\r\n";

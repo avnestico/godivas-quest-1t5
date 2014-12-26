@@ -80,11 +80,11 @@ require_once(__DIR__ . "/../quest_db.php");
 
 $query = check_for_existence("alldata", "alias", $alias);
 if (!$query->rowCount()) {
-    //Check if the user hasn't verified their email yet.
+    //Check if the user hasn't verified their alias yet.
     $verify_query = check_for_existence("need_verification", "alias", $alias);
 
     if ($verify_query->rowCount()) {
-        refresh_with_message("You haven't validated your account yet. Please check your email or contact the Questmaster for assistance.");
+        refresh_with_message("You haven't verified your Quest ID yet. Please check your email or contact the Questmaster for assistance.");
     } else {
         mail($GLOBALS["qm_email"],
                 $subject[INVALID_LOGIN],

@@ -17,7 +17,7 @@ $alias_hash = $_REQUEST["id"];
 $verify_query = check_for_existence("need_verification", "alias_hash", $alias_hash);
 
 if (!$verify_query->rowCount()) {
-    refresh_with_message("That ID is invalid. ", true);
+    refresh_with_message("That ID is invalid. Please contact the Questmaster for assistance.", true);
 } else {
     // If the ID exists, check if it has already been validated
     $row = $verify_query->fetch();

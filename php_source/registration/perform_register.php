@@ -43,7 +43,7 @@ $query = register_user($first_name, $last_name, $alias, $alias_hash, $email);
 
 if ($query->rowCount()) {
     email_register($first_name, $alias_hash, $email);
-    refresh_with_message("Your information has been submitted. Please check your email for the next step in the registration process.", true);
+    refresh_with_message("Thank you for registering. Please check your email for the next step in the registration process. If you don't get an email in the next few minutes, please contact the Questmaster.", true);
 } else {
     refresh_with_message("Registration failed! Please try again, or contact me at " . $GLOBALS["qm_email"]);
 }
