@@ -1,5 +1,6 @@
 <?php
-
+include_once(__DIR__ . "/../global_variables.php");
+include_once(__DIR__ . "/../global_functions.php");
 require_once(__DIR__ . "/../quest_db.php");
 
 // If the number of arguments is incorrect, cancel change.

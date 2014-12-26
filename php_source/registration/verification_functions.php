@@ -1,4 +1,12 @@
 <?php
+include_once(__DIR__ . "/../global_variables.php");
+include_once(__DIR__ . "/../global_functions.php");
+require_once(__DIR__ . "/../quest_db.php");
+include_once(__DIR__ . "/../email/email_registration.php");
+
+if (PHP_VERSION_ID < 50500) {
+    require_once(__DIR__ . "/../registration/password.php");
+}
 
 function get_verification_url($alias) {
     $pwoptions = ['cost' => 8,];

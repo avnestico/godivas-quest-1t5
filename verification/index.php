@@ -34,6 +34,11 @@ if (!$verify_query->rowCount()) {
 
         validate_user($first_name, $last_name, $alias, $email);
         email_verify($first_name, $alias, $email);
+
+        // The following line is only needed in the 1T5 Quest to transfer answers from the backup database to alldata when an old user re-validates.
+        require_once(__DIR__ . "/../php_source/backup/transfer_answers.php");
+        transfer_answers($email, $alias);
+
         refresh_with_message("Thank you for validating your email address. Your alias is $alias. You're good to start solving puzzles.", true);
     }
 }
