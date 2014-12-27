@@ -35,6 +35,7 @@ if ($message != "") {
 // TODO: replace all this stuff with UTORauth so that we can get rid of aliases once and for all.
 // This is only being done because I don't have the time to figure out UTORauth in the middle of the Quest.
 $alias = strtolower($first_name{0}) . sprintf('%02d', rand(0, 99)) . strtolower($last_name{0}) . sprintf('%02d', rand(0, 99));
+include_once(__DIR__ . "/verification_functions.php");
 $alias_hash = get_verification_url($alias);
 
 // Register the user and send them an email to validate their email address.
