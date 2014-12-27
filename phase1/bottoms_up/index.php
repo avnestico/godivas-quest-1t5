@@ -25,8 +25,9 @@ $questionNumber = 4;
         <div id="content">
             <h2>#4: Bottoms Up</h2>
 
-            <p>An old widower handed me this note. I'm having a little trouble digesting it, do you think you could
-                help?</p>
+            <p>I met an old man who had written a note,<br/>
+            He gave it to me, but I can't digest what he wrote.<br/>
+            Perhaps his wife'll die.</p>
             <br/>
 
             <img src="bottoms_up.jpg" alt="Bottoms Up"
