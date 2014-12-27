@@ -48,7 +48,7 @@ if (!isset($_REQUEST['username'])) {
 
 // Compatibility library. Needed as long as php version is < 5.5.0.
 if (PHP_VERSION_ID < 50500) {
-    require_once(__DIR__ . "/password.php");
+    require_once(__DIR__ . "/../registration/password.php");
 }
 
 $alias = $_REQUEST['alias'];
