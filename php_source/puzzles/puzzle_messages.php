@@ -194,6 +194,28 @@ function puzzle_messages_12($answer) {
     }
 }
 
+function puzzle_messages_13($answer) {
+    switch ($answer) {
+        case "heart house":
+            return "Correct! This misspelling is deliberate in the spirit of the puzzle, but rest assured that I really want Hart House.";
+        case "lw":
+        case "wl":
+            return "You're on the right track. These two letters aren't important for the final solution, though.";
+        case "deflector":
+        case "dunderhead":
+        case "fughettas":
+        case "hallowedness":
+        case "handhold":
+        case "kidnapees":
+        case "laterals":
+        case "nevertheless":
+        case "noursling":
+        case "oleander":
+        case "penuchi":
+        case "straightener":
+            return "That's one of the clues. Keep going.";
+    }
+}
 
 function puzzle_messages_14($answer) {
     switch ($answer) {

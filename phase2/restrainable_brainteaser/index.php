@@ -1,5 +1,5 @@
 <?php
-$questionNumber = 12;
+$questionNumber = 13;
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
@@ -9,7 +9,7 @@ $questionNumber = 12;
     <meta name="generator" content=
     "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org"/>
     <meta name="viewport" content="width=800px"/>
-    <title>Syndicated</title>
+    <title>Restrainable Brainteaser</title>
     <link rel="shortcut icon" type="image/x-icon" href="../../favicon.ico"/>
     <link rel="stylesheet" href="../../style/mystyle.css" type=
     "text/css"/>
@@ -22,13 +22,23 @@ $questionNumber = 12;
     ?>
     <div id="content_container">
         <div id="content">
-            <h2>#12: Syndicated</h2>
+            <h2>#13: Restrainable Brainteaser</h2>
 
-            <p><em>Editor's note: This puzzle had 144 possible permutations. This is the only one with a unique
-                solution. The solution can be found without any guessing. This note is not a hint.</em></p>
+            <p>Don't get sea legs on this one, or you might end up wageless.</p>
             <br/>
+            <p>CDEEFLORT</p>
+            <p>ADDDEEHNRU</p>
+            <p>AEFGHSTTU</p>
+            <p>ADEEHLLNOSSW</p>
+            <p>ADDHHLNO</p>
+            <p>ADEEIKNPS</p>
+            <p>AAELLSRT</p>
+            <p>EEEEHLNRSSTV</p>
+            <p>GILNNORSU</p>
+            <p>ADEELNOR</p>
+            <p>CEHINPU</p>
+            <p>AEEGHINRRSTT</p>
 
-            <img style="border:none;" src="syndicated.jpg" alt="Syndicated">
         </div>
     </div>
 </div>

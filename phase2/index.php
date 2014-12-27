@@ -43,6 +43,8 @@ $questionNumber = 14;
 
             <p><a href="syndicated">#12: Syndicated</a></p>
 
+            <p><a href="restrainable_brainteaser">#13: Restrainable Brainteaser</a></p>
+
         </div>
     </div>
 </div>
