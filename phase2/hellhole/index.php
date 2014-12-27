@@ -23,6 +23,9 @@ $questionNumber = 10;
     <div id="content_container">
         <div id="content">
             <h2>#10: Hellhole</h2>
+
+            <p>31st floor, going down.</p>
+            <br/>
             <img style="border:none;" src="hellhole.jpg" width="100%" alt="Hellhole">
         </div>
     </div>
