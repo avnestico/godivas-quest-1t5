@@ -34,14 +34,14 @@ function email_register($first_name, $registration_url, $email) {
  */
 function email_verify($first_name, $alias, $email) {
     $body = "$first_name,\r\n\r\n" .
-            "Thank you for registering for Godiva's Quest! Your Quest ID is $alias. Use this ID to submit your answers to puzzles.\r\n" .
+            "Thank you for completing your Godiva's Quest registration! Your Quest ID is $alias. Use this ID to submit your answers to puzzles.\r\n" .
             "You can check your progress at " . $GLOBALS['leaderboard_url'] . "\r\n" .
             "If you're having trouble, you can email " . $GLOBALS["qm_email"] . " and I'll see if I can help you.\r\n\r\n" .
             "Good luck!\r\n" .
             "Andrew Nestico,\r\n" .
             "Questmaster 1T5\r\n\r\n";
 
-    mail($email, "[Quest] Thank You For Validating Your Email Address!", $body, $GLOBALS["headers"]);
+    mail($email, "[Quest] Thank You For Verifying Your Email Address!", $body, $GLOBALS["headers"]);
 }
 
 /**
