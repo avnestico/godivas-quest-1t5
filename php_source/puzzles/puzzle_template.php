@@ -1,4 +1,33 @@
 <?php
+/**
+ * print_template
+ *
+ * Print formatted html with puzzle template.
+ *
+ * Copy everything in the next comment into a new file, changing the location of the require_once if necessary, and add
+ * the page's question, title, and content.
+ *
+ * @param $questionNumber
+ * @param $questionTitle
+ * @param $content
+ */
+
+/*
+<?php
+require_once(__DIR__ . "/../../php_source/puzzles/puzzle_template.php");
+
+$questionNumber = ; //number
+$questionTitle = ;  //string
+ob_start();
+?>
+
+// content of page goes here
+
+<?php
+print_template($questionNumber, $questionTitle, ob_get_clean());
+
+*/
+
 function print_template($questionNumber, $questionTitle, $content) {
     ?>
 
