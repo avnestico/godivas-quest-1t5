@@ -173,7 +173,10 @@ function puzzle_messages_9($answer) {
         case "morrison":
         case "morrisonhall":
         case "MO":
-            return "I don't think you've read all of the clue.";
+            return "I don't think you've read the whole clue.";
+        case "thethirdhardthingincomputerscience":
+        case "eastuoftresidencewithfiveseparatehouses":
+            return "Well, you've decoded the string. Now what?";
     }
 }
 
