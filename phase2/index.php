@@ -37,6 +37,8 @@ $questionNumber = 14;
         <div id="content">
             <h2>Crossroads</h2>
 
+            <p><a href="ratsa">#9: RATSA</a></p>
+
             <p><a href="hellhole">#10: Hellhole</a></p>
 
             <p><a href="as_the_crow_flies">#11: As The Crow Flies</a></p>

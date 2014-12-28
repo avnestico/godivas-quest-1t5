@@ -159,6 +159,23 @@ function puzzle_messages_7($answer) {
     }
 }
 
+function puzzle_messages_9($answer) {
+    switch ($answer) {
+        case "elmsley":
+        case "elmsleyhall":
+        case "EH":
+            return "Correct!";
+        case "offbyone":
+        case "offby1":
+        case "offbyoneerrors":
+        case "offby1errors":
+            return "Off-by-one errors are a pain, aren't they?";
+        case "morrison":
+        case "morrisonhall":
+        case "MO":
+            return "I don't think you've read all of the clue.";
+    }
+}
 
 function puzzle_messages_10($answer) {
     switch ($answer) {
