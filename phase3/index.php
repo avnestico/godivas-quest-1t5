@@ -24,8 +24,9 @@ $questionNumber = 21;
         <div id="content">
             <h2>The end of the Quest is upon us!</h2>
 
-            <p>All of the Quest is now open! If I were you, I'd get a move on, because only the first person to
-                complete the Quest can be named Godiva's Quest Champion!</p>
+            <p>All of the Quest is now open! Once you've solved the final puzzle of the Quest, you'll have to find me
+                somewhere on campus in order to complete the Quest and claim your prize! If I were you, I'd get a move
+                on, because only the first person to complete the Quest can be named Godiva's Quest Champion! </p>
 
             <p>Ms. Bold,<br/>
                 Godiva Industries President
@@ -35,7 +36,7 @@ $questionNumber = 21;
 
     <div id="content_container">
         <div id="content">
-            <h2>Game, Set< Match</h2>
+            <h2>Game, Set, Match</h2>
 
 
 
