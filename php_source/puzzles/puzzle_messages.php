@@ -206,6 +206,9 @@ function puzzle_messages_10($answer) {
             return "Correct!";
         case "sanfordfleming":
             return "Correct! It's ok, everyone misses the first 'd' in Sandford.";
+        case "belphegor":
+        case "1000000000000066600000000000001":
+            return "Keep going.";
     }
 }
 
@@ -259,6 +262,7 @@ function puzzle_messages_14($answer) {
     switch ($answer) {
         case "universitycollege":
             return "Correct! Congratulations on solving phase 2!";
+        case "collegeanduniversity":
         case "collegeuniversity":
         case "universityandcollege":
             return "All the answers in this phase, including this one, have something in common.";
