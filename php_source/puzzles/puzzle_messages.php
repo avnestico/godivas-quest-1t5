@@ -159,6 +159,24 @@ function puzzle_messages_7($answer) {
     }
 }
 
+function puzzle_messages_8($answer) {
+    switch ($answer) {
+        case "varsity":
+            return "Correct!";
+        case "upset":
+        case "upsets":
+            return "You're on the right track. Keep going.";
+        case "westvirginiaoklahoma":
+        case "oklahomaflorida":
+        case "purduekansas":
+        case "wisconsinucla":
+        case "michiganflorida":
+        case "texasnotredame":
+        case "kentuckyoklahoma":
+            return "That's one of the games. Keep going.";
+    }
+}
+
 function puzzle_messages_9($answer) {
     switch ($answer) {
         case "elmsley":
