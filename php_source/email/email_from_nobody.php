@@ -88,7 +88,7 @@ function email_nobody_meta_solve($num, $email) {
             break;
         case 14:
             $subject = "[Quest] This is Troubling";
-            $body = "Have you gotten into King's email yet? You really should go take a look.\r\n\r\n" .
+            $body = "I've gotten into King's email. You really should take a look at what's inside.\r\n\r\n" .
                     "This is worse than I thought. Godiva Industries isn't stopping at Godiva Week. They're looking to " .
                     "subsume and monetize practically all of engineering culture at U of T. They're plotting to buy the Skule " .
                     "trademark, for crying out loud. They're in talks with the university to raise tuition to help them afford " .
