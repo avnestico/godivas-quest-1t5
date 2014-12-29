@@ -234,7 +234,7 @@ function puzzle_messages_12($answer) {
 
 function puzzle_messages_13($answer) {
     switch ($answer) {
-        case "heart house":
+        case "hearthouse":
             return "Correct! This misspelling is deliberate in the spirit of the puzzle, but rest assured that I really want Hart House.";
         case "lw":
         case "wl":
@@ -258,7 +258,7 @@ function puzzle_messages_13($answer) {
 function puzzle_messages_14($answer) {
     switch ($answer) {
         case "universitycollege":
-            return "Correct!";
+            return "Correct! Congratulations on solving phase 2!";
         case "collegeuniversity":
         case "universityandcollege":
             return "All the answers in this phase, including this one, have something in common.";
