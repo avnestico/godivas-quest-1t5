@@ -53,9 +53,9 @@ $_SESSION['indexauth'] = $_SESSION['auth'];
                 if ($_SESSION[$user1]) {
                     print_email_table(1);
                 } else if ($_SESSION[$user2]) {
-                    echo "Logged in as user 2";
+                    print_email_table(2);
                 } else if ($_SESSION[$user3]) {
-                    echo "Logged in as user 3";
+                    print_email_table(3);
                 } else {
                     echo "Login error";
                 }
