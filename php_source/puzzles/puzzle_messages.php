@@ -268,3 +268,44 @@ function puzzle_messages_14($answer) {
             return "All the answers in this phase, including this one, have something in common.";
     }
 }
+
+function puzzle_messages_15($answer) {
+    switch ($answer) {
+        case "djikstra":
+            return "Correct!";
+        case "wcyeprtq":
+        case "dlrllafe":
+        case "wftffqlk":
+        case "lyntofoa":
+        case "figroloq":
+        case "leldrfla":
+        case "fkfwtlfq":
+            return "That doesn't make sense. You must have decoded something incorrectly.";
+        case "zelda":
+        case "legendofzelda":
+        case "supermariorpg":
+        case "bravefencermusashi":
+        case "ocarinaoftime":
+        case "legendofzeldaocarinaoftime":
+        case "papermario":
+        case "legendofzeldaoracleofseasons":
+        case "oracleofseasons":
+        case "legendofzeldaminishcap":
+        case "minishcap":
+        case "papermariostickerstar":
+        case "stickerstar":
+            return "You're on the right path. Keep going.";
+    }
+}
+
+function puzzle_messages_21($answer) {
+    switch ($answer) {
+        case "serena":
+            return "Correct!";
+        case "aneres":
+            return "I don't think it's possible to get any closer to the answer without actually getting it.";
+        case "tennis":
+        case "associationoftennisprofessionals":
+            return "Keep going.";
+    }
+}

@@ -40,14 +40,14 @@ $body[11] = $body[0] . "11: As The Crow Flies!";
 $body[12] = $body[0] . "12: Syndicated!";
 $body[13] = $body[0] . "13: Restrainable Brainteaser!";
 $body[14] = $body[0] . "14: Crossroads!";
-$body[15] = $body[0] . "15: !";
+$body[15] = $body[0] . "15: No Turning Back!";
 $body[16] = $body[0] . "16: !";
 $body[17] = $body[0] . "17: !";
 $body[18] = $body[0] . "18: !";
 $body[19] = $body[0] . "19: !";
 $body[20] = $body[0] . "20: !";
-$body[21] = $body[0] . "21: !";
-$body[22] = "Congratulations! You've solved all of the Phase 3 puzzles! Now go win that Quest!";
+$body[21] = $body[0] . "21: Game, Set, Match!";
+$body[22] = "Congratulations! You've solved the final puzzle! The only thing left to do is win the Quest!";
 
 $numPuzzles = sizeof($body) - 1;
 
