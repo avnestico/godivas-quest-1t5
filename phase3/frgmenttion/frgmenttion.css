@@ -1,0 +1,53 @@
+i {
+    display: block;
+    margin: 5px 0px 10px;
+    font-size: smaller;
+}
+
+ins {
+    display: block;
+    margin: 0px 10px 20px;
+}
+
+ol {
+    position: absolute;
+    left: 625px;
+    width: 200px;
+    top: 565px;
+    font-size: smaller;
+}
+
+p {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0px;
+}
+
+s {
+    display: table;
+    margin: 10px 0px;
+}
+
+table {
+    border: groove;
+    border-color: inherit;
+    margin: 16px 0px;
+}
+
+th {
+    font-size: x-large;
+    padding: 8px;
+}
+
+u {
+    font-size: 10px;
+    display: table;
+    margin: 0px;
+}
+
+#eeighty {
+    display: block;
+    float: left;
+    text-align: right;
+    margin-top: 60px;
+}

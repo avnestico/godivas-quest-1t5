@@ -298,6 +298,15 @@ function puzzle_messages_15($answer) {
     }
 }
 
+function puzzle_messages_16($answer) {
+    switch ($answer) {
+        case "federatin":
+            return "Correct!";
+        case "becominunited":
+            return "You're very close.";
+    }
+}
+
 function puzzle_messages_21($answer) {
     switch ($answer) {
         case "serena":

@@ -29,8 +29,7 @@ print_template($questionNumber, $questionTitle, ob_get_clean());
 */
 
 function print_template($questionNumber, $questionTitle, $content) {
-    ?>
-
+?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -58,6 +57,5 @@ function print_template($questionNumber, $questionTitle, $content) {
     </div>
 </body>
 </html>
-
-    <?php
+<?php
 }
