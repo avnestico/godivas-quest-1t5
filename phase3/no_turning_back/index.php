@@ -24,7 +24,7 @@ The prince of darkness has taken everything from you, including your princess. S
 
 <img src="no_turning_back.jpg" alt="No Turning Back">
 
-<p>P.S. If there are multiple entrances, assume you're entering from the East.</p>
+<p>P.S. If there are multiple entrances, assume that you entered from the East.</p>
 
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
