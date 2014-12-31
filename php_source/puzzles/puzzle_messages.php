@@ -163,6 +163,9 @@ function puzzle_messages_8($answer) {
     switch ($answer) {
         case "varsity":
             return "Correct!";
+        case "collegefootball":
+        case "football":
+        case "ncaafootball":
         case "upset":
         case "upsets":
             return "You're on the right track. Keep going.";
@@ -255,6 +258,8 @@ function puzzle_messages_13($answer) {
         case "penuchi":
         case "straightener":
             return "That's one of the clues. Keep going.";
+        case "housefather":
+            return "Almost there.";
     }
 }
 
@@ -313,8 +318,9 @@ function puzzle_messages_21($answer) {
             return "Correct!";
         case "aneres":
             return "I don't think it's possible to get any closer to the answer without actually getting it.";
-        case "tennis":
         case "associationoftennisprofessionals":
+        case "atpworldtour":
+        case "tennis":
             return "Keep going.";
     }
 }
