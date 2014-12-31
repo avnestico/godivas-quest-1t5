@@ -38,5 +38,13 @@ ob_start();
     </li>
 </ul>
 
+<p>Nobody else even comes to this stupid thing any more. Why do we still bother?</p>
+
+            </div>
+        </div>
+
+        <div id="content_container">
+            <div id="modification">
+                Modification (Dec 31, 12:00 a.m. EST): A line has been added to the end of this puzzle.
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());

@@ -242,6 +242,11 @@ ul {
     padding: 0px 7px 0px;
 }
 
+#modification {
+    padding: 16px 7px;
+    font-style: italic;
+}
+
 /* Leaderboard cells displaying a single character */
 
 #small_cell {
