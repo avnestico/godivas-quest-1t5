@@ -10,7 +10,6 @@ ob_start();
     We're leveraging the monetization of our minimum viable product in order to pivot at a 45 degree angle.
     No, the words don't mean a thing, why do you ask?
 </p>
-<br/>
 
 <ul>
     <li>

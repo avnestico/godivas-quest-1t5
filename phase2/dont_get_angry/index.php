@@ -12,7 +12,6 @@ ob_start();
     item that each of us are expected to bring. Us young'uns have decided that it's easier to just comply with what
     we're asked to do than to question it and risk disrupting the delicate family balance. The list is:
 </p>
-<br/>
 
 <ul>
     <li>

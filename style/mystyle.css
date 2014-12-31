@@ -118,6 +118,10 @@ input {
     margin: 6px 0px;
 }
 
+ul {
+    margin: 25px 0px;
+}
+
 #container {
     margin: 0px auto;
     width: 768px;
