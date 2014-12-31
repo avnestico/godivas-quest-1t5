@@ -25,10 +25,15 @@ $questionNumber = 14;
             <h2>Welcome to phase two of the Quest!</h2>
 
             <p>Godiva Industries is proud of all the progress that's been made so far. We're glad you're enjoying the
-                Quest, and we hope you continue solving those puzzles! Good luck!</p>
+                Quest, and we hope you continue solving those puzzles! Good luck!
+            </p>
 
             <p>Peter King,<br/>
                 Godiva Industries Director of University Affairs
+            </p>
+
+            <p>P.S. There are fewer intermediate hints in this round than the first round. Don't give up on a lead just
+                because you don't get a notification every step of the way.
             </p>
         </div>
     </div>
