@@ -320,6 +320,19 @@ function puzzle_messages_16($answer) {
     }
 }
 
+function puzzle_messages_19($answer) {
+    switch ($answer) {
+        case "notchile":
+            return "Correct!";
+        case "chile":
+            return "I don't think that's correct";
+        case "answerisnotchile":
+            return "So what's the answer, then?";
+        case "boggle":
+            return "Keep going.";
+    }
+}
+
 function puzzle_messages_21($answer) {
     switch ($answer) {
         case "serena":
