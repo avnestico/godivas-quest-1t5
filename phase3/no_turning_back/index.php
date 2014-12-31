@@ -22,7 +22,7 @@ The prince of darkness has taken everything from you, including your princess. S
 <p>It's dangerous to go alone. Take this in your left hand.</p>
 <br/>
 
-<img src="no_turning_back.jpg" alt="No Turning Back">
+<img src="no_turning_back.png" alt="No Turning Back">
 
 <p>P.S. If there are multiple entrances, assume that you entered from the East.</p>
 
