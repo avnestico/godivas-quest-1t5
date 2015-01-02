@@ -333,6 +333,25 @@ function puzzle_messages_19($answer) {
     }
 }
 
+function puzzle_messages_20($answer) {
+    switch ($answer) {
+        case "warrior":
+            return "Correct!";
+        case "waterloowarrior":
+            return "I just want the team name, not the university.";
+        case "warriors":
+        case "waterloowarriors":
+            return "Note that there's no Pidgey at the end of the last team.";
+        case "periodictable":
+            return "You're on the right track. Keep going";
+        case "shiny":
+        case "shinygastly":
+        case "shinyrhyhorn":
+        case "shinyoddish":
+            return "Why are those pokemon shiny?";
+    }
+}
+
 function puzzle_messages_21($answer) {
     switch ($answer) {
         case "serena":

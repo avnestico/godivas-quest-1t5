@@ -44,6 +44,8 @@ $questionNumber = 21;
 
             <p><a href="mind-boggling">#19: Mind-Boggling</a></p>
 
+            <p><a href="elementary">#20: Elementary</a></p>
+
         </div>
     </div>
 </div>
