@@ -44,8 +44,8 @@ $body[15] = $body[0] . "15: No Turning Back!";
 $body[16] = $body[0] . "16: Frgmenttion!";
 $body[17] = $body[0] . "17: !";
 $body[18] = $body[0] . "18: !";
-$body[19] = $body[0] . "19: !";
-$body[20] = $body[0] . "20: !";
+$body[19] = $body[0] . "19: Mind-Boggling!";
+$body[20] = $body[0] . "20: Elementary!";
 $body[21] = $body[0] . "21: Game, Set, Match!";
 $body[22] = "Congratulations! You've solved the final puzzle! The only thing left to do is win the Quest!";
 

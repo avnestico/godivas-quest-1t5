@@ -13,7 +13,7 @@ ob_start();
 
 <img src="019.png"/><img src="053.png"/><img src="043.png"/><img src="002.png"/><img src="007.png"/><img src="068.png"/><br/>
 
-<img src="092.png"/><img src="007.png"/><img src="053.png"/><br/>
+<img src="092.png"/><img src="028.png"/><img src="016.png"/><br/>
 
 <img src="032.png"/><img src="007.png"/><img src="068.png"/><img src="053.png"/><img src="006.png"/><br/>
 
@@ -24,6 +24,8 @@ ob_start();
 <img src="008.png"/><img src="045.png"/><img src="008.png"/><img src="008.png"/><img src="015.png"/><img src="016.png"/><br/>
 
 <img src="015.png"/><img src="057.png"/><img src="039.png"/><img src="068.png"/>
+
+<p>Also, be aware that the penultimate battle is the only double battle.</p>
 
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
