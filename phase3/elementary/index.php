@@ -6,7 +6,7 @@ $questionTitle = "Elementary";
 ob_start();
 ?>
 
-<p>You must battle each of the following teams in order to become the champion. Remember, the only real pokemon are the
+<p>You must defeat each of these eight gyms in order to become the champion. Remember, the only real pokemon are the
     original 118.</p><br/>
 
 <img src="057.png"/><img src="111.png"/><img src="068.png"/><br/>
