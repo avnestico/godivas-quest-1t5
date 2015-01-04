@@ -320,6 +320,54 @@ function puzzle_messages_16($answer) {
     }
 }
 
+function puzzle_messages_18($answer) {
+    switch ($answer) {
+        case "natale":
+            return "Correct!";
+        case "italianchristmas":
+            return "Well?";
+        case "thisisredherring":
+        case "redherring":
+        case "herring":
+            return "Sorry.";
+        // Fish
+        case "trout":
+        case "haddock":
+        case "icefish":
+        case "sawfish":
+        case "ide":
+        case "salmon":
+        case "ray":
+        case "eel":
+        case "damselfish":
+        case "halibut":
+        case "escolar":
+        case "rainbowfish":
+        case "rockfish":
+        case "inaga":
+        case "needlefish":
+        case "grouper":
+        // Athletes on the Marlins or Dolphins
+        case "incognito":
+        case "treanor":
+        case "alvarez":
+        case "little":
+        case "infante":
+        case "alou":
+        case "nen":
+        case "csonka":
+        case "harvey":
+        case "ramirez":
+        case "izzo":
+        case "stephenson":
+        case "tannehill":
+        case "marino":
+        case "aquino":
+        case "sheffield":
+            return "That's one of the fish. Keep going.";
+    }
+}
+
 function puzzle_messages_19($answer) {
     switch ($answer) {
         case "notchile":
