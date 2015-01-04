@@ -369,6 +369,7 @@ function puzzle_messages_18($answer) {
         case "badjokeeel":
         case "badjokeel":
             $jokes = [
+                "What's green, hangs on a wall, and whistles? ... A red herring! (The joke is longer, but the rest of it would be too distracting)",
                 "What do you call a fish with no eyes? ... A fsh!",
                 "Why do seagulls fly over the sea? ... Because if they flew over the bay, they'd be bagels!",
                 "How much did the pirate pay for his piercing? ... A buck-an-ear!",
