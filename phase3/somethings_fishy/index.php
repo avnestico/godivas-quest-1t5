@@ -15,11 +15,12 @@ shuffle($fish);
 $break = 0;
 
 foreach ($fish as $i) {
-    echo("<a href='0$i.jpg'><img style='vertical-align: middle' src='$i.jpg' width='25%'/></a>");
+    if ($break % 4 == 0) echo('<div style="margin-bottom: 10px;">');
+
+    echo("<a href='$i.jpg'><img style='vertical-align: middle' src='$i.jpeg' width='25%'/></a>");
+
     $break += 1;
-    if ($break % 4 == 0) {
-        echo("<p></p>\n");
-    }
+    if ($break % 4 == 0) echo("</div>");
 }
 ?>
 
