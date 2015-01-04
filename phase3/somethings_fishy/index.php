@@ -17,7 +17,7 @@ $break = 0;
 foreach ($fish as $i) {
     if ($break % 4 == 0) echo('<div style="margin-bottom: 10px;">');
 
-    echo("<a href='$i.jpg'><img style='vertical-align: middle' src='$i.jpeg' width='25%'/></a>");
+    echo("<a href='../something_fishy/$i.jpg'><img style='vertical-align: middle' src='$i.jpg' width='25%'/></a>");
 
     $break += 1;
     if ($break % 4 == 0) echo("</div>");
