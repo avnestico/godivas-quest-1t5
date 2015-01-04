@@ -1,1 +1,1 @@
-RedirectMatch 301 /$ /1T5/phase3/somethings_fishy
+RedirectMatch 301 something_fishy/$ /1T5/phase3/somethings_fishy
