@@ -365,6 +365,26 @@ function puzzle_messages_18($answer) {
         case "aquino":
         case "sheffield":
             return "That's one of the fish. Keep going.";
+        // Bad jokes. Also cover for likely typo.
+        case "badjokeeel":
+        case "badjokeel":
+            $jokes = [
+                "What do you call a fish with no eyes? ... A fsh!",
+                "Why do seagulls fly over the sea? ... Because if they flew over the bay, they'd be bagels!",
+                "How much did the pirate pay for his piercing? ... A buck-an-ear!",
+                "What do you call a fish with a tie? ... Sofishticated!",
+                "Where do fish go to get risky credit? ... A loan shark!",
+                "Why do fish always know what they weigh? ... They have their own scales!",
+                "What did the salmon say when he crashed into the wall? ... Dam!",
+                "Did you hear about the goldfish who went bankrupt? ... He's a bronze fish now.",
+                "Why are fish such intelligent creatures? ... Because they always swim in schools!",
+                "Why did the whale cross the road? ... To get to the other tide!",
+                "What do you get when you cross an abbot and a trout? ... A monkfish!",
+                "What do you call a big fish who makes you an offer you can't refuse? .. The Codfather!",
+                "What's the best way to communicate with a fish? ... Drop it a line!",
+                "Two fish are swimming in a tank. One turns to the other and asks, 'how the hell do you drive this thing?!'"
+            ];
+            return $jokes[array_rand($jokes)];
     }
 }
 
