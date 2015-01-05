@@ -266,6 +266,19 @@ function puzzle_messages_13($answer) {
         case "penuchi":
         case "straightener":
             return "That's one of the clues. Keep going.";
+        case "coldfeet":
+        case "redhanded":
+        case "hateguts":
+        case "swollenhead":
+        case "oldhand":
+        case "skindeep":
+        case "allears":
+        case "steelnerves":
+        case "ironlung":
+        case "lendear":
+        case "chinup":
+        case "heartstring":
+            return "Keep going";
         case "housefather":
             return "Almost there.";
     }

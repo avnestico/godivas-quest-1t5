@@ -8,18 +8,18 @@ ob_start();
 
 <p>Don't get sea legs on this one, or you might end up wageless.</p>
 <br/>
-<p>CDEEFLORT</p>
-<p>ADDDEEHNRU</p>
-<p>AEFGHSTTU</p>
-<p>ADEEHLLNOSSW</p>
-<p>ADDHHLNO</p>
-<p>ADEEIKNPS</p>
 <p>AAELLSRT</p>
-<p>EEEEHLNRSSTV</p>
+<p>CEHINPU</p>
+<p>CDEEFLORT</p>
+<p>AEFGHSTTU</p>
+<p>AEEGHINRRSTT</p>
 <p>GILNNORSU</p>
 <p>ADEELNOR</p>
-<p>CEHINPU</p>
-<p>AEEGHINRRSTT</p>
+<p>ADDHHLNO</p>
+<p>ADDDEEHNRU</p>
+<p>ADEEIKNPS</p>
+<p>EEEEHLNRSSTV</p>
+<p>ADEEHLLNOSSW</p>
 
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
