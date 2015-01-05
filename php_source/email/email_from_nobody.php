@@ -11,11 +11,12 @@ include_once(__DIR__ . "/../global_functions.php");
  * @return mixed
  */
 function phase_three_row($row) {
+    $new_row = $row;
     for ($i = 1; $i < 15; $i++) {
-        unset($row["Q" . $i]);
+        $new_row["Q" . $i] = "";
     }
-    unset($row["Q21"]);
-    return $row;
+    $new_row["Q21"] = "";
+    return $new_row;
 }
 
 /**
