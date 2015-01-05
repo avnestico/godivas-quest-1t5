@@ -21,5 +21,13 @@ ob_start();
 <p>EEEEHLNRSSTV</p>
 <p>ADEEHLLNOSSW</p>
 
+            </div>
+        </div>
+
+        <div id="content_container">
+            <div id="modification">
+                Modification (Jan 4, 10:00 p.m. EST): The order of this puzzle's clues has been changed, and some
+                intermediate clues have been added. Please submit your intermediate answers again.
+
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
