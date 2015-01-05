@@ -31,6 +31,12 @@ $questionNumber = 21;
             <p>Ms. Bold,<br/>
                 Godiva Industries President
             </p>
+
+            <p>
+                P.S. You <strong>do not</strong> need to solve every puzzle to complete the Quest (or even to complete
+                a phase's meta puzzle!), but solving every puzzle and doing nothing else <strong>isn't enough</strong>
+                to complete the Quest. If you find yourself stuck, look back at the rest of the Quest to move forward.
+            </p>
         </div>
     </div>
 

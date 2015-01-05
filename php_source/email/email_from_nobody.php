@@ -63,13 +63,16 @@ function email_nobody_first_solve($email) {
 }
 
 function email_nobody_phase_three($email) {
-    $subject = "[Quest] FWD: See You In Court";
+    $subject = "[Quest] #22: FWD: See You In Court";
     $body = "If I were you, I’d make sure your cells are energized.\r\n\r\n" .
             "Our mutual friend Bold isn’t very happy with people snooping around her site, and she’s letting people know " .
             "it. She’s always been a fan of reversing things for her own benefit, so I think you need to end this " .
             "quickly, before she can turn the tables.\r\n\r\n" .
             "The end is close,\r\n" .
-            "Nobody";
+            "Nobody\r\n\r\n" .
+            "P.S. Don't be surprised if you don't hear from me again for a while.\r\n" .
+            "P.P.S I've left you a hidden note on the hints page. It's possible that you've already found what " .
+            "I'm hinting towards, however.";
     $headers = $GLOBALS['nobody'];
 
     mail($email, $subject, $body, $headers);
@@ -101,7 +104,7 @@ function email_nobody_meta_solve($num, $email) {
             $subject = "[Quest] Go Go Go!";
             $body = "You know what to do.\r\n\r\n" .
                     "That's it! Godiva Industries ends today. This 'Bold' character is going down, once and for all. " .
-                    "Get to her first, and you'll have won the Quest.\r\n\r\n" .
+                    "Get to her first, and you'll have won the Quest and saved Godiva Week!\r\n\r\n" .
                     "Congratulations,\r\n" .
                     "Nobody";
             break;
