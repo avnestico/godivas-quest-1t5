@@ -26,8 +26,7 @@ ob_start();
 
         <div id="content_container">
             <div id="modification">
-                Modification (Jan 4, 10:00 p.m. EST): The order of this puzzle's clues has been changed, and some
-                intermediate clues have been added. Please submit your intermediate answers again.
-
+                <p>Modification (Jan 4, 10:30 p.m. EST): The order of this puzzle's clues has been changed, and some
+                intermediate clues have been added. Please submit your intermediate answers again.<p>
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
