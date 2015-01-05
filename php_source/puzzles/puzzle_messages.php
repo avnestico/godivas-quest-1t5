@@ -317,6 +317,19 @@ function puzzle_messages_16($answer) {
             return "Correct!";
         case "becominunited":
             return "You're very close.";
+        case "4265636f6d696e2720556e69746564":
+            return "Keep going";
+    }
+}
+
+function puzzle_messages_17($answer) {
+    switch($answer) {
+        case "marries":
+            return "Correct!";
+        case "carsandladies":
+            return "Unbeknownst to the boys, the cars and ladies had a toast too!";
+        case "wedsorhitches":
+            return "Go on...";
     }
 }
 
