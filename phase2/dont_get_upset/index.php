@@ -2,39 +2,36 @@
 require_once(__DIR__ . "/../../php_source/puzzles/puzzle_template.php");
 
 $questionNumber = 8;
-$questionTitle = "Don't Get Angry";
+$questionTitle = "Don't Get Upset";
 ob_start();
 ?>
 
 <p>
-    The year is 2036, and it's time for the annual Smith family potluck. We all get together at our alma mater,
-    celebrate the good times, and have a meal as a family. This is no ordinary potluck, however; there's a very specific
-    item that each of us are expected to bring. Us young'uns have decided that it's easier to just comply with what
-    we're asked to do than to question it and risk disrupting the delicate family balance. The list is:
+    The year is 2036, and my friends and I are going back to our alma mater this weekend. We're there to watch the
+    college football postseason, and each of us is expected to bring a specific item:
 </p>
 
 <ul>
     <li>
-        My 28-year old cousin, Adam, brings five party favours
+        My 28-year-old buddy, Adam, brings supplies for five fiestas
     </li>
     <li>
-        Adam's twin, Erica, brings her parents' two American credit cards
+        Adam's twin, Erica, brings two Capital One credit cards
     </li>
     <li>
-        My 35-year old sister, Becca, brings four citrus cupcakes
+        My 35-year-old wife, Becca, brings four orange cupcakes
     </li>
     <li>
-        I, two years my sister's senior, bring seven flower bouquets and sign them with my name, David
+        I, two years my wife's senior, bring seven rose bouquets and sign them with my name, David
     </li>
     <li>
-        My brother Chris, born a year before me, brings three memorials for revolutionary wars
+        My friend Chris, born a year before me, brings three Alamo memorials
     </li>
     <li>
-        My aunt Francis, age 58, brings a soft, fluffy shrub
+        My old professor Francis, age 58, brings a cotton shrub
     </li>
     <li>
-        And my grandfather (affectionately known as grandpa) whose family was already running Smith family potlucks when
-        he was born 85 years ago, brings 8 ounces of sweet, soluble carbs
+        And my grandfather (affectionately known as grandpa), born 85 years ago, brings 8 ounces of sugar
     </li>
 </ul>
 
@@ -45,6 +42,8 @@ ob_start();
 
         <div id="content_container">
             <div id="modification">
-                Modification (Dec 31, 12:00 a.m. EST): A line has been added to the end of this puzzle.
+                Modification (Dec 31, 12:00 a.m. EST): A line has been added to the end of this puzzle.<br/>
+                Modification (Jan 4, 10:00 p.m. EST): This puzzle's name has been changed from "Don't Get Angry" and
+                its structure has been simplified.
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());

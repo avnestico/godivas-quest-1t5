@@ -163,6 +163,10 @@ function puzzle_messages_8($answer) {
     switch ($answer) {
         case "varsity":
             return "Correct!";
+        case "bowlgames":
+        case "bowls":
+        case "collegebowl":
+        case "collegebowls":
         case "collegefootball":
         case "football":
         case "ncaafootball":
@@ -177,14 +181,6 @@ function puzzle_messages_8($answer) {
         case "texasnotredame":
         case "kentuckyoklahoma":
             return "That's one of the games. Keep going.";
-        case "fiestabowl":
-        case "capitalonebowl":
-        case "orangebowl":
-        case "rosebowl":
-        case "alamobowl":
-        case "cottonbowl":
-        case "sugarbowl":
-            return "That's one of the bowls. Keep going.";
     }
 }
 
