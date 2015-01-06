@@ -254,12 +254,12 @@ function puzzle_messages_13($answer) {
         case "fughettas":
         case "hallowedness":
         case "handhold":
-        case "kidnapees":
         case "laterals":
         case "nevertheless":
         case "noursling":
         case "oleander":
         case "penuchi":
+        case "stallages":
         case "straightener":
             return "That's one of the clues. Keep going.";
         case "coldfeet":
@@ -267,12 +267,12 @@ function puzzle_messages_13($answer) {
         case "hateguts":
         case "swollenhead":
         case "oldhand":
-        case "skindeep":
         case "allears":
         case "steelnerves":
         case "ironlung":
         case "lendear":
         case "chinup":
+        case "lastlegs":
         case "heartstring":
             return "Keep going";
         case "housefather":
@@ -324,8 +324,10 @@ function puzzle_messages_16($answer) {
     switch ($answer) {
         case "federatin":
             return "Correct!";
+        case "confederatin":
+            return "Be less negative!";
         case "becominunited":
-            return "You're very close.";
+            return "You're very close. Think on a country-sized scale.";
         case "4265636f6d696e2720556e69746564":
             return "Keep going";
     }
@@ -339,13 +341,17 @@ function puzzle_messages_17($answer) {
             return "Unbeknownst to the boys, the cars and ladies had a toast too!";
         case "wedsorhitches":
             return "Go on...";
+        case "couples":
+        case "joins":
+        case "unites":
+            return "Pick a different synonym.";
     }
 }
 
 function puzzle_messages_18($answer) {
     switch ($answer) {
         case "natale":
-            return "Correct!";
+            return "Correct! P.S. submit 'bad joke eel' as an answer to this puzzle if you want to take a break from puzzle solving.";
         case "italianchristmas":
             return "Well?";
         case "thisisredherring":

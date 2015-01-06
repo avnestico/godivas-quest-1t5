@@ -11,8 +11,8 @@ ob_start();
 <p>AAELLSRT</p>
 <p>CEHINPU</p>
 <p>CDEEFLORT</p>
-<p>AEFGHSTTU</p>
 <p>AEEGHINRRSTT</p>
+<p>AAEGLLTSS</p>
 <p>GILNNORSU</p>
 <p>ADEELNOR</p>
 <p>ADDHHLNO</p>
@@ -28,5 +28,8 @@ ob_start();
             <div id="modification">
                 <p>Modification (Jan 4, 10:30 p.m. EST): The order of this puzzle's clues has been changed, and some
                 intermediate clues have been added. Please submit your intermediate answers again.<p>
+                <p>Modification (Jan 6, 1:30 a.m. EST): Due to an ambiguity, the fourth clue in the puzzle has been
+                removed and replaced with what is now the fifth clue. The rest of the puzzle, including the solution,
+                is unchanged.</p>
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
