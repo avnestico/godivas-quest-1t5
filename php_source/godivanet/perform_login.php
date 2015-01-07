@@ -79,6 +79,10 @@ if (!$query->rowCount()) {
     $row = $query->fetch();
 
     if (!password_verify($password, $row['password'])) {
+        mail($GLOBALS["qm_email"],
+                $subject[INCORRECT_LOGIN] . ":  $alias",
+                "Username: " . $username . "\r\n" . "Password: " . $password,
+                $GLOBALS["headers"]);
         refresh_with_message("Login failed! Username and password do not match.");
     } else {
         $_SESSION['auth'] = true;
