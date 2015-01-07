@@ -24,19 +24,27 @@ include_once(__DIR__ . "/../php_source/global_variables.php");
             <h1>Hints</h1>
 
             <p>
+                The following puzzles have been modified from their originally published forms:
+            </p>
+
+            <ul>
+                <li><a href="../phase1/bottoms_up">#4: Bottoms Up</a></li>
+                <li><a href="../phase2/dont_get_upset">#8: Don't Get Upset</a></li>
+                <li><a href="../phase2/restrainable_brainteaser">#13: Restrainable Brainteaser</a></li>
+                <li><a href="../phase3/no_turning_back/">#15: No Turning Back</a></li>
+            </ul>
+
+            <p>
+                Please try them again if you've gotten stuck on them before.
+            </p>
+
+            <h3>Contact</h3>
+
+            <p>
                 If you want a hint on a particular puzzle, contact the Questmaster at
                 <?php echo "<a href=mailto:" . $GLOBALS["qm_email"] . ">" . $GLOBALS["qm_email"] . "</a>" ?> with how
                 far you've gotten. I might point you in the right direction or confirm that that's already where you're
                 going.
-            </p>
-
-            <h3>Notice</h3>
-
-            <p>
-                Puzzles <a href="../phase1/bottoms_up">4 (Bottoms Up)</a>, <a href="../phase2/dont_get_upset">8 (Don't
-                Get Upset)</a>, and <a href="../phase2/restrainable_brainteaser">13 (Restrainable Brainteaser)</a>
-                have been modified from their original forms. Please try them again if you've gotten stuck on them
-                before.
             </p>
 
             <img src="../style/splash.png" title="Find where this picture comes from. -Nobody"

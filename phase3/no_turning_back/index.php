@@ -13,7 +13,7 @@ The prince of darkness has taken everything from you, including your princess. S
     <li>A comet piece</li>
     <li>Geno</li>
     <li>The Graveyard</li>
-    <li>A jail cell's key</li>
+    <li>The key to unlock Jon's stocks (found in a different graveyard)</li>
     <li>The Royal Crypt</li>
     <li>Sacred Forest Meadow</li>
     <li>Tarm Ruins</li>
@@ -25,6 +25,13 @@ The prince of darkness has taken everything from you, including your princess. S
 <img src="no_turning_back.png" alt="No Turning Back">
 
 <p>P.S. If there are multiple entrances, assume that you entered from the East.</p>
+
+            </div>
+        </div>
+
+        <div id="content_container">
+            <div id="modification">
+                <p>Modification (Jan 6, 11:30 a.m. EST): There was an error in the fifth clue. It has been fixed.</p>
 
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());

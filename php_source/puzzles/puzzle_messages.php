@@ -305,6 +305,7 @@ function puzzle_messages_15($answer) {
             return "That doesn't make sense. You must have decoded something incorrectly.";
         case "zelda":
         case "legendofzelda":
+        case "thelegendofzelda":
         case "supermariorpg":
         case "bravefencermusashi":
         case "ocarinaoftime":
@@ -397,6 +398,10 @@ function puzzle_messages_18($answer) {
         case "badjokeeel":
         case "badjokeel":
             $jokes = [
+                // Copy red herring joke multiple times so people get it more often.
+                "What's green, hangs on a wall, and whistles? ... A red herring! (The joke is longer, but the rest of it would be too distracting)",
+                "What's green, hangs on a wall, and whistles? ... A red herring! (The joke is longer, but the rest of it would be too distracting)",
+                "What's green, hangs on a wall, and whistles? ... A red herring! (The joke is longer, but the rest of it would be too distracting)",
                 "What's green, hangs on a wall, and whistles? ... A red herring! (The joke is longer, but the rest of it would be too distracting)",
                 "What do you call a fish with no eyes? ... A fsh!",
                 "Why do seagulls fly over the sea? ... Because if they flew over the bay, they'd be bagels!",
@@ -452,7 +457,7 @@ function puzzle_messages_20($answer) {
 function puzzle_messages_21($answer) {
     switch ($answer) {
         case "serena":
-            return "Correct!";
+            return "Correct! Congratulations on solving phase 3, but you're not done yet! You need to do one more thing before you've finished the Quest. You may have already found out what that is, but if you haven't, you'll need to backtrack and figure out what you missed.";
         case "aneres":
             return "I don't think it's possible to get any closer to the answer without actually getting it.";
         case "associationoftennisprofessionals":
