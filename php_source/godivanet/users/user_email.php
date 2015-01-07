@@ -18,7 +18,7 @@ function get_email($num) {
                     "from" => "IT Manager",
                     "subject" => "Re: Re: How are things going?",
                     "body" => "Pete,<br/><br/>" .
-                            "That's horrible! I've got to tell her to change her password!<br/><br/>" .
+                            "That's horrible! I've got to tell her to change her password! I doubt she'll listen, though.<br/><br/>" .
                             "Dave<br/><br/>" .
                             "P.S. It's times like this that make me glad my account can't be accessed from the web portal.<br/><br/>" .
                             "| Dave,<br/>|<br/>" .
@@ -29,7 +29,9 @@ function get_email($num) {
                             "| Bold is a master of her craft. She's playing the administration like a<br/>" .
                             "| fiddle while keeping the students happy. She's got some plans cooking<br/>" .
                             "| in her email inbox - she told me her password is her real name, so if<br/>" .
-                            "| you want to stay up to date with what's going on, just log in as her.<br/>|<br/>" .
+                            "| you want to stay up to date with what's going on, just log in as her.<br/>" .
+                            "| Side note, I kinda love how she derived her code name from her real<br/>" .
+                            "| name.<br/>|<br/>" .
                             "| Pete<br/>|<br/>" .
                             "| | Hi Pete,<br/>| |<br/>" .
                             "| | Just checking in on the Quest. How are our plans for the University?<br/>" .
