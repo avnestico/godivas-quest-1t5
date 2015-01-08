@@ -369,7 +369,7 @@ function puzzle_messages_18($answer) {
         case "escolar":
         case "rainbowfish":
         case "rockfish":
-        case "inaga":
+        case "inanga":
         case "needlefish":
         case "grouper":
         // Athletes on the Marlins or Dolphins
