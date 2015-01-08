@@ -13,7 +13,7 @@ s<i>x<th>numbersix</th>letter
 tw</i>cea<s>gooda</s><th>reedee
 l<ol>s<i>xtyn</i>nel</ol>
 </th>esecond<p>r<i>mescube
-one<s>core<a>ndzeroye</a>r</s>ago
+one<s>core<a>ndzeroye</a>r</s>
 v</i>etn<a>mw</a>rbeg<ins>
 </ins>e<!--rttwopai-->r<!--sbefo-->r<!--eprevi-->o<!--ustwo-->r<!--eversed-->
 <s>econdmo</s>tf<a>mous</a>k

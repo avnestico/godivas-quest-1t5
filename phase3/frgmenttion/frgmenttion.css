@@ -11,10 +11,9 @@ ins {
 
 ol {
     position: absolute;
-    left: 625px;
-    width: 200px;
-    top: 565px;
+    bottom: 240px;
     font-size: smaller;
+    text-align: center;
 }
 
 p {
