@@ -11,6 +11,7 @@ include_once(__DIR__ . "/../global_variables.php");
 <div id="left_sidebar">
     <?php
     include_once(__DIR__ . "/form_puzzle_submit.php");
+    display_submit_form();
     include_once(__DIR__ . "/../header_data.php");
     ?>
 </div>

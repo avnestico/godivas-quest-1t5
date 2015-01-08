@@ -85,7 +85,7 @@ function int_to_uoft_year($int) {
         display_header_link("winners", "Winners", false);
         display_header_link("godivanet", "GodivaNet", false);
         ?>
-    </b><br/>
+    </b>
 </div>
 
 <div class="box_container">
@@ -93,6 +93,5 @@ function int_to_uoft_year($int) {
 
     <p class="center">
         <?php display_past_quests("0T7"); ?>
-        <br/>
     </p>
 </div>

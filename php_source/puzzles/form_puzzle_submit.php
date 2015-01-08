@@ -1,8 +1,9 @@
 <?php
 include_once(__DIR__ . "/../global_variables.php");
-?>
 
-<div class="box_container">
+function get_submit_form() {
+    global $questionNumber;
+    ?>
     <h3>Submit</h3>
     <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/submit_enter.js' . '"' ?>></script>
     <form name="final_answer"
@@ -21,5 +22,24 @@ include_once(__DIR__ . "/../global_variables.php");
         <input name="question" type="hidden" value="<?php echo $questionNumber ?>"/>
         <input name="questionUrl" type="hidden" value="<?php echo $_SERVER['PHP_SELF'] . '/../' ?>"/>
     </form>
-    <br/>
-</div>
+    <?php
+}
+
+function get_solution_link() {
+    ?>
+
+        <h3>Solution</h3>
+        <a href="solution.html"><b>View Solution</b></a>
+    <?php
+}
+
+
+function display_submit_form($solution = false) {
+    echo('<div class="box_container">');
+    if (!$solution) {
+        get_submit_form();
+    } else {
+        get_solution_link();
+    }
+    echo('</div>');
+}
