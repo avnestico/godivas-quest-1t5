@@ -295,13 +295,9 @@ function puzzle_messages_15($answer) {
     switch ($answer) {
         case "djikstra":
             return "Correct!";
-        case "wcyeprtq":
-        case "dlrllafe":
-        case "wftffqlk":
-        case "lyntofoa":
-        case "figroloq":
-        case "leldrfla":
-        case "fkfwtlfq":
+        case "exjrmntf":
+        case "zyunvrtg":
+        case "qulpctno":
             return "That doesn't make sense. You must have decoded something incorrectly.";
         case "zelda":
         case "legendofzelda":
