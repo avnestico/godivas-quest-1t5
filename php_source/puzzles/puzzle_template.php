@@ -5,11 +5,12 @@
  * Print formatted html with puzzle template.
  *
  * Copy everything in the next comment into a new file, changing the location of the require_once if necessary, and add
- * the page's question, title, and content.
+ * the page's question, title, and content. If printing a solution page, add true as a fourth optional argument.
  *
  * @param $questionNumber
  * @param $questionTitle
  * @param $content
+ * @param bool $solution
  */
 
 /*
@@ -24,11 +25,11 @@ ob_start();
 // content of page goes here
 
 <?php
-print_template($questionNumber, $questionTitle, ob_get_clean());
+print_template($questionNumber, $questionTitle, ob_get_clean()); // Add true to print solution template
 
 */
 
-function print_template($questionNumber, $questionTitle, $content) {
+function print_template($questionNumber, $questionTitle, $content, $is_solution = false) {
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -46,11 +47,18 @@ function print_template($questionNumber, $questionTitle, $content) {
     <div id="container">
         <?php
         include_once(__DIR__ . "/puzzle_header.php");
+        print_puzzle_header($is_solution);
         include_once(__DIR__ . "/../message.php");
         ?>
         <div id="content_container">
-            <div id="content">
-                <h2>#<?php echo $questionNumber ?>: <?php echo $questionTitle ?></h2>
+            <?php
+            if (!$is_solution) {
+                echo('<div id="content">');
+            } else {
+                echo('<div id="solution">');
+            }
+            ?>
+                <h2><?php if ($is_solution) echo('Solution to ') ?>#<?php echo $questionNumber ?>: <?php echo $questionTitle ?></h2>
                 <?php echo $content ?>
             </div>
         </div>

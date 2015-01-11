@@ -1,6 +1,28 @@
 <?php
 include_once(__DIR__ . "/../global_variables.php");
 
+/**
+ * display_submit_form
+ *
+ * Prints the submit form to a puzzle, or a link to the solution once the Quest is over.
+ *
+ * @param bool $solution
+ */
+function display_submit_form($solution = false) {
+    echo('<div class="box_container">');
+    if (!$solution) {
+        get_submit_form();
+    } else {
+        get_solution_link();
+    }
+    echo('</div>');
+}
+
+/**
+ * get_submit_form
+ *
+ * Print the puzzle answer submission form.
+ */
 function get_submit_form() {
     global $questionNumber;
     ?>
@@ -25,21 +47,29 @@ function get_submit_form() {
     <?php
 }
 
+/**
+ * get_solution_link
+ *
+ * Print link to solution.
+ */
 function get_solution_link() {
     ?>
 
         <h3>Solution</h3>
-        <a href="solution.html"><b>View Solution</b></a>
+        <a href="solution.php"><b>View Solution</b></a>
     <?php
 }
 
-
-function display_submit_form($solution = false) {
-    echo('<div class="box_container">');
-    if (!$solution) {
-        get_submit_form();
-    } else {
-        get_solution_link();
-    }
-    echo('</div>');
+/**
+ * get_return_link
+ *
+ * On a solution page, print link that returns you to the puzzle.
+ */
+function get_return_link() {
+    ?>
+    <div class="box_container">
+        <h3>Return</h3>
+        <a href="../"><b>Return to Question</b></a>
+    </div>
+<?php
 }

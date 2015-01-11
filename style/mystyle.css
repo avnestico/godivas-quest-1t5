@@ -247,6 +247,11 @@ ol {
     padding: 0px 7px 0px;
 }
 
+#solution {
+    padding: 0px 7px 16px;
+    font-family: "Courier New", Courier, monospace;
+}
+
 #modification {
     padding: 10px 7px 16px;
     font-style: italic;
