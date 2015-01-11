@@ -80,3 +80,38 @@ function unknown_error() {
     header("Location: /1T5/?message=$message");
     die();
 }
+
+/**
+ * print_spoiler
+ *
+ * Prints a button that reveals or re-hides hidden text when the user clicks it.
+ *
+ * Requires toggle_visibility.js to be called by html.
+ *
+ * Usage:
+ * print_spoiler("spoiler_1", "Spoiler", true)
+ * // First spoiler content
+ * print_spoiler("spoiler_2", "Spoiler")
+ * // Second spoiler content
+ * print_spoiler_end()
+ *
+ * @param $div_id: A unique identifier for each spoiler segment.
+ * @param $display_name: The text of the link clicked to toggle the spoiler's visibility.
+ * @param bool $is_first: Set to true if not immediately preceded by another call to print_spoiler().
+ */
+function print_spoiler($div_id, $display_name, $is_first=false) {
+    if (!$is_first) {
+        echo("\n" . '</div>');
+    }
+    echo('<a onclick="toggle_visibility(\'' . $div_id . '\');">' . $display_name . '</a>' . "\n\n");
+    echo('<div id="' . $div_id . '" style="display:none;">');
+}
+
+/**
+ * print_spoiler_end
+ *
+ * Ends a spoiler or set of spoilers. See above for usage.
+ */
+function print_spoiler_end() {
+    echo("\n" . '</div>');
+}
