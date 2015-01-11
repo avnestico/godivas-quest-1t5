@@ -56,7 +56,7 @@ function get_solution_link() {
     ?>
 
         <h3>Solution</h3>
-        <a href="solution.php"><b>View Solution</b></a>
+        <a href="solution"><b>View Solution</b></a>
     <?php
 }
 
