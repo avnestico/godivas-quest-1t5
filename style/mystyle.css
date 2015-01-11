@@ -257,6 +257,15 @@ ol {
     font-style: italic;
 }
 
+#solution {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#solution:before {
+    content: "Solution: ";
+}
+
 /* Leaderboard cells displaying a single character */
 
 #small_cell {
