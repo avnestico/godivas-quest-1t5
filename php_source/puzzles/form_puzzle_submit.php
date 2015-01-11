@@ -27,7 +27,7 @@ function get_submit_form() {
     global $questionNumber;
     ?>
     <h3>Submit</h3>
-    <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/submit_enter.js' . '"' ?>></script>
+    <script type="text/javascript" <?php echo 'src="/' . $GLOBALS['this_year'] . '/php_source/js/submit_enter.js' . '"' ?>></script>
     <form name="final_answer"
           method="post" <?php echo 'action="/' . $GLOBALS['this_year'] . '/php_source/puzzles/answer_check.php' . '"' ?>>
 
