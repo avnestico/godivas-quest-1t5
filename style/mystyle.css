@@ -248,8 +248,8 @@ ol {
 }
 
 #solution {
-    padding: 0px 7px 16px;
     font-family: "Courier New", Courier, monospace;
+    white-space: pre;
 }
 
 #modification {
