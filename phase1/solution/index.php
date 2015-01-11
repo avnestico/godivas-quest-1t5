@@ -18,6 +18,5 @@ A quick google search will tell you that Baltimore, the capital city of Maryland
 
 The 'common denominator' of the raven and the oriole refers to the least-significant common word of their scientific classifications. This is their order, Passeriformes.
 
-<div id="solution">PASSERIFORMES</div>
 <?php
-print_template($questionNumber, $questionTitle, ob_get_clean(), true);
+print_template($questionNumber, $questionTitle, ob_get_clean(), "PASSERIFORMES");

@@ -17,6 +17,5 @@ NINTENDO
 
 As hinted by '45 degree angle', you want to look at the first letter of the first answer, second letter of the second answer, and so on. Doing so spells 'founded', the puzzle's answer.
 
-<div id="solution">FOUNDED</div>
 <?php
-print_template($questionNumber, $questionTitle, ob_get_clean(), true);
+print_template($questionNumber, $questionTitle, ob_get_clean(), "FOUNDED");

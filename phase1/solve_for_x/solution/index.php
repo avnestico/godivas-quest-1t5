@@ -15,6 +15,5 @@ The nonogram reads, "Z = Y/X". Knowing this, the title is an obvious clue for wh
 
 X is the denominator of the fraction Y/X.
 
-<div id="solution">DENOMINATOR</div>
 <?php
-print_template($questionNumber, $questionTitle, ob_get_clean(), true);
+print_template($questionNumber, $questionTitle, ob_get_clean(), "DENOMINATOR");
