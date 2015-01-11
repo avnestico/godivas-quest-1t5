@@ -59,11 +59,11 @@ function print_template($questionNumber, $questionTitle, $content, $is_solution 
                 </h2>
                 <?php
                 if ($is_solution) {
-                    echo('<div id="solution">');
+                    echo('<pre><code>');
                 }
                 echo($content);
                 if ($is_solution) {
-                    echo('</div>');
+                    echo('</code></pre>');
                 }
                 ?>
             </div>

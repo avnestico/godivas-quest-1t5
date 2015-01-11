@@ -118,6 +118,11 @@ input {
     margin: 6px 0px;
 }
 
+pre {
+    margin: 0px;
+    white-space: pre-wrap;
+}
+
 ul {
     margin: 25px 0px;
 }
@@ -245,11 +250,6 @@ ol {
 
 #message {
     padding: 0px 7px 0px;
-}
-
-#solution {
-    font-family: "Courier New", Courier, monospace;
-    white-space: pre;
 }
 
 #modification {
