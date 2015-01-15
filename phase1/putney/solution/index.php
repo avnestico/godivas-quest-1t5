@@ -5,6 +5,8 @@ $questionNumber = 3;
 $questionTitle = "Putney";
 ob_start();
 ?>
+<b>Special thanks to Abhinav Ramakrishnan.</b>
+
 The puzzle is a simple substitution cipher, which decodes to:
 
 I ONCE THOUGHT THIS NUMBER WAS RATHER DULL

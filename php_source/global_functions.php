@@ -101,9 +101,9 @@ function unknown_error() {
  */
 function print_spoiler($div_id, $display_name, $is_first=false) {
     if (!$is_first) {
-        echo("\n" . '</div>');
+        echo('<br/></div>');
     }
-    echo('<a onclick="toggle_visibility(\'' . $div_id . '\');">' . $display_name . '</a>' . "\n\n");
+    echo('<a onclick="toggle_visibility(\'' . $div_id . '\');">' . $display_name . '</a><br/><br/>');
     echo('<div id="' . $div_id . '" style="display:none;">');
 }
 
@@ -113,5 +113,5 @@ function print_spoiler($div_id, $display_name, $is_first=false) {
  * Ends a spoiler or set of spoilers. See above for usage.
  */
 function print_spoiler_end() {
-    echo("\n" . '</div>');
+    echo('<br/></div>');
 }
