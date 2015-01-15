@@ -5,21 +5,19 @@ $questionNumber = 13;
 $questionTitle = "Restrainable Brainteaser";
 ob_start();
 ?>
-
 <p>Don't get sea legs on this one, or you might end up wageless.</p>
 <br/>
 <p>AAELLSRT</p>
 <p>CEHINPU</p>
 <p>CDEEFLORT</p>
+<p>AEFGHSTTU</p>
 <p>AEEGHINRRSTT</p>
 <p>AAEGLLTSS</p>
 <p>GILNNORSU</p>
 <p>ADEELNOR</p>
 <p>ADDHHLNO</p>
 <p>ADDDEEHNRU</p>
-<p>ADEEIKNPS</p>
 <p>EEEEHLNRSSTV</p>
-<p>ADEEHLLNOSSW</p>
 
             </div>
         </div>
@@ -31,5 +29,8 @@ ob_start();
                 <p>Modification (Jan 6, 1:30 a.m. EST): Due to an ambiguity, the fourth clue in the puzzle has been
                 removed and replaced with what is now the fifth clue. The rest of the puzzle, including the solution,
                 is unchanged.</p>
+                <p>Modification (Jan 13, 10:30 p.m. EST): The last clue of the puzzle was not supposed to be there. It
+                has been removed. Thankfully, many people were able to solve the puzzle despite the confusion of the
+                additional clue.</p>
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
