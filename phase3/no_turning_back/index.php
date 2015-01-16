@@ -26,15 +26,12 @@ The prince of darkness has taken everything from you, including your princess. S
 
 <p>P.S. If there are multiple entrances, assume that you entered from the East.</p>
 
-            </div>
-        </div>
+<?php print_modification() ?>
 
-        <div id="content_container">
-            <div id="modification">
-                <p>Modification (Jan 6, 11:30 a.m. EST): There was an error in the fifth clue. It has been fixed.</p>
-                <p>Modification (Jan 7, 11:30 p.m. EST): The picture was changed to fix errors that made the puzzle
-                    unsolvable. Letter order and one number has changed. Please refresh the page and bypass your cache
-                    if you worked on the puzzle before this time.</p>
+<p>Modification (Jan 6, 11:30 a.m. EST): There was an error in the fifth clue. It has been fixed.</p>
+<p>Modification (Jan 7, 11:30 p.m. EST): The picture was changed to fix errors that made the puzzle
+    unsolvable. Letter order and one number has changed. Please refresh the page and bypass your cache
+    if you worked on the puzzle before this time.</p>
 
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());

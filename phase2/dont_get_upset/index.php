@@ -37,13 +37,11 @@ ob_start();
 
 <p>Nobody else even comes to this stupid thing any more. Why do we still bother?</p>
 
-            </div>
-        </div>
+<?php print_modification() ?>
 
-        <div id="content_container">
-            <div id="modification">
-                <p>Modification (Dec 31, 12:00 a.m. EST): A line has been added to the end of this puzzle.</p>
-                <p>Modification (Jan 4, 10:30 p.m. EST): This puzzle's name has been changed from "Don't Get Angry" and
-                its structure has been simplified.</p>
+<p>Modification (Dec 31, 12:00 a.m. EST): A line has been added to the end of this puzzle.</p>
+<p>Modification (Jan 4, 10:30 p.m. EST): This puzzle's name has been changed from "Don't Get Angry" and
+its structure has been simplified.</p>
+
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());

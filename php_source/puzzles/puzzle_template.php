@@ -74,3 +74,13 @@ function print_template($questionNumber, $questionTitle, $content, $solution = "
 </html>
 <?php
 }
+
+function print_modification() {
+?>
+    </div>
+</div>
+
+<div id="content_container">
+    <div id="modification">
+<?php
+}

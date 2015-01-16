@@ -16,13 +16,11 @@ Perhaps his wife'll die.</p>
 
 <p>That's strange. It looks to me like the ordering is messed up. Don't ask me why.</p>
 
-            </div>
-        </div>
+<?php print_modification() ?>
 
-        <div id="content_container">
-            <div id="modification">
-                <p>Modification (Dec 31, 12:00 a.m. EST): The opening lines of this puzzle have been changed.</p>
-                <p>Notice (Jan 4, 10:30 p.m. EST): The fifth clue in the picture should have been listed third. This has
-                no effect on the solution to the puzzle.</p>
+<p>Modification (Dec 31, 12:00 a.m. EST): The opening lines of this puzzle have been changed.</p>
+<p>Notice (Jan 4, 10:30 p.m. EST): The fifth clue in the picture should have been listed third. This has
+no effect on the solution to the puzzle.</p>
+
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());

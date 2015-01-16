@@ -19,18 +19,13 @@ ob_start();
 <p>ADDDEEHNRU</p>
 <p>EEEEHLNRSSTV</p>
 
-            </div>
-        </div>
+<?php print_modification() ?>
 
-        <div id="content_container">
-            <div id="modification">
-                <p>Modification (Jan 4, 10:30 p.m. EST): The order of this puzzle's clues has been changed, and some
-                intermediate clues have been added. Please submit your intermediate answers again.<p>
-                <p>Modification (Jan 6, 1:30 a.m. EST): Due to an ambiguity, the fourth clue in the puzzle has been
-                removed and replaced with what is now the fifth clue. The rest of the puzzle, including the solution,
-                is unchanged.</p>
-                <p>Modification (Jan 13, 10:30 p.m. EST): The last clue of the puzzle was not supposed to be there. It
-                has been removed. Thankfully, many people were able to solve the puzzle despite the confusion of the
-                additional clue.</p>
+<p>Modification (Jan 4, 10:30 p.m. EST): The order of this puzzle's clues has been changed, and some
+intermediate clues have been added. Please submit your intermediate answers again.<p>
+<p>Modification (Jan 6, 1:30 a.m. EST): Due to an ambiguity, the fourth clue in the puzzle has been
+removed and replaced with what is now the fifth clue. The rest of the puzzle, including the solution,
+is unchanged.</p>
+
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean());
