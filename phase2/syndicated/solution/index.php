@@ -76,7 +76,7 @@ There is only one solution to this Challenger in which every number is between 1
 # (/)# 23 # 30 # 31 # 28 # 35 #
 #====#====#====#====#====#====#
 
-The rest of the puzzle can be trivially solved because we know (4A) &gt; 2
+The rest of the puzzle can be trivially solved because we know (4A) &gt;= 2 and (4A) + (4B) = 3
 
 (4): (4A) = 2, (4B) = 1
 (A): (2A) = 15
@@ -84,7 +84,7 @@ The rest of the puzzle can be trivially solved because we know (4A) &gt; 2
 (3): (3B) = 1
 (/): (1D) = 14
 (B): (1B) = 1
-(1): (1D) = 14
+(D): (2D) = 6
 <?php print_spoiler_end() ?>
 The solution looks like this:
 

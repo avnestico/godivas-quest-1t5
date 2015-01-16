@@ -17,7 +17,7 @@ B.O.B              So Good
 
 * Note: The first song sounds similar to Breakfast In America by Supertramp, because Cupid's Chokehold sampled that song. Upon submitting Breakfast In America as an answer, you would have been informed that the song you're looking for is one that sampled the one you submitted. *
 
-As hinted by "I just can't wait for these clips to end", you must identify the last word whistled in each song. To help out, the particular segment of each song that you're looking for is given as the title of the mp3 file.
+As hinted by "I just can't wait for these clips to end", you must identify the last word whistled in each song. To help out, the particular segment of each song that you're looking for is given as the title of the mp3 file. By the way, if you downloaded the file and checked its metadata, you'd see that its title and artist are both listed.
 
 The keywords are, in listed order:
 
