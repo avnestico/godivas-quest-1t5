@@ -42,16 +42,17 @@ There is only one solution to this Challenger in which every number is between 1
 # (/)# 23 # 30 # 31 # 28 # 35 #
 #====#====#====#====#====#====#
 
-(4): (4A) + (4C) + (4D) = 7     Each cell can be no larger than 5
+(4): (4A) + (4C) + (4D) = 7     The smallest a cell can be is 1
+                                Thus, each cell can be no larger than 5
 
 (A): (2A) + (4A) = 17           The largest a cell can be is 15
                                 Thus, 2 &lt;= (4A) &lt;= 5
-                                Thus, (4C) and (4D) are each &lt;= 4
+                           (4): Thus, (4C) and (4D) are each &lt;= 4
 
 (\): (2B) + (3C) + (4D) = 32    The largest a cell can be is 15
                                 Thus, 2 &lt;= (4D) &lt;= 4
                                 Thus, (2B) and (3C) are each &gt;= 13
-                                Thus, 2 &lt;= (4A) &lt;= 4 and 1 &lt;= (4C) &lt; 3
+                           (4): Thus, 2 &lt;= (4A) &lt;= 4 and 1 &lt;= (4C) &lt; 3
 
 (B): (1B) + (2B) + (3B) = 16    The smallest a cell can be is 1
                                 Thus, 13 &lt;= (2B) &lt;= 14
@@ -79,11 +80,10 @@ There is only one solution to this Challenger in which every number is between 1
 The rest of the puzzle can be trivially solved because we know (4A) &gt;= 2 and (4A) + (4B) = 3
 
 (4): (4A) = 2, (4B) = 1
+(B): (1B) = 1, (3B) = 1
 (A): (2A) = 15
 (C): (1C) = 14
-(3): (3B) = 1
 (/): (1D) = 14
-(B): (1B) = 1
 (D): (2D) = 6
 <?php print_spoiler_end() ?>
 The solution looks like this:
