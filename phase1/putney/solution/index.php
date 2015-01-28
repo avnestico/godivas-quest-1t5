@@ -19,4 +19,4 @@ EXPRESSIBLE AS THE SUM OF TWO CUBES IN TWO DIFFERENT WAYS
 This is a description of the <a href="http://en.wikipedia.org/wiki/Taxicab_number">taxicab number</a>, 1729.
 
 <?php
-print_template($questionNumber, $questionTitle, ob_get_clean(), true, "1729");
+print_template($questionNumber, $questionTitle, ob_get_clean(), "1729");

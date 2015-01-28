@@ -25,9 +25,11 @@ It becomes quite clear that this puzzle isn't an ordinary Challenger. All the nu
 # 23 # 30 # 31 # 28 # 35 #
 #====#====#====#====#====#
 
-There is only one solution to this Challenger in which every number is between 1 and 15. With patience, it can be found without needing to make any guesses. The solution is as follows:
+There is only one solution to this Challenger in which every number is between 1 and 15. With patience, it can be found without needing to make any guesses.
 
 <?php print_spoiler("spoiler", "Click here to expand puzzle solution", true) ?>
+The solution is as follows:
+
 #====#====#====#====#====#====#
 # (\)# (A)# (B)# (C)# (D)# 19 #
 #====#====#====#====#====#====#
