@@ -33,7 +33,7 @@ As hinted by the puzzle title and "the original 118" (a reference to the origina
 
 "The penunltimate battle is the only double battle" means that you should take the second-last phrase as two words. Every other set of Pokemon is a single word. This gives you:
 
-Larger Kitchener uni's generic tennis, puck, or hoops player
+LARGER KITCHENER UNI'S GENERIC TENNIS, PUCK, OR HOOPS PLAYER
 
 This is referring to the University of Waterloo's varsity team name, the Warriors. If you submit WARRIORS, you'll get the error message "Note that there's no Pidgey at the end of the last team." Pidgey is #16 in the Pokedex, which refers to Sulfur (S). Thus, the correct answer to the puzzle is the singular form, WARRIOR.
 

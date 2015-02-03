@@ -8,17 +8,11 @@ require_once(__DIR__ . "/../../../php_source/global_functions.php");
  *
  * Print a step as a spoiler that can be expanded by clicking.
  *
- * Setting $number = -1 ends the series of steps.
- *
  * @param $number
  * @param bool $is_first
  */
 function print_spoiler_step($number, $is_first=false) {
-    if ($number !== -1) {
-        print_spoiler("step_" . $number, "Step " . $number, $is_first);
-    } else {
-        print_spoiler_end();
-    }
+    print_spoiler("step_" . $number, "Step " . $number, $is_first);
 }
 
 $questionNumber = 17;
@@ -192,7 +186,7 @@ Order Driver  Pssnger Car     Girl    Depart
 7     Tomas   -       Volks   -       5
 
 15 and 18 don't help other than to provide the remaining names.
-<?php print_spoiler_step(-1) ?>
+<?php print_spoiler_end() ?>
 Ordering the bros right to left by arrival time (driver, then passenger), and indexing by their departure time (i.e. taking the letter of their name at the position of their departure time), you get the message:
 
 CARSANDLADIES
