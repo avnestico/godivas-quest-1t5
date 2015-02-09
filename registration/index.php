@@ -1,6 +1,17 @@
 <?php
 session_start();
 include_once(__DIR__ . "/../php_source/global_variables.php");
+
+function print_registration_content() {
+    echo "<p>You will be sent emails with additional instructions. If the email address you submit is not one you have
+        access to for the entire Quest, you will not be able to complete the Quest.</p><br/>";
+    include_once(__DIR__ . "/../php_source/registration/form_registration.php");
+}
+
+function print_registration_closed() {
+    $year = $GLOBALS['this_year'];
+    echo "<p>Registration is closed, as Godiva's Quest $year has ended.</p>";
+}
 ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -27,14 +38,11 @@ include_once(__DIR__ . "/../php_source/global_variables.php");
     <div id="content_container">
         <div id="content">
             <h2>Registration</h2>
-
-            <p>
-                You will be sent emails with additional instructions. If the email address you submit is not one you
-                have access to for the entire Quest, you will not be able to complete the Quest.
-            </p>
-            <br/>
-
-            <?php include_once(__DIR__ . "/../php_source/registration/form_registration.php"); ?>
+            <?php if (!$GLOBALS['quest_finished']) {
+                print_registration_content();
+            } else {
+                print_registration_closed();
+            }?>
         </div>
     </div>
 </div>
