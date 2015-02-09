@@ -187,7 +187,7 @@ Order Driver  Pssnger Car     Girl    Depart
 
 15 and 18 don't help other than to provide the remaining names.
 <?php print_spoiler_end() ?>
-Ordering the bros right to left by arrival time (driver, then passenger), and indexing by their departure time (i.e. taking the letter of their name at the position of their departure time), you get the message:
+Ordering the bros left to right by arrival time (driver, then passenger), and indexing by their departure time (i.e. taking the letter of their name at the position of their departure time), you get the message:
 
 CARSANDLADIES
 
