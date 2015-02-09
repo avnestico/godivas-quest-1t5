@@ -127,7 +127,7 @@ include_once(__DIR__ . "/../php_source/header.php");
     the world from ending, basically). The Godiva's Ark is hidden in one of the
     Engineering buildings and the first person that finds the Ark will be the
     winner. There are 3 stages, 21 puzzles in total. Will you find the Ark to
-    save us all?</p>
+    save us all?</p><br/>
 
 <h3>1T4</h3>
 
@@ -135,7 +135,7 @@ include_once(__DIR__ . "/../php_source/header.php");
     contains 21 puzzles arranged into three phases. Designed for the first time
     by a Chem, the puzzles are meant to move away from a computer and cryptology
     basis, and are based on problem-solving, logic, and maybe a little dumb
-    luck.</p>
+    luck.</p><br/>
 
 <h3>1T5</h3>
 
@@ -145,6 +145,12 @@ include_once(__DIR__ . "/../php_source/header.php");
     behind the group. Though this year's Quest shares the styling of the past few years, sweeping changes have been made
     to the backend.</p>
 <!-- Also new this year are hints in picture title text. -->
+<p>Upon solving each meta puzzle, questers obtained the credentials to the email account of a different Godiva
+    Industries employee. They uncovered more and more of the Godiva Industries conspiracy by finding the company login
+    page hidden within the site and using those credentials to infiltrate the employees' email inboxes. This culminated
+    in the shocking revelation that Godiva Industries' president was none other than our beloved Rhonda Meek! The first
+    person to confront Rhonda in her office with irrefutable proof of her involvement in Godiva Industries was rewarded
+    with the title of Godiva's Quest 1T5 champion.</p><br/>
 
 <h2>Past Winners and Questmasters</h2>
 
@@ -272,9 +278,18 @@ include_once(__DIR__ . "/../php_source/header.php");
     <tr>
         <td>1T5</td>
 
-        <td>1st) You?</td>
+        <td>1st) Colin Parker<br/>
+            2nd) Olga Bondarev, Nicholas Chin, Milan Maljkovic, and Kevin Rupasinghe</td>
 
         <td>Andrew Nestico</td>
+    </tr>
+
+    <tr>
+        <td>1T6</td>
+
+        <td>1st) You?</td>
+
+        <td>ECE 1T6</td>
     </tr>
 </table>
 
