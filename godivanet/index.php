@@ -53,33 +53,38 @@ function print_godivanet_content($auth, $user1, $user2, $user3) {
  * Prints solution to GodivaNet puzzles and all users' emails.
  */
 function print_godivanet_solution() {
-    echo "<h2>Solution to #22: GodivaNet</h2>";
     include_once(__DIR__ . "/../php_source/global_functions.php");
+    echo "<h2>Solution to #22: GodivaNet</h2><pre>";
     ?>
-    <p>This page was hidden for the duration of the Quest, but its existence was hinted at by several pages. The most
-        notable hint was in the title text of the picture at the <a href='../hints'>Hints</a> page, which pointed to
-        the also-hidden <a href='../style'>Style</a> page.</p>
-    <p>Upon finding this page, users were presented with a login screen. Each meta puzzle was linked to a Godiva
-        Industries employee, and logging in as that user provided access to their email inbox. Their usernames were
-        their names in utorID form (ie, John Smith -> smithjoh). The passwords for the first two users was the solution
-        to their respective phases' meta puzzles, and the password for the last phase was hinted at in the second user's
-        GodivaNet emails.</p>
-    <p>Click below to expand each user's GodivaNet emails.</p><br/>
+This page was hidden for the duration of the Quest, but its existence was hinted at by several pages. The most notable hint was in the title text of the picture at the <a href='../hints'>Hints</a> page, which pointed to the also-hidden <a href='../style'>Style</a> page.
+
+Upon finding this page, users were presented with a login screen. Each meta puzzle was linked to a Godiva Industries employee, and logging in as that user provided access to their email inbox. Their usernames were their names in utorID form (ie, John Smith -> smithjoh). The passwords for the first two users were the solutions to their respective phases' meta puzzles, and the password for the last phase was hinted at in the second user's GodivaNet emails.
+
+Click below to expand each user's GodivaNet emails.
     <script src="../php_source/js/toggle_visibility.js" type="text/javascript"></script>
-    <?php
+<?php
     print_spoiler("godivanet1", "User 1: larkrobi (Robin Lark)", true);
-    echo "Password: passeriformes<br/><br/>";
+    echo "Password: passeriformes<br/>";
     print_email_table(1);
+
     print_spoiler("godivanet2", "User 2: kingpete (Peter King)");
-    echo "Password: universitycollege<br/><br/>";
+    echo "Password: universitycollege<br/>";
     print_email_table(2);
+
     print_spoiler("godivanet3", "User 3: boldsere (Serena Bold)");
-    echo "Password: rhondameek<br/><br/>";
+    echo "Password: rhondameek<br/>";
     print_email_table(3);
+
     print_spoiler_end();
-    echo "<p>The first person to talk to Rhonda, address her by her codename, and ask her for the J.P. Potts Memorial Trophy was the champion of Godiva's Quest 1T5.</p>";
-}
-?>
+    ?>
+Once Questers found Ms. Bold's first name, Serena, they needed to uncover her real identity. Knowing that she was a fan of reversing things, they had to 'reverse' her code name, by finding a name with the opposite meaning.
+
+Serena means 'quiet', and upon searching for names that mean 'loud' or 'noisy', Questers would have stumbled upon the name 'Rhonda'. Bold is an antonym of 'Meek'. Coincidentally enough, the U of T Engineering Society Business Manager's name is Rhonda Meek!
+
+The first person to talk to Rhonda, address her by her codename, and ask her for the J.P. Potts Memorial Trophy was the champion of Godiva's Quest 1T5.
+<?php
+    echo "</pre>";
+} ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
