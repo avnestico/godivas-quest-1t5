@@ -33,9 +33,11 @@ WAWRINKA     WARRIOR
 NISHIKORI   NOTCHILE
 MURRAY       MARRIES
 
-Once you've ordered the puzzle answers this way, look at the last letter of each answer ("Ms. Bold has always been a fan of reversing things"). In reverse order, the letters spell SERENA, which is Ms. Bold's first name and the solution to this puzzle.
+Once you've ordered the puzzle answers this way, look at the last letter of each answer ("Ms. Bold has always been a fan of reversing things"). From bottom to top, these letters spell SERENA, which is Ms. Bold's first name and the solution to this puzzle.
 
 As an additional check step, Serena Williams was the number one ranked women's tennis player during Godiva's Quest 1T5. Most of the people who solved this puzzle actually skipped the above process and submitted the names of famous tennis players as guesses, only to be surprised to see that 'Serena' was correct.
+
+Questers needed to go back to <a href="../../godivanet/">GodivaNet</a> one last time after solving this puzzle in order to complete the Quest.
 
 <?php
 print_template($questionNumber, $questionTitle, ob_get_clean(), "SERENA");
