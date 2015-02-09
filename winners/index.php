@@ -20,23 +20,29 @@
         <div id="content">
             <h1><strong>Winners</strong></h1>
 
-            <p>The first ten(-ish) solvers received a <a href="../patch.jpg">commemorative patch</a>
-                for their efforts.</p>
-            <table width="83%" border="1">
+            <p>Congratulations to Colin Parker and the members of the ECE 1T6 team! The ECE 1T6s completed the last
+                Godiva's Quest 1T5 puzzle in the wee hours of Wednesday morning, and got up early to meet Rhonda in her
+                office in order to collect the J.P. Potts Memorial Trophy and the win.</p>
+            <p>Continuing the tradition started by Ryan Wills, Questmaster 1T4, each person who completed the Quest
+                received <a href="../patch_irl.jpg">a swanky patch</a> as their reward.</p><br/>
+            <table width="100%" border="1">
                 <tr>
-                    <th width="48%" scope="col">Name</th>
-                    <th width="40%" scope="col">Year/Discipline</th>
-                    <th width="12%" scope="col">Solve Time</th>
+                    <th width="54%" scope="col">Name</th>
+                    <th width="23%" scope="col">Team</th>
+                    <th width="23%" scope="col">Solve Time</th>
                 </tr>
                 <tr>
-                    <td>1)</td>
-                    <td></td>
-                    <td></td>
+                    <td>1) Colin Parker</td>
+                    <td rowspan="2">ECE 1T6</td>
+                    <td rowspan="2">Wed, Jan 7, 2015, 1:51 a.m.</td>
                 </tr>
                 <tr>
-                    <td>2)</td>
-                    <td></td>
-                    <td></td>
+                    <td>2) Olga Bondarev, Nicholas Chin, Milan Maljkovic, and Kevin Rupasinghe</td>
+                </tr>
+                <tr>
+                    <td>3) Tania Albarghouthi, Ozan Co&#x15F;kun, Fan Guo, Nikita Kachournikov, Eugene Sha, Connor Smith, Ahmed Yusuf, and Paul Zhou</td>
+                    <td>#TeamF!rosh++ (1T7s)</td>
+                    <td>Mon, Jan 12, 2015, 11:58 p.m.</td>
                 </tr>
             </table>
         </div>

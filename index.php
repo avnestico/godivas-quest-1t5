@@ -26,6 +26,39 @@ include_once(__DIR__ . "/php_source/global_variables.php");
 
     <div id="content_container">
         <div id="content">
+            <h1><strong>The Quest Has Concluded!</strong></h1>
+
+            <p>Godiva's Quest 1T5 has come to a close and the J.P. Potts Memorial Trophy has been found. Congratulations
+                are in order for Colin Parker, your Godiva's Quest 1T5 Champion!</p>
+
+            <p>Colin and his ECE 1T6 team were the only group to solve the Quest before the Wednesday morning deadline,
+                and for that, Colin's teammate Olga Bondarev was given the honour of judging Ye Grande Olde Chariot
+                Races 1T5.</p>
+
+            <p>If you make your way back to the puzzles, you might notice something has changed; instead of a puzzle
+                submission form, <strong>each puzzle has a link to its solution on its page!</strong> If there was a
+                puzzle you absolutely couldn't solve, you can check out its solution to see what needed to be done.</p>
+
+            <p>Also, the solution to the Quest's final puzzle is available on the <a href="godivanet">GodivaNet</a>
+                page, but I recommend checking out the solutions to the other puzzles first.</p>
+
+            <hr/>
+
+            <h3>Thank you all for participating!</h3>
+
+            <p>- Andrew Nestico, Questmaster 1T5</p><br/>
+
+            <div id="centre" style="margin-bottom: 16px">
+                <img src="patch_irl.jpg" width="70%"/>
+            </div>
+
+            <p>Below is this page as it appeared during the Quest.</p>
+
+        </div>
+    </div>
+
+    <div id="content_container">
+        <div id="content">
             <h1><strong>Hello and welcome to Godiva's Quest 1T5!</strong></h1>
 
             <p>Godiva's Quest is an annual test of the wit and constitution of the University of Toronto's undergraduate
