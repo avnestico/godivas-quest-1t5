@@ -13,6 +13,9 @@
 include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
 
+// Stop script immediately if the Quest is done.
+quest_finished_check();
+
 define('SOLVED', 0);
 define('INVALID_LOGIN', 1);
 define('MYSQL_ERROR', 2);

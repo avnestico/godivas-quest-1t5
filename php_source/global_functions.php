@@ -115,3 +115,14 @@ function print_spoiler($div_id, $display_name, $is_first=false) {
 function print_spoiler_end() {
     echo('<br/></div>');
 }
+
+/**
+ * quest_finished_check
+ *
+ * Prevent scripts from being run once the Quest is over.
+ */
+function quest_finished_check() {
+    if ($GLOBALS['quest_finished']) {
+        refresh_with_message("The Quest is over, so you can't submit anything now. Sorry!", true);
+    }
+}

@@ -41,6 +41,9 @@ session_start();
 include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
 
+// Stop script immediately if the Quest is done.
+quest_finished_check();
+
 // Fail early
 if (!isset($_REQUEST['username'])) {
     unknown_error();

@@ -9,6 +9,9 @@ include_once(__DIR__ . "/../global_variables.php");
 include_once(__DIR__ . "/../global_functions.php");
 include_once(__DIR__ . "/../email/email_registration.php");
 
+// Stop script immediately if the Quest is done.
+quest_finished_check();
+
 if (PHP_VERSION_ID < 50500) {
     require_once(__DIR__ . "/password.php");
 }
