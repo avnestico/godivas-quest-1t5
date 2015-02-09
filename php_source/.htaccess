@@ -1,1 +1,8 @@
+# Blocks all files from being accessed from a browser except:
+# php_source/
+#     puzzles/answer_check.php
+#     registration/perform_register.php
+#     godivanet/perform_login.php
+# js/
+#     *
 RedirectMatch 404 ^/1T5/php_source/(?!puzzles/answer_check\.php|registration/perform_register\.php|godivanet/perform_login\.php|js/.+).*$
