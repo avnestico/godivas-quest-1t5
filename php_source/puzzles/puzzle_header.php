@@ -24,7 +24,7 @@ function print_puzzle_header($is_solution = false) {
     <?php
     include_once(__DIR__ . "/form_puzzle_submit.php");
     if (!$is_solution) {
-        display_submit_form(true); // True prints link to solution, no argument prints answer submit form
+        display_submit_form($GLOBALS['quest_finished']);
     } else {
         get_return_link();
     }

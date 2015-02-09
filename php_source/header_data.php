@@ -82,8 +82,8 @@ function int_to_uoft_year($int) {
         display_header_link("leaderboard", "Leaderboard");
         display_header_link("history", "History");
         display_header_link("hints", "Hints");
-        display_header_link("winners", "Winners", false);
-        display_header_link("godivanet", "GodivaNet", false);
+        display_header_link("winners", "Winners", $GLOBALS['quest_finished']);
+        display_header_link("godivanet", "GodivaNet", $GLOBALS['quest_finished']);
         ?>
     </b>
 </div>
