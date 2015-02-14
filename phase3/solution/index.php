@@ -7,7 +7,7 @@ ob_start();
 ?>
 The solutions to this phase's puzzles are, in order:
 
-DJIKSTRA
+DIJKSTRA
 FEDERATIN
 MARRIES
 NATALE
@@ -26,7 +26,7 @@ Some of the puzzle solutions in this round sound similar to names of players on 
 
 Player        Answer
 ---------  ---------
-DJOKOVIC    DJIKSTRA
+DJOKOVIC    DIJKSTRA
 FEDERER    FEDERATIN
 NADAL         NATALE
 WAWRINKA     WARRIOR

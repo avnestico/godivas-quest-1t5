@@ -37,8 +37,8 @@ Item                            Directions  Value  Letter
 
 Some solution pages have absolute directions (west, north, east). You must convert these to relative directions; this is why making sure that you start from the East is important. Also, for Brave Fencer Musashi, search the linked page for '---MEANDERING FOREST---'.
 
-Bonus: in a reference to how you're attempting to find the shortest path through these mazes, Djikstra's algorithm is used to solve shortest path problems.
+Bonus: in a reference to how you're attempting to find the shortest path through these mazes, Dijkstra's algorithm is used to solve shortest path problems.
 
 <?php
-print_template($questionNumber, $questionTitle, ob_get_clean(), "DJIKSTRA");
+print_template($questionNumber, $questionTitle, ob_get_clean(), "DIJKSTRA");
 

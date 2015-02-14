@@ -293,7 +293,7 @@ function puzzle_messages_14($answer) {
 
 function puzzle_messages_15($answer) {
     switch ($answer) {
-        case "djikstra":
+        case "dijkstra":
             return "Correct!";
         case "exjrmntf":
         case "zyunvrtg":
